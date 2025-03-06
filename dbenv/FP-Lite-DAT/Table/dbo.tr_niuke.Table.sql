@@ -1,0 +1,62 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tr_niuke](
+	[no_niuke] [varchar](14) NOT NULL,
+	[dt_niuke] [datetime] NOT NULL,
+	[cd_hinmei] [varchar](14) NOT NULL,
+	[kbn_hin] [smallint] NULL,
+	[cd_niuke_basho] [varchar](10) NOT NULL,
+	[kbn_nyushukko] [smallint] NULL,
+	[kbn_zaiko] [smallint] NOT NULL,
+	[tm_nonyu_yotei] [datetime] NULL,
+	[su_nonyu_yotei] [decimal](9, 2) NULL,
+	[su_nonyu_yotei_hasu] [decimal](9, 2) NULL,
+	[tm_nonyu_jitsu] [datetime] NULL,
+	[su_nonyu_jitsu] [decimal](9, 2) NULL,
+	[su_nonyu_jitsu_hasu] [decimal](9, 2) NULL,
+	[su_zaiko] [decimal](9, 2) NULL,
+	[su_zaiko_hasu] [decimal](9, 2) NULL,
+	[su_shukko] [decimal](9, 2) NULL,
+	[su_shukko_hasu] [decimal](9, 2) NULL,
+	[su_kakozan] [decimal](9, 2) NULL,
+	[su_kakozan_hasu] [decimal](9, 2) NULL,
+	[dt_seizo] [datetime] NULL,
+	[dt_kigen] [datetime] NULL,
+	[kin_kuraire] [decimal](12, 4) NULL,
+	[no_lot] [varchar](14) NULL,
+	[no_denpyo] [varchar](30) NULL,
+	[biko] [nvarchar](50) NULL,
+	[cd_torihiki] [varchar](13) NOT NULL,
+	[flg_kakutei] [smallint] NULL,
+	[cd_hinmei_maker] [varchar](14) NULL,
+	[nm_kuni] [nvarchar](60) NULL,
+	[cd_maker] [varchar](20) NULL,
+	[nm_maker] [nvarchar](60) NULL,
+	[cd_maker_kojo] [varchar](20) NULL,
+	[nm_maker_kojo] [nvarchar](60) NULL,
+	[nm_hyoji_nisugata] [nvarchar](26) NULL,
+	[nm_tani_nonyu] [nvarchar](12) NULL,
+	[dt_nonyu] [datetime] NULL,
+	[dt_label_hakko] [datetime] NULL,
+	[cd_update] [varchar](10) NULL,
+	[dt_update] [datetime] NULL,
+	[no_seq] [decimal](8, 0) NOT NULL,
+	[kbn_nyuko] [smallint] NULL,
+	[no_nonyu] [varchar](13) NULL,
+	[flg_print] [smallint] NULL,
+	[no_nohinsho] [nvarchar](16) NULL,
+	[no_zeikan_shorui] [nvarchar](16) NULL,
+	[flg_shonin] [smallint] NULL,
+	[cd_niuke_basho_before] [varchar](10) NULL,
+	[kbn_zaiko_before] [smallint] NULL,
+ CONSTRAINT [PK_tr_niuke] PRIMARY KEY CLUSTERED 
+(
+	[no_niuke] ASC,
+	[cd_niuke_basho] ASC,
+	[kbn_zaiko] ASC,
+	[no_seq] ASC
+)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+)
+GO

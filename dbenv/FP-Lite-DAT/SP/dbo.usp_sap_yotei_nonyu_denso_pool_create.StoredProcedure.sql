@@ -1,0 +1,51 @@
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'usp_sap_yotei_nonyu_denso_pool_create') AND type IN (N'P', N'PC')) 
+DROP PROCEDURE [dbo].[usp_sap_yotei_nonyu_denso_pool_create]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+/*****************************************************
+機能		：納入予定抽出POOLテーブル取込処理
+ファイル名	：usp_sap_keikaku_yotei_nonyu_pool_create
+入力引数	：				
+出力引数	：
+戻り値		：成功時[0] 失敗時[0以外のエラーコード]
+作成日		：2015.01.08 ADMAX endo.y
+更新日      ：
+*****************************************************/
+CREATE PROCEDURE [dbo].[usp_sap_yotei_nonyu_denso_pool_create] 
+AS
+BEGIN
+	--納入予定抽出POOLテーブルから1年以上前のデータを削除
+	DELETE
+	FROM tr_sap_yotei_nonyu_denso_pool
+	WHERE dt_denso < (SELECT DATEADD(month,-18,GETUTCDATE()))
+	
+	--送信対象のデータを製造計画抽出POOLテーブルに格納
+	INSERT INTO tr_sap_yotei_nonyu_denso_pool (
+		kbn_denso_SAP
+		,no_nonyu
+		,cd_kojo
+		,dt_nonyu
+		,cd_hinmei
+		,su_nonyu
+		,cd_torihiki
+		,cd_tani_SAP
+		,kbn_nyuko
+		,dt_denso
+	)
+	SELECT
+		kbn_denso_SAP
+		,no_nonyu
+		,cd_kojo
+		,dt_nonyu
+		,cd_hinmei
+		,COALESCE(su_nonyu,0)
+		,cd_torihiki
+		,cd_tani_SAP
+		,kbn_nyuko
+		,GETUTCDATE()
+	FROM tr_sap_yotei_nonyu_denso
+END
+GO
