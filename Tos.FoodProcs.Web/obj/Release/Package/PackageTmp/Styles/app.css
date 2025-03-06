@@ -1,0 +1,220 @@
+/* 各システム固有のスタイルを記載 */
+.clear-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+                
+.clear-confirm-dialog .part-body {
+    width: 95%;
+}
+
+.find-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+                
+.find-confirm-dialog .part-body {
+    width: 95%;
+}
+
+.edit-confirm-dialog {
+    background-color: White;
+    width: 440px;
+}
+                
+.edit-confirm-dialog .part-body {
+    width: 100%;
+}
+        
+.delete-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+        
+.delete-confirm-dialog .part-body {
+    width: 95%;
+}
+
+.delete-complete-dialog {
+    background-color: White;
+    width: 350px;
+}
+                
+.delete-complete-dialog .part-body {
+    width: 95%;
+}
+
+.futai-dialog {
+	background-color: White;
+	width: 550px;
+}
+
+.hinmei-dialog {
+    background-color: White;
+    width: 550px;
+} 
+
+.shizai-dialog {
+    background-color: White;
+    width: 550px;
+} 
+
+.jikagenryo-dialog {
+    background-color: White;
+    width: 550px;
+}
+
+.line-dialog {
+    background-color: White;
+    width: 550px;
+} 
+
+.shokuba-sentaku-dialog {
+    background-color: White;
+    width: 450px;
+}
+
+.list-part-detail-content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.list-part-detail-content .item-command {
+    border-bottom: solid 1px #cccccc;
+    margin-bottom: 10px;
+}
+        
+.list-part-detail-content .item-list-left {
+    float: left;
+    width: 400px;
+}
+        
+.list-part-detail-content .item-list-right {
+    margin-left: 400px;
+    width: 400px;
+}
+        
+.list-part-detail-content select {
+    width: 12em;
+}
+        
+.list-part-detail-content .item-label {
+    width: 12em;
+}
+
+.mark-dialog 
+{
+    background-color: White;
+    width: 500px;
+}
+
+.menu-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+.menu-confirm-dialog .part-body {
+    width: 95%;
+}
+
+.navigate-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+                
+.navigate-confirm-dialog .part-body {
+    width: 95%;
+}
+
+.part-body .item-label {
+    display: inline-block;
+}
+
+.part-body .item-list li {
+    margin-bottom: .2em;
+}
+
+#result-grid {
+    padding: 0px;
+    overflow: hidden;
+}
+
+.result-list .part-body {
+    overflow-x: hidden;
+}
+
+.result-list .list-arrow {
+    background-image: url('../Styles/images/ui-icons_222222_256x240.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    margin-right: .5em;
+    background-position: -32px 0; 
+}
+
+.save-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+.save-confirm-dialog .part-body {
+    width: 95%;
+}
+
+.close-confirm-dialog
+{
+    background-color: White;
+    width: 350px;
+}
+.close-confirm-dialog .part-body
+{
+    width: 95%;
+}
+
+.save-complete-dialog {
+    background-color: White;
+    width: 350px;
+}
+.save-complete-dialog .part-body {
+    width: 95%;
+}
+
+.search-confirm-dialog
+{
+    background-color: White;
+    width: 350px;
+}
+                
+.search-confirm-dialog .part-body
+{
+    width: 95%;
+}
+
+.search-criteria select {
+    width: 12em;
+}
+        
+.search-criteria .item-label {
+    width: 10em;
+}              
+
+.showgrid-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+.showgrid-confirm-dialog .part-body {
+    width: 95%;
+}
+.search-confirm-dialog {
+    background-color: White;
+    width: 350px;
+}
+/* 2022/05/12 - 16023: -START FP-Lite ChromeBrowser Modify */
+header {
+    position: relative;
+}
+.content-container {
+    margin-top: 0px;
+}
+/* 2022/05/12 - 16023: -START FP-Lite ChromeBrowser Modify */

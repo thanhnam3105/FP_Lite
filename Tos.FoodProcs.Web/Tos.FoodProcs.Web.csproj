@@ -1,0 +1,1855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6380603E-4D65-4ED9-A638-022003FD2ECB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tos.FoodProcs.Web</RootNamespace>
+    <AssemblyName>Tos.FoodProcs.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Default Web Site/tos</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\libraries\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services2, Version=2.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\Microsoft.Web.Services2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Extended, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\NLog.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Services.Client">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.1\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manuals\DirectInput-en.html" />
+    <Content Include="Manuals\DirectInputReadOnly-en.html" />
+    <Content Include="Manuals\SearchList-en.html" />
+    <Content Include="Manuals\FileUploadDownload-en.html" />
+    <Content Include="Manuals\FileUploadDownload-ja.html" />
+    <Content Include="Manuals\Styles\manual.css" />
+    <Content Include="Manuals\Styles\images\directinput.jpg" />
+    <Content Include="Pages\HistoryChangeMaster.aspx" />
+    <Content Include="Pages\ChuiKankiMaster.aspx" />
+    <Content Include="Pages\Dialog\GenshizaichoseinyuryokuExcelIkatsuDialog.aspx" />
+    <Content Include="Pages\NiukeBashoKubunMaster.aspx" />
+    <Content Include="Pages\Dialog\ChomiekiLabelDialog.aspx" />
+    <Content Include="Pages\Dialog\CommentDialog.aspx" />
+    <Content Include="Pages\Dialog\GenryoLotSentakuDialog.aspx" />
+    <Content Include="Pages\Dialog\GenryoLotTorikeshiDialog.aspx" />
+    <Content Include="Pages\Dialog\GokeiHyojiDialog.aspx" />
+    <Content Include="Pages\Dialog\JikaGenryoLotSentakuDialog.aspx" />
+    <Content Include="Pages\Dialog\JikaGenryoLotTorikeshiDialog.aspx" />
+    <Content Include="Pages\Dialog\NiukebashoDialog.aspx" />
+    <Content Include="Pages\Dialog\CsvUploadDialog.aspx" />
+    <Content Include="Pages\Dialog\ShikakariZanIchiranDialog.aspx" />
+    <Content Include="Pages\Dialog\ShokubaSentakuDialog.aspx" />
+    <Content Include="Pages\Dialog\YasumiSentakuDialog.aspx" />
+    <Content Include="Pages\Dialog\SeizoLineDialog.aspx" />
+    <Content Include="Pages\Dialog\GramTaniDialog.aspx" />
+    <Content Include="Pages\Dialog\InsatsuSentakuDialog.aspx" />
+    <Content Include="Pages\Dialog\GenshizaiShiyoIchiranDialog.aspx" />
+    <Content Include="Pages\Dialog\FutaiKetteiTorokuIchiranDialog.aspx" />
+    <Content Include="Pages\Dialog\ChuiKankiDialog.aspx" />
+    <Content Include="Pages\Dialog\SeizoJissekiSentakuDialog.aspx" />
+    <Content Include="Pages\GekkanSeihinKeikaku.aspx" />
+    <Content Include="Pages\GekkanShikakarihinKeikaku.aspx" />
+    <Content Include="Pages\GenryoLotToroku.aspx" />
+    <Content Include="Pages\GenshizaiHendoHyo.aspx" />
+    <Content Include="Pages\Dialog\GenshizaiKonyuDialog.aspx" />
+    <Content Include="Pages\GenshizaiUkeharaiIchiran.aspx" />
+    <Content Include="Pages\GenshizaiZaikoNyuryoku.aspx" />
+    <Content Include="Pages\Dialog\FutaiDialog.aspx" />
+    <Content Include="Pages\Dialog\LabelInsatsuDialog.aspx" />
+    <Content Include="Pages\NonyuYoteiListSakusei.aspx" />
+    <Content Include="Pages\ShikakarihinShikomiKeikaku.aspx" />
+    <Content Include="Pages\ShikakarizanShiyoKanoMaster.aspx" />
+    <Content Include="Pages\ShikomiNippo.aspx" />
+    <Content Include="Pages\HakariSample.aspx" />
+    <Content Include="Pages\HendoHyoSimulation.aspx" />
+    <Content Include="Pages\KeikokuListSakusei.aspx" />
+    <Content Include="Pages\GenshizaiKonyusakiMaster.aspx" />
+    <Content Include="Pages\LineMitorokuIchiran.aspx" />
+    <Content Include="Pages\GenshizaiNonyuKeikakuSakusei.aspx" />
+    <Content Include="Pages\HakariHaniSetteiMaster.aspx" />
+    <Content Include="Pages\ShizaiShiyoMaster.aspx" />
+    <Content Include="Pages\HyojunFundoJokagenchiMaster.aspx" />
+    <Content Include="Pages\KeisanZaikoSakusei.aspx" />
+    <Content Include="Pages\RiyuMaster.aspx" />
+    <Content Include="Pages\KurabashoMaster.aspx" />
+    <Content Include="Pages\TestDialog.aspx" />
+    <Content Include="Pages\TorihikisakiMaster.aspx" />
+    <Content Include="Pages\ShikakarihinShiyoIchiran.aspx" />
+    <Content Include="Pages\GenkaIchiran.aspx" />
+    <Content Include="Pages\GenkaTankaSakusei.aspx" />
+    <Content Include="Pages\GenshizaiShikakarihinShiyoIchiran.aspx" />
+    <Content Include="Pages\GenryoChuiKankiMaster.aspx" />
+    <Content Include="Pages\LocationMaster.aspx" />
+    <Content Include="Pages\GenkaCenterMaster.aspx" />
+    <Content Include="Pages\SokoMaster.aspx" />
+    <Content Include="Pages\SeizoKeikakuDensoIchiran.aspx" />
+    <Content Include="Pages\NonyuYoteiDensoIchiran.aspx" />
+    <Content Include="Pages\SeizoJissekiDensoIchiran.aspx" />
+    <Content Include="Pages\NonyuJissekiDensoIchiran.aspx" />
+    <Content Include="Pages\GetsumatsuZaikoDensoIchiran.aspx" />
+    <Content Include="Pages\ZaikoChoseiDensoIchiran.aspx" />
+    <Content Include="Pages\BomMasterDensoIchiran.aspx" />
+    <Content Include="Pages\SeizoJissekiSentaku.aspx" />
+    <Content Include="Pages\ShiyoJissekiIkkatsuDenso.aspx" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\account\pagedata-login.vi.js" />
+    <Content Include="Resources\account\pagedata-login.zh.js" />
+    <Content Include="Resources\grid\grid.locale-vi.js" />
+    <Content Include="Resources\grid\grid.locale-zh.js" />
+    <Content Include="Resources\id.vi.js" />
+    <Content Include="Resources\menu.vi.js" />
+    <Content Include="Resources\menu.zh.js" />
+    <Content Include="Resources\message.vi.js" />
+    <Content Include="Resources\message.zh.js" />
+    <Content Include="Resources\pagedata-all.vi.js" />
+    <Content Include="Resources\pagedata-all.zh.js" />
+    <Content Include="Resources\pagedata-dialog.vi.js" />
+    <Content Include="Resources\pagedata-dialog.zh.js" />
+    <Content Include="Resources\pages\pagedata-bommasterdensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-bunruimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-chuikankimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-futaiketteimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-futaimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-gekkanseihinkeikaku.vi.js" />
+    <Content Include="Resources\pages\pagedata-gekkanshikakarihinkeikaku.vi.js" />
+    <Content Include="Resources\pages\pagedata-genkacentermaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-genkaichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-genkatankasakusei.vi.js" />
+    <Content Include="Resources\pages\pagedata-genryochuikankimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-genryoshiyoryokeisan.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizaichoseinyuryoku.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizaihendohyo.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizaikonyusakimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizainonyukeikakusakusei.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizaishikakarihinshiyoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizaiukeharaiichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-genshizaizaikonyuryoku.vi.js" />
+    <Content Include="Resources\pages\pagedata-getsumatsuzaikodensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-haigomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-haigomasterichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-haigorecipemaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-hakarihanisetteimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-hakarimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-hakarisample.vi.js" />
+    <Content Include="Resources\pages\pagedata-hendohyosimulation.vi.js" />
+    <Content Include="Resources\pages\pagedata-hinmeimasterichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-historychangemaster.en.js" />
+    <Content Include="Resources\pages\pagedata-historychangemaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-historychangemaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-historychangemaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-hokankubunmaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-hyojunfundojokagenchimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-juryomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-kaishamaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-keikokulistsakusei.vi.js" />
+    <Content Include="Resources\pages\pagedata-keisanzaikosakusei.vi.js" />
+    <Content Include="Resources\pages\pagedata-kojomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-kurabashomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-linemaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-linemitorokuichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-locationmaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-mainmenu.vi.js" />
+    <Content Include="Resources\pages\pagedata-nenkancalendarmaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-niukebashokubunmaster.en.js" />
+    <Content Include="Resources\pages\pagedata-niukebashokubunmaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-niukebashokubunmaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-niukebashokubunmaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-bommasterdensoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-bunruimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-chuikankimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-chuikankimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-futaiketteimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-futaimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-gekkanseihinkeikaku.zh.js" />
+    <Content Include="Resources\pages\pagedata-gekkanshikakarihinkeikaku.zh.js" />
+    <Content Include="Resources\pages\pagedata-genkacentermaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-genkaichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-genkatankasakusei.zh.js" />
+    <Content Include="Resources\pages\pagedata-genryochuikankimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-genryolottoroku.en.js" />
+    <Content Include="Resources\pages\pagedata-genryolottoroku.ja.js" />
+    <Content Include="Resources\pages\pagedata-genryolottoroku.zh.js" />
+    <Content Include="Resources\pages\pagedata-genryoshiyoryokeisan.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizaichoseinyuryoku.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizaihendohyo.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizaikonyusakimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizainonyukeikakusakusei.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizaishikakarihinshiyoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-bunruimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-futaiketteimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-futaimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-gekkanseihinkeikaku.en.js" />
+    <Content Include="Resources\pages\pagedata-gekkanseihinkeikaku.ja.js" />
+    <Content Include="Resources\pages\pagedata-gekkanshikakarihinkeikaku.en.js" />
+    <Content Include="Resources\pages\pagedata-gekkanshikakarihinkeikaku.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizaihendohyo.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizaihendohyo.ja.js" />
+    <Content Include="Pages\TantoshaMaster.aspx" />
+    <Content Include="Pages\NonyuIraishoSakusei.aspx" />
+    <Content Include="Pages\NonyuIraishoList.aspx" />
+    <Content Include="Resources\pages\pagedata-futaiketteimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizainonyukeikakusakusei.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizainonyukeikakusakusei.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizaishikakarihinshiyoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizaiukeharaiichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizaiukeharaiichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizaiukeharaiichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-genshizaizaikonyuryoku.zh.js" />
+    <Content Include="Resources\pages\pagedata-getsumatsuzaikodensoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-haigomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-haigomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-haigomasterichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-haigorecipemaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-hakarihanisetteimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-hakarihanisetteimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-hakarimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-hakarisample.en.js" />
+    <Content Include="Resources\pages\pagedata-hakarisample.zh.js" />
+    <Content Include="Resources\pages\pagedata-hendohyosimulation.zh.js" />
+    <Content Include="Resources\pages\pagedata-hinmeimasterichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-hokankubunmaster.en.js" />
+    <Content Include="Resources\pages\pagedata-hokankubunmaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-hyojunfundojokagenchimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-juryomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-juryomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-kaishamaster.en.js" />
+    <Content Include="Resources\pages\pagedata-kaishamaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-keikokulistsakusei.zh.js" />
+    <Content Include="Resources\pages\pagedata-keisanzaikosakusei.en.js" />
+    <Content Include="Resources\pages\pagedata-keisanzaikosakusei.zh.js" />
+    <Content Include="Resources\pages\pagedata-kojomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-kojomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-kurabashomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-linemaster.en.js" />
+    <Content Include="Resources\pages\pagedata-linemaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-linemitorokuichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-linemitorokuichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-locationmaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-mainmenu.en.js" />
+    <Content Include="Resources\pages\pagedata-mainmenu.ja.js" />
+    <Content Include="Resources\pages\pagedata-mainmenu.zh.js" />
+    <Content Include="Resources\pages\pagedata-nenkancalendarmaster.en.js" />
+    <Content Include="Resources\pages\pagedata-nenkancalendarmaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-niukebashomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-niukebashomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-niukebashomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraisholist.vi.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraisholist.zh.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraishosakusei.vi.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraishosakusei.zh.js" />
+    <Content Include="Resources\pages\pagedata-nonyujissekidensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-nonyujissekidensoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteidensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteidensoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteilistsakusei.en.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteilistsakusei.ja.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteilistsakusei.vi.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteilistsakusei.zh.js" />
+    <Content Include="Resources\pages\pagedata-riyumaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-riyumaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-searchlist.vi.js" />
+    <Content Include="Resources\pages\pagedata-searchlist.zh.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekidensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekidensoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekisentaku.vi.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekisentaku.zh.js" />
+    <Content Include="Resources\pages\pagedata-seizokeikakudensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-seizokeikakudensoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-seizolinemaster.en.js" />
+    <Content Include="Resources\pages\pagedata-seizolinemaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-seizolinemaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-seizonippo.en.js" />
+    <Content Include="Resources\pages\pagedata-seizonippo.vi.js" />
+    <Content Include="Resources\pages\pagedata-seizonippo.zh.js" />
+    <Content Include="Resources\pages\pagedata-setsubimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-setsubimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-setsubimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshikomikeikaku.en.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshikomikeikaku.vi.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshikomikeikaku.zh.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshiyoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshiyoichiran.zh.js" />
+    <Content Include="Resources\pages\pagedata-shikakarizanshiyokanomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-shikakarizanshiyokanomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-shikakarizanshiyokanomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-shikakarizanshiyokanomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-shikominippo.en.js" />
+    <Content Include="Resources\pages\pagedata-shikominippo.vi.js" />
+    <Content Include="Resources\pages\pagedata-shikominippo.zh.js" />
+    <Content Include="Resources\pages\pagedata-shikomisagyoshijimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-shikomisagyoshijimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-shikomisagyoshijimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-shiyojissekiikkatsudenso.vi.js" />
+    <Content Include="Resources\pages\pagedata-shiyojissekiikkatsudenso.zh.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyoryokeisan.en.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyoryokeisan.ja.js" />
+    <Content Include="Pages\BunruiMaster.aspx" />
+    <Content Include="Pages\Dialog\LineDialog.aspx" />
+    <Content Include="Pages\Dialog\TorihikisakiDialog.aspx" />
+    <Content Include="Pages\Dialog\HinmeiDialog.aspx" />
+    <Content Include="Pages\Dialog\MarkDialog.aspx" />
+    <Content Include="Pages\FutaiKetteiMaster.aspx" />
+    <Content Include="Pages\FutaiMaster.aspx" />
+    <Content Include="Pages\GenryoShiyoryoKeisan.aspx" />
+    <Content Include="Pages\HaigoMaster.aspx" />
+    <Content Include="Pages\HaigoMasterIchiran.aspx" />
+    <Content Include="Pages\LineMaster.aspx" />
+    <Content Include="Pages\MainMenu.aspx" />
+    <Content Include="Pages\SeizoLineMaster.aspx" />
+    <Content Include="Pages\SetsubiMaster.aspx" />
+    <Content Include="Pages\NiukeBashoMaster.aspx" />
+    <Content Include="Pages\KaishaMaster.aspx" />
+    <Content Include="Pages\KojoMaster.aspx" />
+    <Content Include="Pages\ShikomiSagyoShijiMaster.aspx" />
+    <Content Include="Pages\HakariMaster.aspx" />
+    <Content Include="Pages\HaigoRecipeMaster.aspx" />
+    <Content Include="Pages\HinmeiMasterIchiran.aspx" />
+    <Content Include="Pages\NenkanCalendarMaster.aspx" />
+    <Content Include="Pages\TaniSetteiMaster.aspx" />
+    <Content Include="Pages\HokanKubunMaster.aspx" />
+    <Content Include="Pages\SeizoNippo.aspx" />
+    <Content Include="Pages\JuryoMaster.aspx" />
+    <Content Include="Pages\ShokubaMaster.aspx" />
+    <Content Include="Pages\GenshizaiChoseiNyuryoku.aspx" />
+    <Content Include="Resources\account\pagedata-login.ja.js" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Manuals\DirectInput-ja.html" />
+    <Content Include="Manuals\DirectInputReadOnly-ja.html" />
+    <Content Include="Manuals\SearchList-ja.html" />
+    <Content Include="Pages\FileUploadDownload.aspx" />
+    <Content Include="Resources\account\pagedata-login.en.js" />
+    <Content Include="Resources\id.ja.js" />
+    <Content Include="Resources\pagedata-dialog.en.js" />
+    <Content Include="Resources\pagedata-dialog.ja.js" />
+    <Content Include="Resources\pages\pagedata-bunruimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-futaimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-genryoshiyoryokeisan.ja.js" />
+    <Content Include="Resources\pages\pagedata-haigomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-haigomasterichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-linemaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-hakarisample.ja.js" />
+    <Content Include="Resources\pages\pagedata-searchlist.ja.js" />
+    <Content Include="Resources\menu.ja.js" />
+    <Content Include="Resources\pagedata-all.ja.js" />
+    <Content Include="Resources\pagedata-all.en.js" />
+    <Content Include="Resources\pages\pagedata-searchlist.en.js" />
+    <Content Include="Resources\pages\pagedata-seizolinemaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-setsubimaster.ja.js" />
+    <Content Include="Resources\message.ja.js" />
+    <Content Include="Resources\message.en.js" />
+    <Content Include="Resources\pages\pagedata-niukebashomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-kaishamaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-kojomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-shikomisagyoshijimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-hakarimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-haigorecipemaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-hinmeimasterichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-nenkancalendarmaster.ja.js" />
+    <Content Include="Resources\id.zh.js" />
+    <Content Include="Resources\id.en.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyoryokeisan.vi.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyoryokeisan.zh.js" />
+    <Content Include="Resources\pages\pagedata-shokubamaster.en.js" />
+    <Content Include="Resources\pages\pagedata-shokubamaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-shokubamaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-sokomaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-sokomaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-tanisetteimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-tanisetteimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-hokankubunmaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-seizonippo.ja.js" />
+    <Content Include="Resources\pages\pagedata-juryomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-tanisetteimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-tanisetteimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-tantoshamaster.en.js" />
+    <Content Include="Resources\pages\pagedata-tantoshamaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-tantoshamaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-torihikisakimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-torihikisakimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-shokubamaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-haigomasterichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizaichoseinyuryoku.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizaizaikonyuryoku.ja.js" />
+    <Content Include="Resources\pages\pagedata-tantoshamaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-shikominippo.ja.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraishosakusei.ja.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraisholist.ja.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraisholist.en.js" />
+    <Content Include="Resources\pages\pagedata-nonyuiraishosakusei.en.js" />
+    <Content Include="Resources\pages\pagedata-hendohyosimulation.ja.js" />
+    <Content Include="Resources\pages\pagedata-keikokulistsakusei.ja.js" />
+    <Content Include="Resources\pages\pagedata-keikokulistsakusei.en.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshikomikeikaku.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizaikonyusakimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-linemitorokuichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-hinmeimasterichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-hakarimaster.en.js" />
+    <Compile Include="Controllers\ActionConst.cs" />
+    <Compile Include="Controllers\CalcHaigoGokeiJuryoController.cs" />
+    <Compile Include="Controllers\ChuiKankiMasterController.cs" />
+    <Compile Include="Controllers\HistoryChangeMasterExcelController.cs" />
+    <Compile Include="Controllers\HistoryChangeMasterController.cs" />
+    <Compile Include="Controllers\GenryoLotTorikeshiDialogController.cs" />
+    <Compile Include="Controllers\GenryoLotTorokuController.cs" />
+    <Compile Include="Controllers\GenshizaiChoseiNyuryokuExcelIkatsuController.cs" />
+    <Compile Include="Controllers\GenshizaiUkeharaiIchiranController.cs" />
+    <Compile Include="Controllers\GenshizaiUkeharaiIchiranExcelController.cs" />
+    <Compile Include="Controllers\GenshizaiZaikoNyuryokuZaikoCopyController.cs" />
+    <Compile Include="Controllers\GekkanSeihinKeikakuJissekiController.cs" />
+    <Compile Include="Controllers\GenshizaiNonyuKeikakuSakuseiController.cs" />
+    <Content Include="Resources\pages\pagedata-hakarihanisetteimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-shizaishiyomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-hyojunfundojokagenchimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-hendohyosimulation.en.js" />
+    <Content Include="Resources\pages\pagedata-hyojunfundojokagenchimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-keisanzaikosakusei.ja.js" />
+    <Content Include="Resources\pages\pagedata-riyumaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-riyumaster.en.js" />
+    <Content Include="Resources\pages\pagedata-kurabashomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-kurabashomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshiyoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-shikakarihinshiyoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-genkaichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-genkatankasakusei.ja.js" />
+    <Content Include="Resources\pages\pagedata-genshizaishikakarihinshiyoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-genryochuikankimaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-chuikankimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-genkaichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-genkatankasakusei.en.js" />
+    <Content Include="Resources\pages\pagedata-genryochuikankimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-locationmaster.en.js" />
+    <Content Include="Resources\pages\pagedata-locationmaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-genkacentermaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-genkacentermaster.en.js" />
+    <Content Include="Resources\pages\pagedata-sokomaster.en.js" />
+    <Content Include="Resources\pages\pagedata-sokomaster.ja.js" />
+    <Content Include="Resources\pages\pagedata-seizokeikakudensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-seizokeikakudensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteidensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-nonyuyoteidensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekidensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekidensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-nonyujissekidensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-getsumatsuzaikodensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-getsumatsuzaikodensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-torihikisakimaster.vi.js" />
+    <Content Include="Resources\pages\pagedata-torihikisakimaster.zh.js" />
+    <Content Include="Resources\pages\pagedata-zaikochoseidensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-zaikochoseidensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-nonyujissekidensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-bommasterdensoichiran.ja.js" />
+    <Content Include="Resources\pages\pagedata-bommasterdensoichiran.en.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekisentaku.ja.js" />
+    <Content Include="Resources\pages\pagedata-seizojissekisentaku.en.js" />
+    <Content Include="Resources\pages\pagedata-shiyojissekiikkatsudenso.ja.js" />
+    <Content Include="Resources\pages\pagedata-shiyojissekiikkatsudenso.en.js" />
+    <Content Include="Resources\pages\pagedata-zaikochoseidensoichiran.vi.js" />
+    <Content Include="Resources\pages\pagedata-zaikochoseidensoichiran.zh.js" />
+    <Content Include="Resources\systemconst.ja.js" />
+    <Content Include="Resources\systemconst.en.js" />
+    <Content Include="Resources\systemconst.vi.js" />
+    <Content Include="Resources\systemconst.zh.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\grid.setcolumns.js" />
+    <Content Include="Resources\grid\grid.locale-ja.js" />
+    <Content Include="Scripts\ie6.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.9.1.custom.js" />
+    <Content Include="Scripts\jquery-ui-1.9.1.custom.min.js" />
+    <Content Include="Scripts\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\jquery.jqGrid.src.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-ja.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-en.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-vi.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-zh.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Resources\grid\grid.locale-en.js" />
+    <Content Include="Scripts\ui.js" />
+    <Content Include="Scripts\uploadfile.js" />
+    <Content Include="Scripts\vbPrint.vbs" />
+    <Content Include="Scripts\util\app-util.js" />
+    <Content Include="Services\FoodProcsService.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="Services\JapserService.svc" />
+    <Content Include="Pages\ShizaiShiyoryoKeisan.aspx" />
+    <Content Include="Styles\constants.css" />
+    <Content Include="Styles\images\checked.gif" />
+    <Content Include="Styles\images\FPL.png" />
+    <Content Include="Styles\images\logo.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_f0f0f0_1x100.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_fff5f0_1x100.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_fff6ae_1x100.png" />
+    <Content Include="Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\images\ui-label.png" />
+    <Content Include="Styles\jquery-ui-1.9.1.custom.css" />
+    <Content Include="Styles\jquery-ui-1.9.1.custom.min.css" />
+    <Content Include="Styles\images\loading.gif" />
+    <Content Include="Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="Styles\images\ui-icons_888888_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\print.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\style.extends.en.css" />
+    <Content Include="Styles\style.extends.ja.css" />
+    <Content Include="Styles\style.extends.vi.css" />
+    <Content Include="Styles\style.extends.zh.css" />
+    <Content Include="Styles\ui.jqgrid.css" />
+    <Content Include="Styles\app.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CalcShikomiJuryoController.cs" />
+    <Compile Include="Controllers\FileDownloadUtility.cs" />
+    <Compile Include="Controllers\FileUploadUtility.cs" />
+    <Compile Include="Controllers\FoodProcsCalculator.cs" />
+    <Compile Include="Controllers\GekkanSeihinKeikakuController.cs" />
+    <Compile Include="Controllers\GekkanSeihinKeikakuExcelController.cs" />
+    <Compile Include="Controllers\GekkanShikakarihinKeikakuController.cs" />
+    <Compile Include="Controllers\GenericExceptionFilterAttribute.cs" />
+    <Compile Include="Controllers\GenericPDFFileController.cs" />
+    <Compile Include="Controllers\GenshizaiKonyuDialogController.cs" />
+    <Compile Include="Controllers\GenshizaiZaikoNyuryokuCSVController.cs" />
+    <Compile Include="Controllers\GenshizaiZaikoNyuryokuZaikoRetrasmitController.cs" />
+    <Compile Include="Controllers\GokeiHyojiController.cs" />
+    <Compile Include="Controllers\HaigoRecipeMasterPDFController.cs" />
+    <Compile Include="Controllers\HendoHyoSimulationExcelController.cs" />
+    <Compile Include="Controllers\JikaGenryoLotTorikeshiDialogController.cs" />
+    <Compile Include="Controllers\LabelInsatsuController.cs" />
+    <Compile Include="Controllers\LoggingExceptionFilterAttribute.cs" />
+    <Compile Include="Controllers\BunruiMasterController.cs" />
+    <Compile Include="Controllers\NenkanCalendarMasterController.cs" />
+    <Compile Include="Controllers\FutaiMasterController.cs" />
+    <Compile Include="Controllers\HaigoRecipeMasterController.cs" />
+    <Compile Include="Controllers\LineMasterController.cs" />
+    <Compile Include="Controllers\NiukeBashoKubunMasterController.cs" />
+    <Compile Include="Controllers\SeizoJissekiSentakuZaikoCheckController.cs" />
+    <Compile Include="Controllers\SeizoNippoLotTraceController.cs" />
+    <Compile Include="Controllers\ShikakarizanShiyoKanoMasterController.cs" />
+    <Compile Include="Controllers\ShikomiSagyoShijiMasterController.cs" />
+    <Compile Include="Controllers\SeizoLineMasterController.cs" />
+    <Compile Include="Controllers\ShokubaBetsuExcelController.cs" />
+    <Compile Include="Controllers\TantoshaMasterController.cs" />
+    <Compile Include="Controllers\NonyuYoteiListSakuseiExcelController.cs" />
+    <Compile Include="Controllers\RecipeTenkaiDAO.cs" />
+    <Compile Include="Controllers\ResponseUtility.cs" />
+    <Compile Include="Controllers\ShikakarihinShikomiKeikakuUchiwakeController.cs" />
+    <Compile Include="Controllers\ShikomiNippoController.cs" />
+    <Compile Include="Controllers\ShikomiNippoExcelController.cs" />
+    <Compile Include="Controllers\NonyuYoteiListSakuseiController.cs" />
+    <Compile Include="Controllers\ShiyoryoKeisanController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\NiukeBashoMasterController.cs" />
+    <Compile Include="Controllers\KojoMasterController.cs" />
+    <Compile Include="Controllers\HaigoMasterIchiranController.cs" />
+    <Compile Include="Controllers\HaigoMasterIchiranExcelController.cs" />
+    <Compile Include="Controllers\FutaiKetteiMasterController.cs" />
+    <Compile Include="Controllers\HakariMasterIchiranExcelController.cs" />
+    <Compile Include="Controllers\HakariMasterController.cs" />
+    <Compile Include="Controllers\KaishaMasterController.cs" />
+    <Compile Include="Controllers\TaniSetteiMasterController.cs" />
+    <Compile Include="Controllers\HinmeiMasterIchiranExcelController.cs" />
+    <Compile Include="Controllers\HaigoMasterController.cs" />
+    <Compile Include="Controllers\HokanKubunMasterController.cs" />
+    <Compile Include="Controllers\SeizoNippoController.cs" />
+    <Compile Include="Controllers\JuryoMasterController.cs" />
+    <Compile Include="Controllers\HinmeiMasterController.cs" />
+    <Compile Include="Controllers\ShokubaMasterController.cs" />
+    <Compile Include="Controllers\GenryoShiyoryoKeisanExcelController.cs" />
+    <Compile Include="Controllers\TorihikisakiMasterController.cs" />
+    <Compile Include="Controllers\TorihikisakiMasterIchiranExcelController.cs" />
+    <Compile Include="Controllers\GenshizaiChoseiNyuryokuController.cs" />
+    <Compile Include="Controllers\GenshizaiChoseiNyuryokuExcelController.cs" />
+    <Compile Include="Controllers\GenshizaiZaikoNyuryokuController.cs" />
+    <Compile Include="Controllers\GenshizaiZaikoNyuryokuExcelController.cs" />
+    <Compile Include="Controllers\GenshizaiHendoHyoController.cs" />
+    <Compile Include="Controllers\CommentMasterController.cs" />
+    <Compile Include="Controllers\NonyuIraishoListController.cs" />
+    <Compile Include="Controllers\GenshizaiHendoHyoExcelController.cs" />
+    <Compile Include="Controllers\KeikokuListSakuseiController.cs" />
+    <Compile Include="Controllers\KeikokuListSakuseiExcelController.cs" />
+    <Compile Include="Controllers\HendoHyoSimulationController.cs" />
+    <Compile Include="Controllers\SeizoNippoExcelController.cs" />
+    <Compile Include="Controllers\ShikakarihinShikomiKeikakuController.cs" />
+    <Compile Include="Controllers\NonyuIraishoListPDFController.cs" />
+    <Compile Include="Controllers\GenshizaiKonyusakiMasterController.cs" />
+    <Compile Include="Controllers\LineMitorokuHinmeiController.cs" />
+    <Compile Include="Controllers\LineMitorokuHaigoController.cs" />
+    <Compile Include="Controllers\ShikomiKeikakuHyoExcelController.cs" />
+    <Compile Include="Controllers\GenryoLotBangoKirokuHyoPDFController.cs" />
+    <Compile Include="Controllers\GenshizaiKonyusakiMasterExcelController.cs" />
+    <Compile Include="Controllers\ShikomiCheckHyoPDFController.cs" />
+    <Compile Include="Controllers\HinmeiMasterPDFController.cs" />
+    <Compile Include="Controllers\GekkanShikakarihinKeikakuExcelController.cs" />
+    <Compile Include="Controllers\NonyuIraishoListPDFCountController.cs" />
+    <Compile Include="Controllers\YukoHaigoMeiController.cs" />
+    <Compile Include="Controllers\YukoHaigoMeiSeihinController.cs" />
+    <Compile Include="Controllers\YukoHaigoMeiSeizoLineController.cs" />
+    <Compile Include="Controllers\CalcBairitsuBatchSuController.cs" />
+    <Compile Include="Controllers\HakariHaniSetteiMasterController.cs" />
+    <Compile Include="Controllers\HendoHyoSimulationRecipeTenkaiDAO.cs" />
+    <Compile Include="Controllers\GekkanShikakarihinShiyoLotCheckController.cs" />
+    <Compile Include="Controllers\ShizaiShiyoMasterController.cs" />
+    <Compile Include="Controllers\HyojunFundoJokagenchiMasterController.cs" />
+    <Compile Include="Controllers\KeisanZaikoSakuseiController.cs" />
+    <Compile Include="Controllers\RiyuMasterController.cs" />
+    <Compile Include="Controllers\KurabashoMasterController.cs" />
+    <Compile Include="Controllers\ShikakarihinShiyoIchiranController.cs" />
+    <Compile Include="Controllers\ShikakarihinShiyoIchiranExcelController.cs" />
+    <Compile Include="Controllers\HinmeiDialogController.cs" />
+    <Compile Include="Controllers\GenshizaiShikakarihinShiyoIchiranController.cs" />
+    <Compile Include="Controllers\GenshizaiShikakarihinShiyoIchiranExcelController.cs" />
+    <Compile Include="Controllers\GenryoChuiKankiMasterController.cs" />
+    <Compile Include="Controllers\FoodProcsCommonUtility.cs" />
+    <Compile Include="Controllers\GenkaTankaSakuseiController.cs" />
+    <Compile Include="Controllers\GenkaIchiranController.cs" />
+    <Compile Include="Controllers\GenkaIchiranExcelController.cs" />
+    <Compile Include="Controllers\LocationMasterController.cs" />
+    <Compile Include="Controllers\GenkaCenterMasterController.cs" />
+    <Compile Include="Controllers\SokoMasterController.cs" />
+    <Compile Include="Controllers\SeizoDensoIchiranController.cs" />
+    <Compile Include="Controllers\NonyuDensoIchiranController.cs" />
+    <Compile Include="Controllers\GetsumatsuZaikoDensoIchiranController.cs" />
+    <Compile Include="Controllers\ZaikoChoseiDensoIchiranController.cs" />
+    <Compile Include="Controllers\SeizoJissekiSentakuController.cs" />
+    <Compile Include="Controllers\SeizoJissekiSentakuDialogController.cs" />
+    <Compile Include="Controllers\ShiyoJissekiIkkatsuDensoController.cs" />
+    <Compile Include="Controllers\ShikakariZanIchiranDialogController.cs" />
+    <Compile Include="Controllers\SeizoNippoUchiwakeController.cs" />
+    <Compile Include="Controllers\HaigoMasterCommonController.cs" />
+    <Compile Include="Controllers\GenryoChuiKankiMasterIchiranExcelController.cs" />
+    <Compile Include="Data\BairitsuObject.cs" />
+    <Compile Include="Data\HistoryChangeMasterCriteria.cs" />
+    <Compile Include="Data\FoodProcsErrorObject.cs" />
+    <Compile Include="Data\FoodProcsModel.Designer.cs">
+      <DependentUpon>FoodProcsModel.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Data\GekkanShikakarihinKeikakuCriteria.cs" />
+    <Compile Include="Data\GenryoLotTorikeshiDialogCriteria.cs" />
+    <Compile Include="Data\GenryoLotTorokuCriteria.cs" />
+    <Compile Include="Data\GenryoLotTorokuPostCriteria.cs" />
+    <Compile Include="Data\GenshizaiChoseiNyuryokuCriteria.cs" />
+    <Compile Include="Data\GenshizaiChoseiNyuryokuDataCriteria.cs" />
+    <Compile Include="Data\GenshizaiUkeharaiIchiranCriteria.cs" />
+    <Compile Include="Data\GenshizaiZaikoNyuryokuZaikoRetrasmitCriteria.cs" />
+    <Compile Include="Data\HaigoJuryoGokeiCriteria.cs" />
+    <Compile Include="Data\HaigoRecipeMasterCriteria.cs" />
+    <Compile Include="Data\HendoHyoSimulationData.cs" />
+    <Compile Include="Data\JikaGenryoLotTorikeshiDialogCriteria.cs" />
+    <Compile Include="Data\KowakeCalcCriteria.cs" />
+    <Compile Include="Data\LabelInsatsuCriteria.cs" />
+    <Compile Include="Data\LabelInsatsuResult.cs" />
+    <Compile Include="Data\NonyuDensoIchiranCriteria.cs" />
+    <Compile Include="Data\SeihinKeikakuObject.cs" />
+    <Compile Include="Data\ShikakariGassanKey.cs" />
+    <Compile Include="Data\FoodProcsEntities.cs" />
+    <Compile Include="Data\ChangeSet.cs" />
+    <Compile Include="Data\DuplicateSet.cs" />
+    <Compile Include="Data\GekkanSeihinKeikakuCriteria.cs" />
+    <Compile Include="Data\GenshizaiKonyuDialogCriteria.cs" />
+    <Compile Include="Data\GenshizaiZaikoNyuryokuCriteria.cs" />
+    <Compile Include="Data\GokeiHyojiCriteria.cs" />
+    <Compile Include="Data\InvalidationSet.cs" />
+    <Compile Include="Data\JuryoMasterCriteria.cs" />
+    <Compile Include="Data\ma_calendarCriteria.cs" />
+    <Compile Include="Data\NenkanCalendarCriteria.cs" />
+    <Compile Include="Data\NenkanCalendarMasterResult.cs" />
+    <Compile Include="Data\NonyuYoteiListSakuseiCriteria.cs" />
+    <Compile Include="Data\RecipeTenkaiObject.cs" />
+    <Compile Include="Data\ShikomiJyuryoContainer.cs" />
+    <Compile Include="Data\ShikakarihinShikomiKeikakuUchiwakeCriteria.cs" />
+    <Compile Include="Data\SqlErrorNumbers.cs" />
+    <Compile Include="Data\StoredProcedureResult.cs" />
+    <Compile Include="Data\UserInfo.cs" />
+    <Compile Include="Data\HinmeiDialogCriteria.cs" />
+    <Compile Include="Data\HaigoMasterIchiranCriteria.cs" />
+    <Compile Include="Data\FutaiKetteiMasterCriteria.cs" />
+    <Compile Include="Data\GenshizaiHendoHyoCriteria.cs" />
+    <Compile Include="Data\GenshizaiHendoHyoData.cs" />
+    <Compile Include="Data\KeikokuListSakuseiCriteria.cs" />
+    <Compile Include="Data\HendoHyoSimulationCriteria.cs" />
+    <Compile Include="Data\ShikakarihinShikomiKeikakuCriteria.cs" />
+    <Compile Include="Data\ShikomiNippoCriteria.cs" />
+    <Compile Include="Data\LineMitorokuHaigoCriteria.cs" />
+    <Compile Include="Data\LineMitorokuHinmeiCriteria.cs" />
+    <Compile Include="Data\GenshizaiShiyoryoKeisanCriteria.cs" />
+    <Compile Include="Data\HinmeiMasterIchiranCriteria.cs" />
+    <Compile Include="Data\SeizoNippoCriteria.cs" />
+    <Compile Include="Data\NonyuIraishoPdfCountCriteria.cs" />
+    <Compile Include="Data\NonyuIraishoPdfCriteria.cs" />
+    <Compile Include="Data\YukoHaigoMeiCriteria.cs" />
+    <Compile Include="Data\ShikakarihinShiyoIchiranCriteria.cs" />
+    <Compile Include="Data\KeisanZaikoSakuseiCriteria.cs" />
+    <Compile Include="Data\GenshizaiShikakarihinShiyoIchiranCriteria.cs" />
+    <Compile Include="Data\GenkaKeisanCriteria.cs" />
+    <Compile Include="Data\SeizoDensoIchiranCriteria.cs" />
+    <Compile Include="Data\GetsumatsuZaikoDensoIchiranCriteria.cs" />
+    <Compile Include="Data\ZaikoChoseiDensoIchiranCriteria.cs" />
+    <Compile Include="Data\SeizoJissekiSentakuCriteria.cs" />
+    <Compile Include="Data\SeizoJissekiSentakuDialogCriteria.cs" />
+    <Compile Include="Data\UchiwakeInfo.cs" />
+    <Compile Include="Data\ZaikoUpdObject.cs" />
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Models\CommonKeikakuSakuseiModels.cs" />
+    <Compile Include="Models\ShikakariKeikakuSakuseiModels.cs" />
+    <Compile Include="Models\ShikakariSummarySakuseiModels.cs" />
+    <Compile Include="Pages\BunruiMaster.aspx.cs">
+      <DependentUpon>BunruiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BunruiMaster.aspx.designer.cs">
+      <DependentUpon>BunruiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HistoryChangeMaster.aspx.cs">
+      <DependentUpon>HistoryChangeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HistoryChangeMaster.aspx.designer.cs">
+      <DependentUpon>HistoryChangeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChuiKankiMaster.aspx.cs">
+      <DependentUpon>ChuiKankiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ChuiKankiMaster.aspx.designer.cs">
+      <DependentUpon>ChuiKankiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenshizaichoseinyuryokuExcelIkatsuDialog.aspx.cs">
+      <DependentUpon>GenshizaichoseinyuryokuExcelIkatsuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenshizaichoseinyuryokuExcelIkatsuDialog.aspx.designer.cs">
+      <DependentUpon>GenshizaichoseinyuryokuExcelIkatsuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NiukeBashoKubunMaster.aspx.cs">
+      <DependentUpon>NiukeBashoKubunMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NiukeBashoKubunMaster.aspx.designer.cs">
+      <DependentUpon>NiukeBashoKubunMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\ChomiekiLabelDialog.aspx.cs">
+      <DependentUpon>ChomiekiLabelDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\ChomiekiLabelDialog.aspx.designer.cs">
+      <DependentUpon>ChomiekiLabelDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\CommentDialog.aspx.cs">
+      <DependentUpon>CommentDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\CommentDialog.aspx.designer.cs">
+      <DependentUpon>CommentDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenryoLotSentakuDialog.aspx.cs">
+      <DependentUpon>GenryoLotSentakuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenryoLotSentakuDialog.aspx.designer.cs">
+      <DependentUpon>GenryoLotSentakuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenryoLotTorikeshiDialog.aspx.cs">
+      <DependentUpon>GenryoLotTorikeshiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenryoLotTorikeshiDialog.aspx.designer.cs">
+      <DependentUpon>GenryoLotTorikeshiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenshizaiKonyuDialog.aspx.cs">
+      <DependentUpon>GenshizaiKonyuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenshizaiKonyuDialog.aspx.designer.cs">
+      <DependentUpon>GenshizaiKonyuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GokeiHyojiDialog.aspx.cs">
+      <DependentUpon>GokeiHyojiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GokeiHyojiDialog.aspx.designer.cs">
+      <DependentUpon>GokeiHyojiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\JikaGenryoLotSentakuDialog.aspx.cs">
+      <DependentUpon>JikaGenryoLotSentakuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\JikaGenryoLotSentakuDialog.aspx.designer.cs">
+      <DependentUpon>JikaGenryoLotSentakuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\JikaGenryoLotTorikeshiDialog.aspx.cs">
+      <DependentUpon>JikaGenryoLotTorikeshiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\JikaGenryoLotTorikeshiDialog.aspx.designer.cs">
+      <DependentUpon>JikaGenryoLotTorikeshiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\LineDialog.aspx.cs">
+      <DependentUpon>LineDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\LineDialog.aspx.designer.cs">
+      <DependentUpon>LineDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\NiukebashoDialog.aspx.cs">
+      <DependentUpon>NiukebashoDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\NiukebashoDialog.aspx.designer.cs">
+      <DependentUpon>NiukebashoDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\CsvUploadDialog.aspx.cs">
+      <DependentUpon>CsvUploadDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\CsvUploadDialog.aspx.designer.cs">
+      <DependentUpon>CsvUploadDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\ShikakariZanIchiranDialog.aspx.cs">
+      <DependentUpon>ShikakariZanIchiranDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\ShikakariZanIchiranDialog.aspx.designer.cs">
+      <DependentUpon>ShikakariZanIchiranDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\ShokubaSentakuDialog.aspx.cs">
+      <DependentUpon>ShokubaSentakuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\ShokubaSentakuDialog.aspx.designer.cs">
+      <DependentUpon>ShokubaSentakuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\TorihikisakiDialog.aspx.cs">
+      <DependentUpon>TorihikisakiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\TorihikisakiDialog.aspx.designer.cs">
+      <DependentUpon>TorihikisakiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\HinmeiDialog.aspx.cs">
+      <DependentUpon>HinmeiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\HinmeiDialog.aspx.designer.cs">
+      <DependentUpon>HinmeiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\MarkDialog.aspx.cs">
+      <DependentUpon>MarkDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\MarkDialog.aspx.designer.cs">
+      <DependentUpon>MarkDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\FutaiDialog.aspx.cs">
+      <DependentUpon>FutaiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\FutaiDialog.aspx.designer.cs">
+      <DependentUpon>FutaiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\YasumiSentakuDialog.aspx.cs">
+      <DependentUpon>YasumiSentakuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\YasumiSentakuDialog.aspx.designer.cs">
+      <DependentUpon>YasumiSentakuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\SeizoLineDialog.aspx.cs">
+      <DependentUpon>SeizoLineDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\SeizoLineDialog.aspx.designer.cs">
+      <DependentUpon>SeizoLineDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GramTaniDialog.aspx.cs">
+      <DependentUpon>GramTaniDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GramTaniDialog.aspx.designer.cs">
+      <DependentUpon>GramTaniDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\InsatsuSentakuDialog.aspx.cs">
+      <DependentUpon>InsatsuSentakuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\InsatsuSentakuDialog.aspx.designer.cs">
+      <DependentUpon>InsatsuSentakuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenshizaiShiyoIchiranDialog.aspx.cs">
+      <DependentUpon>GenshizaiShiyoIchiranDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\GenshizaiShiyoIchiranDialog.aspx.designer.cs">
+      <DependentUpon>GenshizaiShiyoIchiranDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\FutaiKetteiTorokuIchiranDialog.aspx.cs">
+      <DependentUpon>FutaiKetteiTorokuIchiranDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\FutaiKetteiTorokuIchiranDialog.aspx.designer.cs">
+      <DependentUpon>FutaiKetteiTorokuIchiranDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\ChuiKankiDialog.aspx.cs">
+      <DependentUpon>ChuiKankiDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\ChuiKankiDialog.aspx.designer.cs">
+      <DependentUpon>ChuiKankiDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\SeizoJissekiSentakuDialog.aspx.cs">
+      <DependentUpon>SeizoJissekiSentakuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\SeizoJissekiSentakuDialog.aspx.designer.cs">
+      <DependentUpon>SeizoJissekiSentakuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FileUploadDownload.aspx.cs">
+      <DependentUpon>FileUploadDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FileUploadDownload.aspx.designer.cs">
+      <DependentUpon>FileUploadDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FutaiKetteiMaster.aspx.cs">
+      <DependentUpon>FutaiKetteiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FutaiKetteiMaster.aspx.designer.cs">
+      <DependentUpon>FutaiKetteiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FutaiMaster.aspx.cs">
+      <DependentUpon>FutaiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FutaiMaster.aspx.designer.cs">
+      <DependentUpon>FutaiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GekkanSeihinKeikaku.aspx.cs">
+      <DependentUpon>GekkanSeihinKeikaku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GekkanSeihinKeikaku.aspx.designer.cs">
+      <DependentUpon>GekkanSeihinKeikaku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GekkanShikakarihinKeikaku.aspx.cs">
+      <DependentUpon>GekkanShikakarihinKeikaku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GekkanShikakarihinKeikaku.aspx.designer.cs">
+      <DependentUpon>GekkanShikakarihinKeikaku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenryoLotToroku.aspx.cs">
+      <DependentUpon>GenryoLotToroku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenryoLotToroku.aspx.designer.cs">
+      <DependentUpon>GenryoLotToroku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenryoShiyoryoKeisan.aspx.cs">
+      <DependentUpon>GenryoShiyoryoKeisan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenryoShiyoryoKeisan.aspx.designer.cs">
+      <DependentUpon>GenryoShiyoryoKeisan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiHendoHyo.aspx.cs">
+      <DependentUpon>GenshizaiHendoHyo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiHendoHyo.aspx.designer.cs">
+      <DependentUpon>GenshizaiHendoHyo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiUkeharaiIchiran.aspx.cs">
+      <DependentUpon>GenshizaiUkeharaiIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiUkeharaiIchiran.aspx.designer.cs">
+      <DependentUpon>GenshizaiUkeharaiIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HaigoMaster.aspx.cs">
+      <DependentUpon>HaigoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HaigoMaster.aspx.designer.cs">
+      <DependentUpon>HaigoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HaigoMasterIchiran.aspx.cs">
+      <DependentUpon>HaigoMasterIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HaigoMasterIchiran.aspx.designer.cs">
+      <DependentUpon>HaigoMasterIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Dialog\LabelInsatsuDialog.aspx.cs">
+      <DependentUpon>LabelInsatsuDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Dialog\LabelInsatsuDialog.aspx.designer.cs">
+      <DependentUpon>LabelInsatsuDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LineMaster.aspx.cs">
+      <DependentUpon>LineMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LineMaster.aspx.designer.cs">
+      <DependentUpon>LineMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NonyuYoteiListSakusei.aspx.cs">
+      <DependentUpon>NonyuYoteiListSakusei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NonyuYoteiListSakusei.aspx.designer.cs">
+      <DependentUpon>NonyuYoteiListSakusei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\QRCodeGererateHandler.ashx.cs">
+      <DependentUpon>QRCodeGererateHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SeizoLineMaster.aspx.cs">
+      <DependentUpon>SeizoLineMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SeizoLineMaster.aspx.designer.cs">
+      <DependentUpon>SeizoLineMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SetsubiMaster.aspx.cs">
+      <DependentUpon>SetsubiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SetsubiMaster.aspx.designer.cs">
+      <DependentUpon>SetsubiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NiukeBashoMaster.aspx.cs">
+      <DependentUpon>NiukeBashoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NiukeBashoMaster.aspx.designer.cs">
+      <DependentUpon>NiukeBashoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KaishaMaster.aspx.cs">
+      <DependentUpon>KaishaMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KaishaMaster.aspx.designer.cs">
+      <DependentUpon>KaishaMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KojoMaster.aspx.cs">
+      <DependentUpon>KojoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KojoMaster.aspx.designer.cs">
+      <DependentUpon>KojoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShikakarihinShikomiKeikaku.aspx.cs">
+      <DependentUpon>ShikakarihinShikomiKeikaku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShikakarihinShikomiKeikaku.aspx.designer.cs">
+      <DependentUpon>ShikakarihinShikomiKeikaku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShikakarizanShiyoKanoMaster.aspx.cs">
+      <DependentUpon>ShikakarizanShiyoKanoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShikakarizanShiyoKanoMaster.aspx.designer.cs">
+      <DependentUpon>ShikakarizanShiyoKanoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShikomiSagyoShijiMaster.aspx.cs">
+      <DependentUpon>ShikomiSagyoShijiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShikomiSagyoShijiMaster.aspx.designer.cs">
+      <DependentUpon>ShikomiSagyoShijiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HakariMaster.aspx.cs">
+      <DependentUpon>HakariMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HakariMaster.aspx.designer.cs">
+      <DependentUpon>HakariMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HaigoRecipeMaster.aspx.cs">
+      <DependentUpon>HaigoRecipeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HaigoRecipeMaster.aspx.designer.cs">
+      <DependentUpon>HaigoRecipeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HinmeiMasterIchiran.aspx.cs">
+      <DependentUpon>HinmeiMasterIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HinmeiMasterIchiran.aspx.designer.cs">
+      <DependentUpon>HinmeiMasterIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NenkanCalendarMaster.aspx.cs">
+      <DependentUpon>NenkanCalendarMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NenkanCalendarMaster.aspx.designer.cs">
+      <DependentUpon>NenkanCalendarMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TaniSetteiMaster.aspx.cs">
+      <DependentUpon>TaniSetteiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TaniSetteiMaster.aspx.designer.cs">
+      <DependentUpon>TaniSetteiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HokanKubunMaster.aspx.cs">
+      <DependentUpon>HokanKubunMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HokanKubunMaster.aspx.designer.cs">
+      <DependentUpon>HokanKubunMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SeizoNippo.aspx.cs">
+      <DependentUpon>SeizoNippo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SeizoNippo.aspx.designer.cs">
+      <DependentUpon>SeizoNippo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\JuryoMaster.aspx.cs">
+      <DependentUpon>JuryoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\JuryoMaster.aspx.designer.cs">
+      <DependentUpon>JuryoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TantoshaMaster.aspx.cs">
+      <DependentUpon>TantoshaMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TantoshaMaster.aspx.designer.cs">
+      <DependentUpon>TantoshaMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShokubaMaster.aspx.cs">
+      <DependentUpon>ShokubaMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShokubaMaster.aspx.designer.cs">
+      <DependentUpon>ShokubaMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiZaikoNyuryoku.aspx.cs">
+      <DependentUpon>GenshizaiZaikoNyuryoku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiZaikoNyuryoku.aspx.designer.cs">
+      <DependentUpon>GenshizaiZaikoNyuryoku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShikomiNippo.aspx.cs">
+      <DependentUpon>ShikomiNippo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShikomiNippo.aspx.designer.cs">
+      <DependentUpon>ShikomiNippo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NonyuIraishoSakusei.aspx.cs">
+      <DependentUpon>NonyuIraishoSakusei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NonyuIraishoSakusei.aspx.designer.cs">
+      <DependentUpon>NonyuIraishoSakusei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NonyuIraishoList.aspx.cs">
+      <DependentUpon>NonyuIraishoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NonyuIraishoList.aspx.designer.cs">
+      <DependentUpon>NonyuIraishoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HakariSample.aspx.cs">
+      <DependentUpon>HakariSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HakariSample.aspx.designer.cs">
+      <DependentUpon>HakariSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HendoHyoSimulation.aspx.cs">
+      <DependentUpon>HendoHyoSimulation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HendoHyoSimulation.aspx.designer.cs">
+      <DependentUpon>HendoHyoSimulation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KeikokuListSakusei.aspx.cs">
+      <DependentUpon>KeikokuListSakusei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KeikokuListSakusei.aspx.designer.cs">
+      <DependentUpon>KeikokuListSakusei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiKonyusakiMaster.aspx.cs">
+      <DependentUpon>GenshizaiKonyusakiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiKonyusakiMaster.aspx.designer.cs">
+      <DependentUpon>GenshizaiKonyusakiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LineMitorokuIchiran.aspx.cs">
+      <DependentUpon>LineMitorokuIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LineMitorokuIchiran.aspx.designer.cs">
+      <DependentUpon>LineMitorokuIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiNonyuKeikakuSakusei.aspx.cs">
+      <DependentUpon>GenshizaiNonyuKeikakuSakusei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiNonyuKeikakuSakusei.aspx.designer.cs">
+      <DependentUpon>GenshizaiNonyuKeikakuSakusei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HakariHaniSetteiMaster.aspx.cs">
+      <DependentUpon>HakariHaniSetteiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HakariHaniSetteiMaster.aspx.designer.cs">
+      <DependentUpon>HakariHaniSetteiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShizaiShiyoMaster.aspx.cs">
+      <DependentUpon>ShizaiShiyoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShizaiShiyoMaster.aspx.designer.cs">
+      <DependentUpon>ShizaiShiyoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HyojunFundoJokagenchiMaster.aspx.cs">
+      <DependentUpon>HyojunFundoJokagenchiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HyojunFundoJokagenchiMaster.aspx.designer.cs">
+      <DependentUpon>HyojunFundoJokagenchiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KeisanZaikoSakusei.aspx.cs">
+      <DependentUpon>KeisanZaikoSakusei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KeisanZaikoSakusei.aspx.designer.cs">
+      <DependentUpon>KeisanZaikoSakusei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RiyuMaster.aspx.cs">
+      <DependentUpon>RiyuMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RiyuMaster.aspx.designer.cs">
+      <DependentUpon>RiyuMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TestDialog.aspx.cs">
+      <DependentUpon>TestDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TestDialog.aspx.designer.cs">
+      <DependentUpon>TestDialog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TorihikisakiMaster.aspx.cs">
+      <DependentUpon>TorihikisakiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TorihikisakiMaster.aspx.designer.cs">
+      <DependentUpon>TorihikisakiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KurabashoMaster.aspx.cs">
+      <DependentUpon>KurabashoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\KurabashoMaster.aspx.designer.cs">
+      <DependentUpon>KurabashoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShikakarihinShiyoIchiran.aspx.cs">
+      <DependentUpon>ShikakarihinShiyoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShikakarihinShiyoIchiran.aspx.designer.cs">
+      <DependentUpon>ShikakarihinShiyoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenkaIchiran.aspx.cs">
+      <DependentUpon>GenkaIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenkaIchiran.aspx.designer.cs">
+      <DependentUpon>GenkaIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenkaTankaSakusei.aspx.cs">
+      <DependentUpon>GenkaTankaSakusei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenkaTankaSakusei.aspx.designer.cs">
+      <DependentUpon>GenkaTankaSakusei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiShikakarihinShiyoIchiran.aspx.cs">
+      <DependentUpon>GenshizaiShikakarihinShiyoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiShikakarihinShiyoIchiran.aspx.designer.cs">
+      <DependentUpon>GenshizaiShikakarihinShiyoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenryoChuiKankiMaster.aspx.cs">
+      <DependentUpon>GenryoChuiKankiMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenryoChuiKankiMaster.aspx.designer.cs">
+      <DependentUpon>GenryoChuiKankiMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LocationMaster.aspx.cs">
+      <DependentUpon>LocationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LocationMaster.aspx.designer.cs">
+      <DependentUpon>LocationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenkaCenterMaster.aspx.cs">
+      <DependentUpon>GenkaCenterMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenkaCenterMaster.aspx.designer.cs">
+      <DependentUpon>GenkaCenterMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SokoMaster.aspx.cs">
+      <DependentUpon>SokoMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SokoMaster.aspx.designer.cs">
+      <DependentUpon>SokoMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SeizoKeikakuDensoIchiran.aspx.cs">
+      <DependentUpon>SeizoKeikakuDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SeizoKeikakuDensoIchiran.aspx.designer.cs">
+      <DependentUpon>SeizoKeikakuDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NonyuYoteiDensoIchiran.aspx.cs">
+      <DependentUpon>NonyuYoteiDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NonyuYoteiDensoIchiran.aspx.designer.cs">
+      <DependentUpon>NonyuYoteiDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SeizoJissekiDensoIchiran.aspx.cs">
+      <DependentUpon>SeizoJissekiDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SeizoJissekiDensoIchiran.aspx.designer.cs">
+      <DependentUpon>SeizoJissekiDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NonyuJissekiDensoIchiran.aspx.cs">
+      <DependentUpon>NonyuJissekiDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NonyuJissekiDensoIchiran.aspx.designer.cs">
+      <DependentUpon>NonyuJissekiDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GetsumatsuZaikoDensoIchiran.aspx.cs">
+      <DependentUpon>GetsumatsuZaikoDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GetsumatsuZaikoDensoIchiran.aspx.designer.cs">
+      <DependentUpon>GetsumatsuZaikoDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ZaikoChoseiDensoIchiran.aspx.cs">
+      <DependentUpon>ZaikoChoseiDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ZaikoChoseiDensoIchiran.aspx.designer.cs">
+      <DependentUpon>ZaikoChoseiDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BomMasterDensoIchiran.aspx.cs">
+      <DependentUpon>BomMasterDensoIchiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BomMasterDensoIchiran.aspx.designer.cs">
+      <DependentUpon>BomMasterDensoIchiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SeizoJissekiSentaku.aspx.cs">
+      <DependentUpon>SeizoJissekiSentaku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SeizoJissekiSentaku.aspx.designer.cs">
+      <DependentUpon>SeizoJissekiSentaku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShiyoJissekiIkkatsuDenso.aspx.cs">
+      <DependentUpon>ShiyoJissekiIkkatsuDenso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShiyoJissekiIkkatsuDenso.aspx.designer.cs">
+      <DependentUpon>ShiyoJissekiIkkatsuDenso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Services\FoodProcsService.svc.cs">
+      <DependentUpon>FoodProcsService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\JapserService.svc.cs">
+      <DependentUpon>JapserService.svc</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pages\ShizaiShiyoryoKeisan.aspx.cs">
+      <DependentUpon>ShizaiShiyoryoKeisan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShizaiShiyoryoKeisan.aspx.designer.cs">
+      <DependentUpon>ShizaiShiyoryoKeisan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GenshizaiChoseiNyuryoku.aspx.cs">
+      <DependentUpon>GenshizaiChoseiNyuryoku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GenshizaiChoseiNyuryoku.aspx.designer.cs">
+      <DependentUpon>GenshizaiChoseiNyuryoku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ExcelUtilities.cs" />
+    <Compile Include="Utilities\PDFUtilities.cs" />
+    <Content Include="Pages\QRCodeGererateHandler.ashx" />
+    <Content Include="App_Browsers\ie.browser" />
+    <Content Include="App_Browsers\firefox.browser" />
+    <None Include="Properties\PublishProfiles\20210720_FPLite.pubxml" />
+    <None Include="Properties\PublishProfiles\20210726FPLIte.pubxml" />
+    <None Include="Properties\PublishProfiles\Azure用.pubxml" />
+    <None Include="Properties\PublishProfiles\FP-Lite.pubxml" />
+    <None Include="Properties\PublishProfiles\FPLite.pubxml" />
+    <None Include="Properties\PublishProfiles\Publish.pubxml" />
+    <None Include="Properties\PublishProfiles\QBT.pubxml" />
+    <None Include="Properties\PublishProfiles\テスト用.pubxml" />
+    <Content Include="Templates\Error_en.xlsx" />
+    <Content Include="Templates\Error_ja.xlsx" />
+    <Content Include="Templates\Error_zh.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuTanLine_ja.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuZenLine_ja.xlsx" />
+    <Content Include="Templates\seizoNippo_ja.xlsx" />
+    <Content Include="Templates\gekkanShikakarihinKeikaku_ja.xlsx" />
+    <Content Include="Resources\menu.en.js" />
+    <Content Include="Resources\pages\pagedata-genryoshiyoryokeisan.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizaichoseinyuryoku.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizaikonyusakimaster.en.js" />
+    <Content Include="Resources\pages\pagedata-genshizaizaikonyuryoku.en.js" />
+    <Content Include="Resources\pages\pagedata-haigorecipemaster.en.js" />
+    <Content Include="Templates\gekkanSeihinKeikakuTanLine_en.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuZenLine_en.xlsx" />
+    <Content Include="Templates\gekkanShikakarihinKeikaku_en.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_en.xlsx" />
+    <Content Include="Templates\genshizaiHendoHyo_en.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_en.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_ja.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_en.xlsx" />
+    <Content Include="Templates\haigoMasterIchiran_en.xlsx" />
+    <Content Include="Templates\hakariMasterIchiran_en.xlsx" />
+    <Content Include="Templates\hendoHyoSimulation_en.xlsx" />
+    <Content Include="Templates\hendoHyoSimulation_ja.xlsx" />
+    <Content Include="Templates\keikokuList_ja.xlsx" />
+    <Content Include="Templates\torihikisakiMasterIchiran_ja.xlsx" />
+    <Content Include="Templates\shikomiKeikakuHyo_ja.xlsx" />
+    <Content Include="Templates\shikomiNippo_ja.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern3_ja.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern7_ja.xlsx" />
+    <Content Include="Templates\keikokuList_en.xlsx" />
+    <Content Include="Templates\materialUsedAmountCalc_en.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_en.xlsx" />
+    <Content Include="Templates\ReportServerError.pdf" />
+    <Content Include="Templates\seizoNippo_en.xlsx" />
+    <Content Include="Templates\shikomiKeikakuHyo_en.xlsx" />
+    <Content Include="Templates\shikomiNippo_en.xlsx" />
+    <Content Include="Templates\shizaiShiyoryoKeisan_en.xlsx" />
+    <Content Include="Templates\torihikisakiMasterIchiran_en.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern3_en.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern7_en.xlsx" />
+    <Content Include="Templates\shikakarihinShiyoIchiran_ja.xlsx" />
+    <Content Include="Templates\shikakarihinShiyoIchiran_en.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_en.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_ja.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_shizai_en.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_shizai_ja.xlsx" />
+    <Content Include="Templates\genryoShiyoryoKeisan_en.xlsx" />
+    <Content Include="Templates\genkaIchiran_en.xlsx" />
+    <Content Include="Templates\genkaIchiran_ja.xlsx" />
+    <Content Include="Templates\kuradashiIrai_en.xlsx" />
+    <Content Include="Templates\kuradashiIrai_ja.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_hasuAri_ja.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_hasuAri_en.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_sokoAri_ja.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_sokoAri_en.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_ja.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_nashi_ja.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_en.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_nashi_en.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_kbn_nyuko_en.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_kbn_nyuko_ja.xlsx" />
+    <Content Include="Templates\genshizaiUkeharaiIchiran_en.xlsx" />
+    <Content Include="Templates\genshizaiUkeharaiIchiran_ja.xlsx" />
+    <Content Include="Templates\shikomiNippoSeizobiAri_en.xlsx" />
+    <Content Include="Templates\shikomiNippoSeizobiAri_ja.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuTanLine_zh.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuZenLine_zh.xlsx" />
+    <Content Include="Templates\gekkanShikakarihinKeikaku_zh.xlsx" />
+    <Content Include="Templates\genkaIchiran_zh.xlsx" />
+    <Content Include="Templates\genryoShiyoryoKeisan_zh.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_nashi_zh.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_zh.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_zh.xlsx" />
+    <Content Include="Templates\genshizaiHendoHyo_zh.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_hasuAri_zh.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_zh.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_shizai_zh.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_zh.xlsx" />
+    <Content Include="Templates\genshizaiUkeharaiIchiran_zh.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_sokoAri_zh.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_zh.xlsx" />
+    <Content Include="Templates\haigoMasterIchiran_zh.xlsx" />
+    <Content Include="Templates\hakariMasterIchiran_zh.xlsx" />
+    <Content Include="Templates\hendoHyoSimulation_zh.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern3_zh.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern7_zh.xlsx" />
+    <Content Include="Templates\keikokuList_zh.xlsx" />
+    <Content Include="Templates\kuradashiIrai_zh.xlsx" />
+    <Content Include="Templates\materialUsedAmountCalc_zh.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_kbn_nyuko_zh.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_zh.xlsx" />
+    <Content Include="Templates\seizoNippo_zh.xlsx" />
+    <Content Include="Templates\shikakarihinShiyoIchiran_zh.xlsx" />
+    <Content Include="Templates\shikomiKeikakuHyo_zh.xlsx" />
+    <Content Include="Templates\shikomiNippoSeizobiAri_zh.xlsx" />
+    <Content Include="Templates\shikomiNippo_zh.xlsx" />
+    <Content Include="Templates\shizaiShiyoryoKeisan_zh.xlsx" />
+    <Content Include="Templates\torihikisakiMasterIchiran_zh.xlsx" />
+    <Content Include="Templates\kuradashiIraiShokuba_en.xlsx" />
+    <Content Include="Templates\kuradashiIraiShokuba_ja.xlsx" />
+    <Content Include="Templates\kuradashiIraiShokuba_zh.xlsx" />
+    <Content Include="Templates\genryoChuiKankiMasterIchiran_en.xlsx" />
+    <Content Include="Templates\genryoChuiKankiMasterIchiran_ja.xlsx" />
+    <Content Include="Templates\genryoChuiKankiMasterIchiran_zh.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_kikanSentaku_en.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_kikanSentaku_ja.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_kikanSentaku_zh.xlsx" />
+    <Content Include="Templates\historyChangeMaster_en.xlsx" />
+    <Content Include="Templates\historyChangeMaster_ja.xlsx" />
+    <Content Include="Templates\historyChangeMaster_zh.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_vi.xlsx" />
+    <Content Include="Templates\Error_vi.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuTanLine_vi.xlsx" />
+    <Content Include="Templates\gekkanSeihinKeikakuZenLine_vi.xlsx" />
+    <Content Include="Templates\gekkanShikakarihinKeikaku_vi.xlsx" />
+    <Content Include="Templates\genkaIchiran_vi.xlsx" />
+    <Content Include="Templates\genryoChuiKankiMasterIchiran_vi.xlsx" />
+    <Content Include="Templates\genryoShiyoryoKeisan_vi.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_nashi_vi.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_cn_kino_vi.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_kikanSentaku_vi.xlsx" />
+    <Content Include="Templates\genshizaiHendoHyo_vi.xlsx" />
+    <Content Include="Templates\genshizaiKonyusakiMaster_vi.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_shizai_vi.xlsx" />
+    <Content Include="Templates\genshizaiShikakarihinShiyoIchiran_vi.xlsx" />
+    <Content Include="Templates\genshizaiUkeharaiIchiran_vi.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_sokoAri_vi.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_vi.xlsx" />
+    <Content Include="Templates\haigoMasterIchiran_vi.xlsx" />
+    <Content Include="Templates\hakariMasterIchiran_vi.xlsx" />
+    <Content Include="Templates\hendoHyoSimulation_vi.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern3_vi.xlsx" />
+    <Content Include="Templates\hinmeiMasterIchiran_pattern7_vi.xlsx" />
+    <Content Include="Templates\historyChangeMaster_vi.xlsx" />
+    <Content Include="Templates\keikokuList_vi.xlsx" />
+    <Content Include="Templates\kuradashiIrai_vi.xlsx" />
+    <Content Include="Templates\kuradashiIraiShokuba_vi.xlsx" />
+    <Content Include="Templates\materialUsedAmountCalc_vi.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_vi.xlsx" />
+    <Content Include="Templates\seizoNippo_vi.xlsx" />
+    <Content Include="Templates\shikakarihinShiyoIchiran_vi.xlsx" />
+    <Content Include="Templates\shikomiKeikakuHyo_vi.xlsx" />
+    <Content Include="Templates\shikomiNippo_vi.xlsx" />
+    <Content Include="Templates\shikomiNippoSeizobiAri_vi.xlsx" />
+    <Content Include="Templates\shizaiShiyoryoKeisan_vi.xlsx" />
+    <Content Include="Templates\torihikisakiMasterIchiran_vi.xlsx" />
+    <Content Include="Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Pages\App_LocalResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.nlog">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\nonyuYoteiListSakusei_ja.xlsx" />
+    <Content Include="Templates\shizaiShiyoryoKeisan_ja.xlsx" />
+    <Content Include="Templates\haigoMasterIchiran_ja.xlsx" />
+    <Content Include="Templates\hakariMasterIchiran_ja.xlsx" />
+    <Content Include="Templates\materialUsedAmountCalc_ja.xlsx" />
+    <Content Include="Templates\genryoShiyoryoKeisan_ja.xlsx" />
+    <Content Include="Templates\genshizaiChoseiNyuryoku_ja.xlsx" />
+    <Content Include="Templates\genshizaiZaikoNyuryoku_ja.xlsx" />
+    <Content Include="Templates\genshizaiHendoHyo_ja.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.vi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Data\FoodProcsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FoodProcsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

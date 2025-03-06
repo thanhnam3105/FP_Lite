@@ -1,0 +1,65 @@
+﻿/*英語用スタイル設定*/
+html {
+  font-size: 90%;
+}
+
+.ui-datepicker table th {
+    padding: .7em 0.1em;
+}
+
+header .header-container h1 {
+    line-height: 40px;
+    vertical-align: middle;
+    padding-left: 9px;
+    font-size: 16pt;
+    font-weight: normal;
+    position: absolute;
+    left: 195px;
+    min-width: 540px;
+    font-family: Arial, Meiryo, Sans-Serif, 'メイリオ' ;
+}
+
+.ui-jqgrid-btable td,.ui-jqgrid-htable th {
+    vertical-align: middle !important;
+}
+
+textarea {
+    font-family: Arial, Meiryo, Sans-Serif, 'メイリオ' ;
+
+}
+
+.part-header {
+    line-height: 30px!important;
+}
+
+footer .footer .command {
+    display: flex;
+}
+
+.footer button, .dlg-holder .dialog-footer button {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+#grid-view
+{
+    right: 85px !important;
+}
+.part-grid-up {
+    left: 100px !important;
+    top: -41px !important;
+}
+
+.part-grid-down
+{
+    left: 100px !important;
+    top: -41px !important;
+}
+.hasu-area {
+    padding-top: 10px;
+}
+
+.insatsu-sentaku-dialog
+{
+    width: 740px !important;
+}

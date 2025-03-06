@@ -1,0 +1,40 @@
+﻿@charset "utf-8";
+@page	
+{
+    
+	/*margin: 0cm 0cm;*/
+	
+}      
+@media print{
+    /*この中にCSSを記述*/
+    /* 改ページ 2ページ以降のページの先頭に出力する */
+    hr.page-break {
+        page-break-before: always;
+        visibility: hidden;
+        height: 0;
+    }
+    body
+    {
+        /* 余白 */
+        margin: 0px 6px;
+
+        /* 用紙サイズ */
+        width:auto;
+        height:auto;
+        /* 文字サイズ */
+        font-size:12pt;
+        color:Black;
+        font-family:"ＭＳ ゴシック";
+    }
+    .qrCodeBlock
+    {
+        float:left;
+        height:180px;
+        /*
+        border-bottom-color:Black;
+        border-bottom-width:thick;
+        border-bottom-style:solid;
+        /*
+    }
+        
+}

@@ -1,0 +1,129 @@
+(function () {
+    //// ページデータ -- Start
+
+    var lang = App.ui.pagedata.lang("ja", {
+        // TODO: 画面の仕様に応じて以下の画面項目のテキストを変更してください。
+        _pageTitle: { text: "年間カレンダーマスタ" },
+        yy_nendo: { text: "年度" },
+        dt_nendo_start: { text: "年度開始月" },
+        kojoKyujitsu: { text: "工場休日設定" },
+        ippanKyujitsu: { text: "一般休日設定" },
+        kyujitsu: { text: "休日" },
+        kaijo: { text: "解除" },
+        yobi: { text: "曜日" },
+        dt_yobi_1: { text: "1月" },
+        dt_yobi_2: { text: "2月" },
+        dt_yobi_3: { text: "3月" },
+        dt_yobi_4: { text: "4月" },
+        dt_yobi_5: { text: "5月" },
+        dt_yobi_6: { text: "6月" },
+        dt_yobi_7: { text: "7月" },
+        dt_yobi_8: { text: "8月" },
+        dt_yobi_9: { text: "9月" },
+        dt_yobi_10: { text: "10月" },
+        dt_yobi_11: { text: "11月" },
+        dt_yobi_12: { text: "12月" },
+        dt_1: { text: "1月" },
+        dt_2: { text: "2月" },
+        dt_3: { text: "3月" },
+        dt_4: { text: "4月" },
+        dt_5: { text: "5月" },
+        dt_6: { text: "6月" },
+        dt_7: { text: "7月" },
+        dt_8: { text: "8月" },
+        dt_9: { text: "9月" },
+        dt_10: { text: "10月" },
+        dt_11: { text: "11月" },
+        dt_12: { text: "12月" }, 
+        flg_kyujitsu: { text: "休日フラグ" },
+        flg_shukujitsu: { text: "祝日フラグ" },
+        memo_1: { text: "※工場休日設定は工場が稼働しない日を設定します。（納入計画作成に反映）" },
+        memo_2: { text: "※一般休日設定は一般的な休日を設定します。" },
+        ts: { text: "タイムスタンプ" },
+        cd_create: { text: "登録者" },
+        dt_create: { text: "登録日時" },
+        // TODO: ここまで
+
+        // TODO: 画面の仕様に応じて以下の画面メッセージを変更してください。
+        noRecords: { text: MS0442 },
+        notFound: { text: MS0037 },
+        noSelect: { text: MS0443 },
+        noChange: { text: MS0444 },
+        saveConfirm: { text: MS0064 },
+        findConfirm: { text: MS0065 },
+        unloadWithoutSave: { text: MS0066 }
+        // TODO: ここまで
+    });
+
+    App.ui.pagedata.validation("ja", {
+        // TODO: 画面の仕様に応じて以下のバリデーションルールとバリデーションメッセージを変更してください。
+        masterKubun: {
+            rules: {
+                required: "マスタ区分",
+            },
+            messages: {
+                required: MS0004
+            }
+        },
+        haigoCode: {
+            rules: {
+                required: "配合コード",
+                alphanum: true,
+                maxbytelength: 14
+            },
+            messages: {
+                required: MS0004,
+                alphanum: MS0439,
+                maxbytelength: MS0012
+            }
+        },
+        cd_line: {
+            rules: {
+                required: "ラインコード",
+                alphanum: true,
+                maxbytelength: 10
+            },
+            messages: {
+                required: MS0042,
+                alphanum: MS0439,
+                maxbytelength: MS0012
+            }
+        },
+        no_yusen: {
+            rules: {
+                required: "順位",
+                digits: true,
+                range: [1, 99],
+                maxbytelength: 2
+            },
+            messages: {
+                required: MS0042,
+                digits: MS0005,
+                range: MS0009,
+                maxbytelength: MS0012
+            }
+        }
+        // TODO: ここまで
+    });
+
+    //第1引数のロケール無しでの設定も可能
+    App.ui.pagedata.operation("ja", {
+        // TODO: 画面の仕様に応じて以下の画面制御ルールを変更してください。
+        search: {
+            Manufacture: { visible: false }
+        },
+        settei: {
+            Manufacture: { visible: false },
+            Quality: { visible: false },
+            Warehouse: { visible: false }
+        },
+        save: {
+            Manufacture: { visible: false },
+            Quality: { visible: false },
+            Warehouse: { visible: false }
+        }
+        // TODO: ここまで
+    });
+
+    //// ページデータ -- End
+})();

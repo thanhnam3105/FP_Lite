@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css;">
+<meta http-equiv="Content-Script-Type" content="text/javascript;">
+<!--================== INCLUDE SCRIPT & CSS start ========================-->
+<link rel="stylesheet" type="text/css" href="./Styles/manual.css" />
+<script src="<%=this.ResolveClientUrl("~/Resources/pages/pagedata-directinput.ja.js") %>"   type="text/javascript"></script>
+<!--================== INCLUDE SCRIPT & CSS end ========================-->
+    <title>ID0001:原料使用料計算</title>
+</head>
+<body>
+    <div style="background-color: #FFFFFF;">
+    <h1>ID0001:原料使用料計算</h1>
+    <p class="col_base"></p>
+    <table style="width: 100%;">
+				<tr>
+					<td class="col_1_2">【１．概要】</td>
+				</tr>
+				<tr>
+					<td class="col_1_1">
+						・指定された日付の原料の使用予定量、必要量を計算して画面に表示し、
+                        その日に原料がどれだけ必要かを確認します。</br>
+                       ・前日残を入力することにより、当日の必要量を確認することも可能です。
+                       また、原料の当日残を入力することにより、現場に残っている原料の管理も行います。</br>
+                       ・原資材メニューから、「原料使用量計算」画面を開きます。
+					</td>
+				</tr>
+				<tr>
+					<td class="col_1_2">【２．画面イメージ】</td>
+				</tr>
+				<tr>
+					<td class="col_1_1">
+						<img src="./Styles/images/directinput.jpg" border="0"></br>
+					</td>
+				</tr>
+                <tr>
+					<td class="col_1_2">【３．操作説明】</td>
+				</tr>
+				<tr>
+					<td class="col_1_1">
+						①日付などを指定した後、｢検索｣ボタンをクリックします。</br>
+						②指定した日付に製造する全製品に使用する原料の総量が計算され、
+                        画面に表示されます。前日残、当日残がある場合入力を行います。</br>
+                        ③｢保存｣ボタンをクリックして、入力内容を保存します。</br>
+					</td>
+				</tr>
+			</table>
+		<hr size=2></hr>
+	</div>
+</body>
+</html>

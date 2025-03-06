@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="hinmeiMaster" language="groovy" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="d316649a-8738-4c7e-851e-8c554f1f7a9e">
+	<property name="ireport.zoom" value="0.9313819845887343"/>
+	<property name="ireport.x" value="139"/>
+	<property name="ireport.y" value="252"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="nonyu Dataset" uuid="7125c7c9-e310-4067-aa9a-9e642fed843d"/>
+	<queryString language="xPath">
+		<![CDATA[/root]]>
+	</queryString>
+	<field name="cd_hinmei" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_hinmei]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_ja" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_ja]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_en" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_en]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_zh" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_zh]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_ryaku" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_ryaku]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_hin" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_hin]]></fieldDescription>
+	</field>
+	<field name="nm_nisugata_hyoji" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_nisugata_hyoji]]></fieldDescription>
+	</field>
+	<field name="wt_nisugata_naiyo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/wt_nisugata_naiyo]]></fieldDescription>
+	</field>
+	<field name="su_iri" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_iri]]></fieldDescription>
+	</field>
+	<field name="wt_ko" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/wt_ko]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_kanzan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_kanzan]]></fieldDescription>
+	</field>
+	<field name="tani_nonyu" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tani_nonyu]]></fieldDescription>
+	</field>
+	<field name="tani_shiyo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tani_shiyo]]></fieldDescription>
+	</field>
+	<field name="ritsu_hiju" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/ritsu_hiju]]></fieldDescription>
+	</field>
+	<field name="tan_ko" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tan_ko]]></fieldDescription>
+	</field>
+	<field name="nm_bunrui" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_bunrui]]></fieldDescription>
+	</field>
+	<field name="dd_shomi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_shomi]]></fieldDescription>
+	</field>
+	<field name="dd_kaifugo_shomi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_kaifugo_shomi]]></fieldDescription>
+	</field>
+	<field name="dd_kaitogo_shomi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_kaitogo_shomi]]></fieldDescription>
+	</field>
+	<field name="nm_hokan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hokan]]></fieldDescription>
+	</field>
+	<field name="nm_kaifugo_hokan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kaifugo_hokan]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_jotai" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_jotai]]></fieldDescription>
+	</field>
+	<field name="nm_zei" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_zei]]></fieldDescription>
+	</field>
+	<field name="ritsu_budomari" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/ritsu_budomari]]></fieldDescription>
+	</field>
+	<field name="su_zaiko_min" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_zaiko_min]]></fieldDescription>
+	</field>
+	<field name="su_zaiko_max" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_zaiko_max]]></fieldDescription>
+	</field>
+	<field name="nm_niuke" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_niuke]]></fieldDescription>
+	</field>
+	<field name="dd_leadtime" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_leadtime]]></fieldDescription>
+	</field>
+	<field name="flg_mishiyo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/flg_mishiyo]]></fieldDescription>
+	</field>
+	<field name="dt_create" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dt_create]]></fieldDescription>
+	</field>
+	<field name="dt_update" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dt_update]]></fieldDescription>
+	</field>
+	<field name="cd_hanbai_1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_hanbai_1]]></fieldDescription>
+	</field>
+	<field name="nm_torihiki1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_torihiki1]]></fieldDescription>
+	</field>
+	<field name="cd_hanbai_2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_hanbai_2]]></fieldDescription>
+	</field>
+	<field name="nm_torihiki2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_torihiki2]]></fieldDescription>
+	</field>
+	<field name="cd_haigo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_haigo]]></fieldDescription>
+	</field>
+	<field name="nm_haigo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_haigo]]></fieldDescription>
+	</field>
+	<field name="cd_jan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_jan]]></fieldDescription>
+	</field>
+	<field name="su_batch_dekidaka" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_batch_dekidaka]]></fieldDescription>
+	</field>
+	<field name="su_palette" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_palette]]></fieldDescription>
+	</field>
+	<field name="kin_romu" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/kin_romu]]></fieldDescription>
+	</field>
+	<field name="kin_keihi_cs" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/kin_keihi_cs]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_kuraire" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_kuraire]]></fieldDescription>
+	</field>
+	<field name="tan_nonyu" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tan_nonyu]]></fieldDescription>
+	</field>
+	<field name="flg_tenkai" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/flg_tenkai]]></fieldDescription>
+	</field>
+	<field name="cd_seizo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_seizo]]></fieldDescription>
+	</field>
+	<field name="nm_seizo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_seizo]]></fieldDescription>
+	</field>
+	<field name="su_hachu_lot_size" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_hachu_lot_size]]></fieldDescription>
+	</field>
+	<field name="nm_kura" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kura]]></fieldDescription>
+	</field>
+	<field name="line_toroku" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/line_toroku]]></fieldDescription>
+	</field>
+	<field name="cd_maker_hin" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_maker_hin]]></fieldDescription>
+	</field>
+	<field name="biko" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/biko]]></fieldDescription>
+	</field>
+	<field name="user" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/user]]></fieldDescription>
+	</field>
+	<field name="output_day" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/output_day]]></fieldDescription>
+	</field>
+	<field name="currency" class="java.lang.String">
+		<fieldDescription><![CDATA[currency]]></fieldDescription>
+	</field>
+	<field name="kbn_kotei" class="java.lang.String">
+		<fieldDescription><![CDATA[kbn_kotei]]></fieldDescription>
+	</field>
+	<field name="kbn_hasu" class="java.lang.String">
+		<fieldDescription><![CDATA[kbn_hasu]]></fieldDescription>
+	</field>
+	<field name="nm_tani_hasu" class="java.lang.String">
+		<fieldDescription><![CDATA[nm_tani_hasu]]></fieldDescription>
+	</field>
+	<field name="dd_kotei" class="java.lang.String">
+		<fieldDescription><![CDATA[dd_kotei]]></fieldDescription>
+	</field>
+	<field name="kbn_location" class="java.lang.String">
+		<fieldDescription><![CDATA[kbn_location]]></fieldDescription>
+	</field>
+	<field name="location" class="java.lang.String">
+		<fieldDescription><![CDATA[location]]></fieldDescription>
+	</field>
+	<field name="flg_trace_taishogai" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/flg_trace_taishogai]]></fieldDescription>
+	</field>
+	<field name="nm_kaitogo_hokan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kaitogo_hokan]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="58">
+			<staticText>
+				<reportElement x="1" y="0" width="202" height="26" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="16" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Material master]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="656" y="0" width="146" height="17" uuid="43a5d30c-e9f5-4362-ae46-16f784681c62"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{output_day}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="581" y="0" width="75" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Output date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="581" y="17" width="75" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Output person]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="656" y="17" width="146" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="497" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="57" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Item code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="74" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Item name(Ja)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="108" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Item name(En)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="142" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Item name(Ch)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="176" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Short name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="210" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Item type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="244" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Packing style ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="278" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Contained
+quantities of
+packing style]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="312" width="77" height="28" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Contained
+number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="340" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Unit quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="357" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Conversion unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="374" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Delivery unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="391" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Usage unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="408" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Gravity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="425" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Unit price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="442" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="57" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Number of
+expiration date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="91" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Expiration date
+after opening]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="57" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cd_hinmei}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="159" width="88" height="18" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Storage type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="177" width="88" height="33" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Storage type
+after opening]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="243" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Condition type]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="159" width="170" height="18" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hokan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="57" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Output number
+of one batch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="142" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Purchase lot size]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="618" y="57" width="120" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{su_batch_dekidaka}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="260" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Yield]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="277" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Minimum inventory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="294" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Maximum inventory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="311" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Receipt location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="345" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Delivery lead time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="210" width="88" height="266" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Notes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="362" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Register line]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="379" width="88" height="51" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Formula name]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="78" y="74" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="108" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_en}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="142" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_zh}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="379" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cd_haigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="396" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_haigo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="91" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Basic labor cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="108" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Cost of 1C/S ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="125" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Delivery unit price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="159" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Issued location]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="176" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_ryaku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="210" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kbn_hin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="244" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_nisugata_hyoji}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="278" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wt_nisugata_naiyo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="312" width="170" height="28" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{su_iri}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="340" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wt_ko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="357" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kbn_kanzan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="374" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tani_nonyu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="391" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tani_shiyo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="408" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ritsu_hiju}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="425" width="125" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tan_ko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="442" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_bunrui}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="57" width="153" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dd_shomi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="177" width="170" height="33" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kaifugo_hokan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="243" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kbn_jotai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="260" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ritsu_budomari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="277" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{su_zaiko_min}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="294" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{su_zaiko_max}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="311" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_niuke}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="345" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dd_leadtime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="210" width="170" height="266" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{biko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="362" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{line_toroku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="91" width="120" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kin_romu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="108" width="120" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kin_keihi_cs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="125" width="120" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tan_nonyu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="142" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{su_hachu_lot_size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="159" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="91" width="153" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dd_kaifugo_shomi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="503" y="58" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="92" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="243" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[％]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="345" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="739" y="58" width="49" height="15" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ｃ／Ｓ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="17" width="77" height="29" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[When not
+usage]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="17" width="170" height="29" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{flg_mishiyo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="18" width="88" height="28" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Registration date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="18" width="170" height="28" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dt_create}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="18" width="88" height="28" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Update date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="618" y="18" width="170" height="28" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dt_update}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="425" width="44" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="739" y="91" width="49" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="739" y="108" width="49" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="739" y="125" width="49" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="430" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Fixed day]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="430" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dd_kotei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="447" width="170" height="28" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+					<printWhenExpression><![CDATA[($F{kbn_hasu} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_tani_hasu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="447" width="88" height="28" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+					<printWhenExpression><![CDATA[($F{kbn_hasu} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Delivery unit
+(Partial)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="430" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd">
+					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[th]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="618" y="193" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+					<printWhenExpression><![CDATA[($F{kbn_location} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{location}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="193" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="475" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[No lot tracking]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="475" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{flg_trace_taishogai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="125" width="153" height="34" uuid="a98d556a-d183-4ec6-b5b0-865c0d4d39bb"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dd_kaitogo_shomi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="125" width="88" height="34" backcolor="#CCCCFF" uuid="2a6a629e-e665-4df5-91fb-f4db6f3e8e20"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Expiration date
+after thawing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="126" width="16" height="17" uuid="b59a023c-2e8e-4668-b123-8a11633bcbb4"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[th]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="210" width="88" height="33" backcolor="#CCCCFF" uuid="a4a7dd9b-5444-4d62-8a46-f05956708df3"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="10" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Storage type
+after thawing]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="210" width="170" height="33" uuid="9f1700cc-66e0-44cd-9d70-334df871d9bc"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kaitogo_hokan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="290" y="17" width="253" height="22" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[There is no detail data to display.]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

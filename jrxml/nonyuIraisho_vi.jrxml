@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nonyuIraisho" language="groovy" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="d316649a-8738-4c7e-851e-8c554f1f7a9e">
+	<property name="ireport.zoom" value="1.4641000000000026"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="nonyu Dataset" uuid="7125c7c9-e310-4067-aa9a-9e642fed843d"/>
+	<queryString language="xPath">
+		<![CDATA[/root/pageBreak/nodes]]>
+	</queryString>
+	<field name="hachuNo" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hachuNo]]></fieldDescription>
+	</field>
+	<field name="searchDateFrom" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/searchDateFrom]]></fieldDescription>
+	</field>
+	<field name="searchDateTo" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/searchDateTo]]></fieldDescription>
+	</field>
+	<field name="kaishaName" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/kaishaName]]></fieldDescription>
+	</field>
+	<field name="renrakusaki" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/renrakusaki]]></fieldDescription>
+	</field>
+	<field name="renrakusakiTel" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/renrakusakiTel]]></fieldDescription>
+	</field>
+	<field name="renrakusakiFax" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/renrakusakiFax]]></fieldDescription>
+	</field>
+	<field name="nohinsaki" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nohinsaki]]></fieldDescription>
+	</field>
+	<field name="nohinsakiAdd" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nohinsakiAdd]]></fieldDescription>
+	</field>
+	<field name="torihikisaki" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/torihikisaki]]></fieldDescription>
+	</field>
+	<field name="tantosha" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/tantosha]]></fieldDescription>
+	</field>
+	<field name="keisho" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/keisho]]></fieldDescription>
+	</field>
+	<field name="torihikisakiFax" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/torihikisakiFax]]></fieldDescription>
+	</field>
+	<field name="keishikiKbn" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/keishikiKbn]]></fieldDescription>
+	</field>
+	<field name="holiday" class="java.lang.String">
+		<fieldDescription><![CDATA[holiday]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="change1" class="java.lang.String">
+		<fieldDescription><![CDATA[change1]]></fieldDescription>
+	</field>
+	<field name="suryo1" class="java.lang.String">
+		<fieldDescription><![CDATA[suryo1]]></fieldDescription>
+	</field>
+	<field name="change2" class="java.lang.String">
+		<fieldDescription><![CDATA[change2]]></fieldDescription>
+	</field>
+	<field name="suryo2" class="java.lang.String">
+		<fieldDescription><![CDATA[suryo2]]></fieldDescription>
+	</field>
+	<field name="change3" class="java.lang.String">
+		<fieldDescription><![CDATA[change3]]></fieldDescription>
+	</field>
+	<field name="suryo3" class="java.lang.String">
+		<fieldDescription><![CDATA[suryo3]]></fieldDescription>
+	</field>
+	<field name="change4" class="java.lang.String">
+		<fieldDescription><![CDATA[change4]]></fieldDescription>
+	</field>
+	<field name="suryo4" class="java.lang.String">
+		<fieldDescription><![CDATA[suryo4]]></fieldDescription>
+	</field>
+	<field name="change5" class="java.lang.String">
+		<fieldDescription><![CDATA[change5]]></fieldDescription>
+	</field>
+	<field name="suryo5" class="java.lang.String">
+		<fieldDescription><![CDATA[suryo5]]></fieldDescription>
+	</field>
+	<field name="comment" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/comment]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/@name]]></fieldDescription>
+	</field>
+	<field name="output_day" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/output_day]]></fieldDescription>
+	</field>
+	<field name="hinmei1" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmei1]]></fieldDescription>
+	</field>
+	<field name="hinmeiCode1" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmeiCode1]]></fieldDescription>
+	</field>
+	<field name="nisugata1" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nisugata1]]></fieldDescription>
+	</field>
+	<field name="bunrui1" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/bunrui1]]></fieldDescription>
+	</field>
+	<field name="hinmeiCode2" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmeiCode2]]></fieldDescription>
+	</field>
+	<field name="hinmei2" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmei2]]></fieldDescription>
+	</field>
+	<field name="nisugata2" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nisugata2]]></fieldDescription>
+	</field>
+	<field name="bunrui2" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/bunrui2]]></fieldDescription>
+	</field>
+	<field name="hinmeiCode3" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmeiCode3]]></fieldDescription>
+	</field>
+	<field name="hinmei3" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmei3]]></fieldDescription>
+	</field>
+	<field name="nisugata3" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nisugata3]]></fieldDescription>
+	</field>
+	<field name="bunrui3" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/bunrui3]]></fieldDescription>
+	</field>
+	<field name="hinmeiCode4" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmeiCode4]]></fieldDescription>
+	</field>
+	<field name="hinmei4" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmei4]]></fieldDescription>
+	</field>
+	<field name="nisugata4" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nisugata4]]></fieldDescription>
+	</field>
+	<field name="bunrui4" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/bunrui4]]></fieldDescription>
+	</field>
+	<field name="hinmeiCode5" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmeiCode5]]></fieldDescription>
+	</field>
+	<field name="hinmei5" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/hinmei5]]></fieldDescription>
+	</field>
+	<field name="nisugata5" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/nisugata5]]></fieldDescription>
+	</field>
+	<field name="bunrui5" class="java.lang.String">
+		<fieldDescription><![CDATA[ancestor::pageBreak/bunrui5]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="73">
+			<staticText>
+				<reportElement x="492" y="3" width="15" height="15" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<textElement>
+					<font size="10" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[～]]></text>
+			</staticText>
+			<line>
+				<reportElement x="247" y="15" width="322" height="1" uuid="d1340945-2da5-4aaa-b005-eba0ba916a7c"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="651" y="12" width="150" height="12" uuid="2534c22b-2e96-4b42-8d69-44be8298d7fb"/>
+				<textElement textAlignment="Right">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kaishaName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="493" y="24" width="78" height="10" uuid="3a2855ba-92da-4cae-ba1f-bb4788a4c8d7"/>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[Contact address：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="493" y="43" width="78" height="10" uuid="3a2855ba-92da-4cae-ba1f-bb4788a4c8d7"/>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[Delivery destination：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="571" y="24" width="230" height="10" uuid="3330e900-bf56-47eb-a807-773d25ed7183"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{renrakusaki}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="571" y="35" width="230" height="10" uuid="034e023b-8d5a-4f5a-b8cc-f8d443820f01"/>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["TEL  "+$F{renrakusakiTel}+"      FAX  "+$F{renrakusakiFax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="571" y="44" width="230" height="10" uuid="9fdd3246-07c8-475f-9a2e-d71ba9cb6546"/>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nohinsaki}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="571" y="54" width="230" height="19" uuid="2d31d586-2401-436f-a35c-a3c320b6d662"/>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nohinsakiAdd}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="48" width="300" height="12" uuid="a4739071-09c3-436a-a6b1-2b7b6201fdec"/>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tantosha}+$F{keisho}+"    FAX "+ (($F{torihikisakiFax} == null )? " ": $F{torihikisakiFax})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="245" height="16" uuid="a73a1f35-1942-4325-a486-dafb499ab6ae"/>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hachuNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="248" y="1" width="175" height="16" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<textElement>
+					<font size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[Make a delivery request list]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="426" y="1" width="65" height="16" uuid="9c7d260a-753c-416d-af46-4cc9baf2f11b"/>
+				<textElement>
+					<font size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{searchDateFrom}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="505" y="1" width="65" height="16" uuid="9c7d260a-753c-416d-af46-4cc9baf2f11b"/>
+				<textElement>
+					<font size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{searchDateTo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="651" y="0" width="150" height="12" uuid="43a5d30c-e9f5-4362-ae46-16f784681c62"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{output_day}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="60" width="100" height="12" uuid="8a81cb25-4998-40c1-9e90-39da5e4b0b8b"/>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keishikiKbn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="36" width="223" height="12" uuid="31ba1310-ee5a-466a-a57d-49b102fd33ea"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="8" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{torihikisaki}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="43">
+			<textField isBlankWhenNull="true">
+				<reportElement x="65" y="0" width="139" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmeiCode1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="65" y="11" width="141" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="DejaVu Sans" size="7" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmei1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="67" height="11" uuid="6a88e13f-818c-46fe-8064-b63d40d64034"/>
+				<box leftPadding="2" rightPadding="3">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[material code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="11" width="65" height="11" uuid="6a88e13f-818c-46fe-8064-b63d40d64034"/>
+				<box leftPadding="2" rightPadding="3">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[material]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="22" width="65" height="11" uuid="6a88e13f-818c-46fe-8064-b63d40d64034"/>
+				<box leftPadding="2" rightPadding="3">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[Packing style]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="32" width="65" height="11" uuid="6a88e13f-818c-46fe-8064-b63d40d64034"/>
+				<box leftPadding="2" rightPadding="3">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[Group]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="65" y="22" width="141" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nisugata1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="65" y="32" width="141" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bunrui1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="0" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmeiCode2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="11" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmei2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="22" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nisugata2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="32" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bunrui2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="355" y="0" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmeiCode3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="355" y="11" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmei3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="355" y="22" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nisugata3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="355" y="32" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bunrui3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="504" y="0" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmeiCode4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="504" y="11" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmei4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="504" y="22" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nisugata4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="504" y="32" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bunrui4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="653" y="0" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmeiCode5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="653" y="11" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hinmei5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="653" y="22" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nisugata5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="653" y="32" width="149" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bunrui5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="12" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="65" y="1" width="35" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{change1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="206" y="1" width="44" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{change2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="1" width="65" height="11" uuid="0a25ac65-84c6-4ece-9d7b-d030fe49dba8"/>
+				<box leftPadding="2" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{holiday}+$F{date}+"  "]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="1" width="106" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{suryo1}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="100" y="1" width="1" height="11" uuid="a6a3311e-05ac-49d5-9109-dbb743d5e4d8">
+					<printWhenExpression><![CDATA[!($F{date} == " ") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="250" y="1" width="105" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{suryo2}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="250" y="1" width="1" height="11" uuid="a6a3311e-05ac-49d5-9109-dbb743d5e4d8">
+					<printWhenExpression><![CDATA[!($F{date} == " ") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="355" y="1" width="44" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{change3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="399" y="1" width="105" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{suryo3}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="399" y="1" width="1" height="11" uuid="a6a3311e-05ac-49d5-9109-dbb743d5e4d8">
+					<printWhenExpression><![CDATA[!($F{date} == " ") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="504" y="1" width="44" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{change4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="548" y="1" width="105" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{suryo4}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="547" y="1" width="1" height="11" uuid="a6a3311e-05ac-49d5-9109-dbb743d5e4d8">
+					<printWhenExpression><![CDATA[!($F{date} == " ") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="653" y="1" width="44" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{change5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="697" y="1" width="105" height="11" uuid="e4c09d01-8ce5-4b51-b7f4-df1498585ad4"/>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{suryo5}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="697" y="1" width="1" height="11" uuid="a6a3311e-05ac-49d5-9109-dbb743d5e4d8">
+					<printWhenExpression><![CDATA[!($F{date} == " ") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="-1" width="802" height="1" uuid="61f1dc61-a5c5-494e-9f8c-46f6f516da57"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="12" width="802" height="12" uuid="fcf09875-6036-42ac-9a1f-93d81bdef73b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="9" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comment}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="337" y="3" width="80" height="20" uuid="61bf34b9-4f83-4b80-9bac-e3ff4348c5ce"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="417" y="3" width="40" height="20" uuid="c91e4dd9-73cb-444f-9a4c-c088ec12c8a5"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="290" y="17" width="223" height="16" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[There is no detail data to display.]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

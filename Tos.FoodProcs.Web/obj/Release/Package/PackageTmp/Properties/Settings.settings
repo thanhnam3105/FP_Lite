@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Tos.FoodProcs.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="jasperURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.98:8080/jasperserver/</Value>
+    </Setting>
+    <Setting Name="xmlURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">?net.sf.jasperreports.xml.source=http://192.168.0.98:8080/xmldata/{3}</Value>
+    </Setting>
+    <Setting Name="reportJrxml" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/reports/FP_LITE/FP_Lite_Vietnamese_Ver2/{0}_{1}{2}</Value>
+    </Setting>
+    <Setting Name="xmldatapath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\\Jaspersoft\\jasperreports-server-cp-8.2.0\\apache-tomcat\\webapps\\xmldata</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

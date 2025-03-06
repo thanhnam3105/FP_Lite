@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Nlogの設定に関する詳細には、http://nlog-project.org/ を参照してください
+  -->
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  throwExceptions="true">
+  <!--KPM環境-->
+  <!--<variable name="basedir" value="E:/LOG/99_SONOTA/04_SEISAN/0018_FOODPROCS-Lite/53200_KPM"/>-->
+  <!--Q&B環境-->
+  <!--<variable name="basedir" value="E:/LOG/99_SONOTA/04_SEISAN/0018_FOODPROCS-Lite/54000_QB"/>-->
+  <!--BQP環境-->
+  <!--<variable name="basedir" value="E:/LOG/99_SONOTA/04_SEISAN/0018_FOODPROCS-Lite/52100_BQP"/>-->
+  <!--HQP環境-->
+  <!--<variable name="basedir" value="E:/LOG/99_SONOTA/04_SEISAN/0018_FOODPROCS-Lite/52200_HQP"/>-->
+
+  <variable name="logdir" value="${basedir}/log/"/>
+  <variable name="appName" value="FPlite"/>
+  <extensions>
+    <add assembly="NLog.Extended"/>
+  </extensions>
+  
+  <targets>
+    <target name="applogfile"
+            xsi:type="File"
+            fileName="${logdir}${appName}.log"
+            layout="[${longdate}][${level:uppercase=true}][${callsite}] ${message}"
+            keepFileOpen="false"
+            archiveFileName="${logdir}${appName}.log.{#}.txt"
+            archiveNumbering="Rolling"
+            archiveEvery="Day"
+            maxArchiveFiles="30"
+            concurrentWrites="true"
+            />
+    <target name="auditlogfile"
+            xsi:type="File"
+            fileName="${logdir}${appName}_audit.log"
+            layout="[${longdate}] ${message}"
+            keepFileOpen="false"
+            archiveFileName="${logdir}${appName}_audit.log.{#}.txt"
+            archiveNumbering="Rolling"
+            archiveEvery="Day"
+            maxArchiveFiles="30"
+            />
+  </targets>
+  <rules>
+    <logger name="application" minlevel="Trace" writeTo="applogfile"/>
+    <logger name="audit" minlevel="Trace" writeTo="auditlogfile"/>
+  </rules>
+</nlog>

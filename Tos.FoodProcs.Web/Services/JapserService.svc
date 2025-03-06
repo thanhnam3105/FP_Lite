@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="JapserService.svc.cs" Class="Tos.FoodProcs.Web.Services.JapserService" %>

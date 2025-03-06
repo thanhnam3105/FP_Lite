@@ -1,0 +1,119 @@
+@color-default: #ffffff;
+@color-second:  #4682b4;
+@background-color-default: #ffffff;
+@background-color-first: #4682b4;
+@background-color-hover: #87cefa - 20;
+@color-hover: #4682b4;
+@menu-item-padding: 5px 10px;
+@menu-item-width: 120px;
+
+ul.ddl-menu, ul.ddl-menu 
+{
+    margin: 0px;
+    padding : 0px;
+    list-style-type: none;
+    list-style-position: outside;
+    position: relative;
+    line-height: 1.5em;
+}
+
+ul.ddl-menu
+{
+    a
+    {
+        display: block;
+        color: @color-default;
+        text-decoration: none;
+        background-color: @background-color-first;
+        padding: @menu-item-padding;
+        min-width: @menu-item-width;
+        vertical-align: middle;
+        white-space: nowrap;
+		border: 2px solid @background-color-first;
+    }
+
+	a:hover
+    {
+	    background-color: transparent;
+		color: @color-hover;
+		border: 2px solid transparent;
+		width:90%;
+	}
+
+    li
+    {
+        float:left;
+        position:relative;
+		background-color: @background-color-first;
+
+        li {
+            clear: left;
+            posision: relative;
+			background-color: @background-color-first;
+			width:100%;
+        }
+
+		li:hover 
+		{
+			width:100%;
+		}
+    }
+
+	li:hover 
+    {
+		color: @color-hover;
+        background-color: @background-color-default;
+    }
+
+    ul
+    {
+        position:absolute;
+        display:none;
+		margin: 0px 0px 0px -1px;
+        background-color: @background-color-first;
+        border: 2px solid @background-color-first;
+
+        ul
+        {
+            left: 100%;
+            margin: -1px 0px 0px 0px;
+            top: 1px;
+			background-color: @background-color-default;
+			border: 2px solid @background-color-first;
+        }
+
+		a {
+		    span 
+			{
+			    background-image: url('images/ui-icons_ffffff_256x240.png');
+				background-repeat: no-repeat;
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				position: relative;
+				top:3px;
+				left: 4px;
+				background-position: -32px 0px; 
+			}
+		}
+
+		a:hover {
+		    span 
+			{
+			    background-image: url('images/ui-icons_2e83ff_256x240.png');
+			}
+		}
+    }
+}
+
+/*
+.ddl-menu li:hover ul ul, .ddl-menu li:hover ul ul ul, .ddl-menu li:hover ul ul ul ul
+{
+    display:none;
+}
+.ddl-menu li:hover ul, .ddl-menu li li:hover ul, .ddl-menu li li li:hover ul, .ddl-menu li li li li:hover ul
+{
+    display:block;
+}
+*/
+

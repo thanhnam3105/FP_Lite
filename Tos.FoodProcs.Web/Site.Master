@@ -1,0 +1,335 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Tos.FoodProcs.Web.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>
+        <%= Page.Title %></title>
+    <style type="text/css">
+        :root { --theme-color: <%= colorMenuBar %>; }
+    </style>
+    <link media="all" rel="stylesheet" href="<%=ResolveUrl("~/Styles/style.css") %>"
+        type="text/css" />
+    <link media="all" rel="stylesheet" href="<%=ResolveUrl("~/Styles/style.extends." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".css") %>"
+        type="text/css" />
+    <link media="all" rel="stylesheet" href="<%=ResolveUrl("~/Styles/app.css") %>"
+        type="text/css" />
+    <link media="all" rel="stylesheet" href="<%=ResolveUrl("~/Styles/jquery-ui-1.9.1.custom.min.css") %>"
+        type="text/css" />
+    <link media="all" rel="stylesheet" href="<%=ResolveUrl("~/Styles/ui.jqgrid.css") %>"
+        type="text/css" />
+    <link media="all" rel="stylesheet" href="<%=ResolveUrl("~/Styles/menu.css") %>" type="text/css" />
+    <script src="<%=ResolveUrl("~/Scripts/json2.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery-1.8.2.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery-ui-1.9.1.custom.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/ie6.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery.jqGrid.src.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/app.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/ui.js") %>" type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/grid.setcolumns.js") %>" type="text/javascript"></script>
+    <!-- TODO: 言語の取得と設定 -->
+    <script src="<%=ResolveUrl("~/Resources/id." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Resources/message." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Resources/menu." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Resources/id." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Resources/pagedata-all." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Resources/pagedata-dialog." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Resources/systemconst." + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>"
+        type="text/javascript"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery.ui.datepicker-" + System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName + ".js") %>" 
+        type="text/javascript"></script>
+    
+    <asp:ContentPlaceHolder ID="IncludeContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .ui-tooltip {
+            font-size: 9pt;
+            font-family: Arial, Meiryo, Sans-Serif, 'メイリオ' !important;
+	        padding: 3px;
+	        position: absolute;
+	        z-index: 99999;
+	        max-width: 300px;
+            border-width: 1px!important;
+            box-shadow: 3px 2px 3px #a8a8a8 !important;
+            -webkit-box-shadow: 3px 2px 3px #a8a8a8 !important;
+            background: #fbfafd!important;
+        }
+
+        .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+            -ms-border-top-left-radius: 4px;
+            -khtml-border-top-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            // 言語の設定
+            App.ui.page.lang = "<%= System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName%>";
+            App.ui.page.langCountry = "<%= System.Threading.Thread.CurrentThread.CurrentUICulture.Name%>";
+            App.ui.pagedata.lang.applySetting(App.ui.page.lang);
+            pageLangText = App.ui.pagedata.lang(App.ui.page.lang);
+
+            $(".menu-open").toggle(function () {
+                $(".menu-container").slideDown();
+            },
+            function () {
+                $(".menu-container").slideUp();
+                $(".menu-container>ul ul").hide();
+            });
+
+            // コンテンツにフォーカスが遷移した場合は、ddlmenuは閉じる
+            $(".content-container").on("click", function () {
+                if ($('.menu-container').is(':visible')) {
+                    $(".menu-open").trigger("click");
+                }
+                //                $(".menu-container").slideUp();
+                //                $(".menu-container>ul ul").hide();
+            });
+
+            //            $(".menu-open").on("click", function () {
+            //                $(this).toggleClass("show-menu-open");
+            //                if (App.ui.ddlmenu.isShowed) {
+            //                    App.ui.menu.close();
+            //                } else {
+            //                    App.ui.menu.show();
+            //                }
+            //            });
+
+            /// <summary>ユーザーマニュアルを表示します。</summary>
+            /// <param name="e">イベントデータ</param>
+            var showManual = function (e) {
+                var url = location.href.replace("Pages", "Manuals").replace(".aspx", "-" + App.ui.page.lang + ".html");
+                window.open(url, "manual", "width=500, menubar=no, toolbar=no, location=no, status=no, resizable=yes, scrollbars=yes");
+            };
+            $.extend(App, {
+                /// <summary>Tooltipをします。</summary>
+                /// <param name="element">html add tooltip</param>
+                customTooltip: function (element) {
+                    element = !element ? $(document) : element;
+                    if (!App.isUndefOrNull(pageLangText.addTooltip) && pageLangText.addTooltip.text) {
+                        //Add tool tip
+                        $(element).find("[data-tooltip-text]").each(function (index, element) {
+                            var element = $(element);
+                            var tooltipText = element.attr("data-tooltip-text");
+
+                            if (!App.isUndefOrNull(pageLangText[tooltipText].tooltip)) {
+                                element.attr("title", pageLangText[tooltipText].tooltip);
+                            }
+                        });
+
+                        $(element).find("[data-tooltip-text]").tooltip({
+                            track: true
+                        });
+                    }
+                }
+            });
+            /// <summary>マニュアルボタンクリック時のイベント処理を行います。</summary>
+            $(".help-button").on("click", showManual);
+
+            // 通知の設定
+            App.ui.page.setNotify(App.ui.notify.info(document.body, {
+                container: ".slideup-area .info-message",
+                messageContainerQuery: "ul",
+                show: function () {
+                    $(".info-message").show();
+                },
+                clear: function () {
+                    $(".info-message").hide();
+                }
+            }), App.ui.notify.alert(document.body, {
+                container: ".slideup-area .alert-message",
+                messageContainerQuery: "ul",
+                show: function () {
+                    $(".alert-message").show();
+                },
+                clear: function () {
+                    $(".alert-message").hide();
+                }
+            }));
+
+            // エンターキー移動
+            $("body").on("keydown", function (evt) {
+                var currentIndex, lastIndex,
+                    target = $(evt.target),
+                    body = $(this).find("input, select").filter(":visible"),
+                    checkDisplay = function (element) {
+                        return ($(element).parents(":not(:visible)").length == 0
+                                && $(element)[0].disabled == false);
+                    };
+
+                if (evt.keyCode === App.ui.keys.BS) {
+                    event.cancelBubble = true;
+                    event.keyCode = 0;
+                    return;
+                }
+                if (evt.keyCode !== 13) {
+                    return;
+                }
+                if (target.is("textarea") || target.is(":button")) {
+                    return;
+                }
+                var i, l, elem;
+                for (i = 0, l = body.length; i < l; i++) {
+                    elem = body[i];
+                    if (evt.target == elem) {
+                        currentIndex = i + 1;
+                        if (body.length <= currentIndex) {
+                            currentIndex = 0;
+                        }
+                        break;
+                    }
+                }
+                lastIndex = i;
+                //次のelementにフォーカスを移動する
+                //次のelement・・表示されている、かつfocusできる項目
+                var currentElement = body[currentIndex];
+                while (currentElement) {
+                    var displayflag = checkDisplay(currentElement);
+                    if (currentElement.focus && displayflag) {
+                        currentElement.focus();
+                        break;
+                    }
+                    if (lastIndex === currentIndex) {
+                        break;
+                    }
+                    currentElement = body[++currentIndex];
+                    if (body.length == currentIndex + 1) {
+                        currentIndex = 0;
+                        currentElement = body[currentIndex];
+                    }
+                }
+                evt.preventDefault();
+                evt.stopPropagation();
+            });
+
+            // リサイズの通知
+            var _globalLock = 0;
+
+            $(window).on("resize", function () {
+                if (!_globalLock++) {
+                    var headerHeight = $(".header-container")[0].clientHeight,
+                        footerHeight = $(".footer-container")[0].clientHeight;
+                    contentContainer = $(".content-container");
+
+                    contentContainer.height(document.body.clientHeight - headerHeight - footerHeight);
+
+                    setTimeout(function () {
+                        $(App.ui.page).trigger("resized");
+                        setTimeout(function () {
+                            _globalLock = 0;
+                        }, 0);
+                    }, 100);
+                }
+            }).resize();
+
+
+            // ユーザー情報の設定
+            App.ajax.webgetSync("../api/User"
+            ).done(function (result) {
+                // TODO: ログインユーザーの設定                
+                $("#user-info-organization").text(result.Organization);
+                $("#user-info-branch").text(result.Branch);
+                $("#user-info-name").text(result.Name);
+                // ユーザー情報の保持
+                App.ui.page.user = result;
+
+            }).fail(function (result) {
+                App.ui.page.notifyAlert.message(result.message).show();
+                App.ui.page.user = {
+                    Name: "",
+                    Roles: []
+                };
+
+            }).always(function (result) {
+                // メニュー の生成
+                App.ui.ddlmenu.setup(App.ui.page.lang, App.ui.page.user.Roles[0], ".menu-container");
+                $(App.ui.page).trigger("ready");
+                App.customTooltip();
+            });
+
+            /* 2022/05/24 - 16023: -START FP-Lite ChromeBrowser Modify */
+            var isTextSelected = function (input) {
+                var startPos = input.selectionStart;
+                var endPos = input.selectionEnd;
+                var doc = document.selection;
+                if (doc && doc.createRange().text.length != 0) {
+                    return true;
+                } else if (!doc && input.value.substring(startPos, endPos).length != 0) {
+                    return true;
+                }
+                return false;
+            }
+            $(document).on("focus", "input[type='text']", function (e) {
+                if (!isTextSelected(e.target)) {
+                    e.target.setSelectionRange(0, 0);
+                }
+            });
+            /* 2022/05/24 - 16023: -END FP-Lite ChromeBrowser Modify */
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="menu-open" href="#" title="Menu"><span class="icon"></span></a>
+            <h1 data-app-text="_pageTitle"><%= Page.Title %></h1>
+            <div class="header-info">
+                <!-- ?ボタンコメントアウト
+                <span class="header-command">
+                    <button type="button" class="help-button" name="help-button" title="Help"><span class="icon"></span></button>
+                </span>
+                -->
+                <form id="form1" runat="server">
+                    <button type="submit" runat="server" id="loginButton" title="Log off"><span class="icon"></span></button>
+                </form>
+                <div class="user-info">
+                    <span id="user-info-organization" data-app-text="userOrganization"></span>
+                    <span id="user-info-branch" data-app-text="userBranch"></span><br />
+                    <span id="user-info-name" data-app-text="userName"></span>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu-container">
+    </div>
+    <div class="content-container">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="message-area slideup-area">
+                <div class="alert-message" data-app-text="title:alertTitle" style="display: none" title="">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="info-message" data-app-text="title:infoTitle" style="display: none" title="">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </footer>
+    <asp:ContentPlaceHolder ID="DialogsContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

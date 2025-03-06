@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="hinmeiMaster" language="groovy" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="d316649a-8738-4c7e-851e-8c554f1f7a9e">
+	<property name="ireport.zoom" value="0.9313819845887346"/>
+	<property name="ireport.x" value="49"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="nonyu Dataset" uuid="7125c7c9-e310-4067-aa9a-9e642fed843d"/>
+	<queryString language="xPath">
+		<![CDATA[/root]]>
+	</queryString>
+	<field name="cd_hinmei" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_hinmei]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_ja" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_ja]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_en" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_en]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_zh" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_zh]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_ryaku" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_ryaku]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_hin" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_hin]]></fieldDescription>
+	</field>
+	<field name="nm_nisugata_hyoji" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_nisugata_hyoji]]></fieldDescription>
+	</field>
+	<field name="wt_nisugata_naiyo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/wt_nisugata_naiyo]]></fieldDescription>
+	</field>
+	<field name="su_iri" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_iri]]></fieldDescription>
+	</field>
+	<field name="wt_ko" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/wt_ko]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_kanzan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_kanzan]]></fieldDescription>
+	</field>
+	<field name="tani_nonyu" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tani_nonyu]]></fieldDescription>
+	</field>
+	<field name="tani_shiyo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tani_shiyo]]></fieldDescription>
+	</field>
+	<field name="ritsu_hiju" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/ritsu_hiju]]></fieldDescription>
+	</field>
+	<field name="tan_ko" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tan_ko]]></fieldDescription>
+	</field>
+	<field name="nm_bunrui" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_bunrui]]></fieldDescription>
+	</field>
+	<field name="dd_shomi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_shomi]]></fieldDescription>
+	</field>
+	<field name="dd_kaifugo_shomi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_kaifugo_shomi]]></fieldDescription>
+	</field>
+	<field name="dd_kaitogo_shomi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_kaitogo_shomi]]></fieldDescription>
+	</field>
+	<field name="nm_hokan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hokan]]></fieldDescription>
+	</field>
+	<field name="nm_kaifugo_hokan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kaifugo_hokan]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_jotai" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_jotai]]></fieldDescription>
+	</field>
+	<field name="nm_zei" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_zei]]></fieldDescription>
+	</field>
+	<field name="ritsu_budomari" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/ritsu_budomari]]></fieldDescription>
+	</field>
+	<field name="su_zaiko_min" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_zaiko_min]]></fieldDescription>
+	</field>
+	<field name="su_zaiko_max" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_zaiko_max]]></fieldDescription>
+	</field>
+	<field name="nm_niuke" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_niuke]]></fieldDescription>
+	</field>
+	<field name="dd_leadtime" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dd_leadtime]]></fieldDescription>
+	</field>
+	<field name="flg_mishiyo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/flg_mishiyo]]></fieldDescription>
+	</field>
+	<field name="dt_create" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dt_create]]></fieldDescription>
+	</field>
+	<field name="dt_update" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/dt_update]]></fieldDescription>
+	</field>
+	<field name="cd_hanbai_1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_hanbai_1]]></fieldDescription>
+	</field>
+	<field name="nm_torihiki1" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_torihiki1]]></fieldDescription>
+	</field>
+	<field name="cd_hanbai_2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_hanbai_2]]></fieldDescription>
+	</field>
+	<field name="nm_torihiki2" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_torihiki2]]></fieldDescription>
+	</field>
+	<field name="cd_haigo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_haigo]]></fieldDescription>
+	</field>
+	<field name="nm_haigo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_haigo]]></fieldDescription>
+	</field>
+	<field name="cd_jan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_jan]]></fieldDescription>
+	</field>
+	<field name="su_batch_dekidaka" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_batch_dekidaka]]></fieldDescription>
+	</field>
+	<field name="su_palette" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_palette]]></fieldDescription>
+	</field>
+	<field name="kin_romu" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/kin_romu]]></fieldDescription>
+	</field>
+	<field name="kin_keihi_cs" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/kin_keihi_cs]]></fieldDescription>
+	</field>
+	<field name="nm_kbn_kuraire" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kbn_kuraire]]></fieldDescription>
+	</field>
+	<field name="tan_nonyu" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/tan_nonyu]]></fieldDescription>
+	</field>
+	<field name="flg_tenkai" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/flg_tenkai]]></fieldDescription>
+	</field>
+	<field name="cd_seizo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_seizo]]></fieldDescription>
+	</field>
+	<field name="nm_seizo" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_seizo]]></fieldDescription>
+	</field>
+	<field name="su_hachu_lot_size" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/su_hachu_lot_size]]></fieldDescription>
+	</field>
+	<field name="nm_kura" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kura]]></fieldDescription>
+	</field>
+	<field name="line_toroku" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/line_toroku]]></fieldDescription>
+	</field>
+	<field name="cd_maker_hin" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/cd_maker_hin]]></fieldDescription>
+	</field>
+	<field name="biko" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/biko]]></fieldDescription>
+	</field>
+	<field name="user" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/user]]></fieldDescription>
+	</field>
+	<field name="output_day" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/output_day]]></fieldDescription>
+	</field>
+	<field name="currency" class="java.lang.String">
+		<fieldDescription><![CDATA[currency]]></fieldDescription>
+	</field>
+	<field name="kbn_kotei" class="java.lang.String">
+		<fieldDescription><![CDATA[kbn_kotei]]></fieldDescription>
+	</field>
+	<field name="kbn_hasu" class="java.lang.String">
+		<fieldDescription><![CDATA[kbn_hasu]]></fieldDescription>
+	</field>
+	<field name="nm_tani_hasu" class="java.lang.String">
+		<fieldDescription><![CDATA[nm_tani_hasu]]></fieldDescription>
+	</field>
+	<field name="dd_kotei" class="java.lang.String">
+		<fieldDescription><![CDATA[dd_kotei]]></fieldDescription>
+	</field>
+	<field name="kbn_location" class="java.lang.String">
+		<fieldDescription><![CDATA[kbn_location]]></fieldDescription>
+	</field>
+	<field name="location" class="java.lang.String">
+		<fieldDescription><![CDATA[location]]></fieldDescription>
+	</field>
+	<field name="flg_trace_taishogai" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/flg_trace_taishogai]]></fieldDescription>
+	</field>
+	<field name="nm_kaitogo_hokan" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_kaitogo_hokan]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="58">
+			<staticText>
+				<reportElement x="1" y="0" width="146" height="26" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="2" leftPadding="2"/>
+				<textElement>
+					<font size="16" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[品名主表登录]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="656" y="0" width="146" height="17" uuid="43a5d30c-e9f5-4362-ae46-16f784681c62"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{output_day}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="603" y="0" width="53" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[输出日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="603" y="17" width="53" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[输出者]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="656" y="17" width="146" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="497" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="57" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[编号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="74" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[品名(日语)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="108" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[品名(英语)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="142" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[品名(汉语)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="176" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[品名简称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="210" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[商品区分]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="244" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[显示包装形式用]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="278" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[包装容量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="295" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[装箱数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="312" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[单个数量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="329" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[单个数量单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="346" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[入库单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="363" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[使用单位]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="380" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[比重]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="397" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[单价]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="414" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[分类]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="448" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[保质期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="465" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[开封后保质期]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="57" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{cd_hinmei}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="74" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[保管区分]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="108" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[开封后保管区分]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="176" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[状态区分]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="74" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hokan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="57" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[批次总产]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="125" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[订货批号大小]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="618" y="57" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{su_batch_dekidaka}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="210" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[原料利用率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="227" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[最小库存]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="244" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[最大库存]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="261" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[入库地点]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="295" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[入库期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="193" width="88" height="289" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="312" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[生产线登录]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="329" width="88" height="51" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[配料名]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="78" y="74" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_ja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="108" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_en}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="142" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_zh}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="329" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{cd_haigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="346" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0" lineStyle="Dotted"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_haigo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="74" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[标准劳务费]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="91" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[１Ｃ／Ｓ经费]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="108" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[入库单价]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="142" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[仓库地点]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="176" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_ryaku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="210" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kbn_hin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="244" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_nisugata_hyoji}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="278" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{wt_nisugata_naiyo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="295" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{su_iri}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="312" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{wt_ko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="329" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kbn_kanzan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="346" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tani_nonyu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="363" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tani_shiyo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="380" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{ritsu_hiju}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="397" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{tan_ko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="414" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_bunrui}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="448" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{dd_shomi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="108" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kaifugo_hokan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="176" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kbn_jotai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="210" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{ritsu_budomari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="227" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{su_zaiko_min}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="244" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{su_zaiko_max}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="261" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_niuke}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="295" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{dd_leadtime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="193" width="170" height="289" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{biko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="312" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{line_toroku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="74" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{kin_romu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="91" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{kin_keihi_cs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="108" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{tan_nonyu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="125" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{su_hachu_lot_size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="142" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="465" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{dd_kaifugo_shomi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="234" y="448" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[天]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="465" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[天]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="210" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[％]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="295" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[天]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="756" y="58" width="33" height="16" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[Ｃ／Ｓ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="17" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[使用情况]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="17" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{flg_mishiyo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="18" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[登录日]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="18" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{dt_create}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="18" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[更新日]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="618" y="18" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{dt_update}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="214" y="397" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="756" y="74" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="380" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[固定日]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="380" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dd_kotei}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="397" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+					<printWhenExpression><![CDATA[($F{kbn_hasu} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[入库单位（零数）]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="397" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+					<printWhenExpression><![CDATA[($F{kbn_hasu} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_tani_hasu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="503" y="278" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd">
+					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[天]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="756" y="91" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="756" y="108" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
+				<textElement textAlignment="Left">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="618" y="176" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+					<printWhenExpression><![CDATA[($F{kbn_location} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{location}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="530" y="176" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+					<printWhenExpression><![CDATA[($F{kbn_location} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[地点]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="414" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{flg_trace_taishogai}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="414" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[追溯对象外]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="57" width="16" height="17" uuid="2da1baad-dc76-476e-a875-1b3f6c487da9"/>
+				<box topPadding="2"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[天]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="57" width="88" height="17" backcolor="#CCCCFF" uuid="b29500a9-9b4f-4c6e-868e-1f0c7e2fdc5f"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[解冻后保质期]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="57" width="153" height="17" uuid="afd51461-f274-4319-8f72-849b8d817a27"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{dd_kaitogo_shomi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="142" width="88" height="34" backcolor="#CCCCFF" uuid="2d24ca0c-859e-4905-940e-fde18a7f3cd5"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[解冻后保管区分]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="348" y="142" width="170" height="34" uuid="d7e2dfaa-45a5-4fb0-b1f6-dd709b033e29"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_kaitogo_hokan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="290" y="17" width="253" height="22" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[无显示的明细数据]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

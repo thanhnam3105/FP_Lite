@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ari" xml:space="preserve">
+    <value>Exist</value>
+    <comment>Words</comment>
+  </data>
+  <data name="budomariContent" xml:space="preserve">
+    <value>ritsu_budomari</value>
+    <comment>Item name that stored returns</comment>
+  </data>
+  <data name="BunruiCode" xml:space="preserve">
+    <value>group code</value>
+    <comment>Words</comment>
+  </data>
+  <data name="CheckOn" xml:space="preserve">
+    <value>on</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ChoseiPrefixSaibanKbn" xml:space="preserve">
+    <value>A</value>
+    <comment>Numbering div prefix: Preparation</comment>
+  </data>
+  <data name="ChoseiRiyuKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Reason div: Reason of preparation</comment>
+  </data>
+  <data name="ChoseiSaibanKbn" xml:space="preserve">
+    <value>11</value>
+    <comment>Numbering div: Preparation</comment>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+    <comment>Words</comment>
+  </data>
+  <data name="CommentPrefixSaibanKbn" xml:space="preserve">
+    <value>C</value>
+    <comment>Numbering div prefix: Comment</comment>
+  </data>
+  <data name="CommentSaibanKbn" xml:space="preserve">
+    <value>13</value>
+    <comment>Numbering div: Comment</comment>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Date</value>
+    <comment>Words</comment>
+  </data>
+  <data name="DownloadCsvFileName" xml:space="preserve">
+    <value>data.csv</value>
+    <comment>Download CSV file name</comment>
+  </data>
+  <data name="DownloadFixedFileName" xml:space="preserve">
+    <value>data.bat</value>
+    <comment>Download FIX file name</comment>
+  </data>
+  <data name="DuplicateItem" xml:space="preserve">
+    <value>DuplicateItem</value>
+    <comment>Words</comment>
+  </data>
+  <data name="DuplicateKey" xml:space="preserve">
+    <value>DuplicateKey</value>
+    <comment>Words</comment>
+  </data>
+  <data name="EkitaiJotaiKbn" xml:space="preserve">
+    <value>2</value>
+    <comment>Condition div: Liquid</comment>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value />
+    <comment>Blank</comment>
+  </data>
+  <data name="ErrorCodeInt" xml:space="preserve">
+    <value>999</value>
+    <comment>Numbers indicate an error.（No meaning）</comment>
+  </data>
+  <data name="ErrorMessageTitle" xml:space="preserve">
+    <value>Error occured.</value>
+    <comment>Message： Error</comment>
+  </data>
+  <data name="Exists" xml:space="preserve">
+    <value>Exists</value>
+    <comment>Words</comment>
+  </data>
+  <data name="FileSaveErrorMessage" xml:space="preserve">
+    <value>Failed to save the file.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="FileSaveSuccessMessage" xml:space="preserve">
+    <value>File saved.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="FileSizeErrorMessage" xml:space="preserve">
+    <value>File size is {0}MB or more.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="FlgKyujitsuPdf" xml:space="preserve">
+    <value>○</value>
+    <comment>For PDF output: Holiday flag: Holiday</comment>
+  </data>
+  <data name="ForeignKeyViolation" xml:space="preserve">
+    <value>Foreign key violation</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="FugoFlagAri" xml:space="preserve">
+    <value>1</value>
+    <comment>Mark flag: Exist mark output</comment>
+  </data>
+  <data name="FugoFlagNashi" xml:space="preserve">
+    <value>0</value>
+    <comment>Mark flag: No mark output</comment>
+  </data>
+  <data name="FugoShutsuryokuAri" xml:space="preserve">
+    <value>Exist mark output</value>
+    <comment>Words</comment>
+  </data>
+  <data name="FutaiKetteiMaster" xml:space="preserve">
+    <value>Packing decision master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="Gassan" xml:space="preserve">
+    <value>Total</value>
+    <comment>Words</comment>
+  </data>
+  <data name="GassanMark" xml:space="preserve">
+    <value>*</value>
+    <comment>Words</comment>
+  </data>
+  <data name="GekkanSeihinKeikakuExcel" xml:space="preserve">
+    <value>Monthly_products_plan</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GekkanSeihinKeikakuExcelName" xml:space="preserve">
+    <value>Production_Plan</value>
+    <comment>Monthly products plan</comment>
+  </data>
+  <data name="GekkanSeihinKeikakuHenkozumiCSKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Division that register until C/S of monthly products plan</comment>
+  </data>
+  <data name="GekkanShikakarihinKeikakuExcelName" xml:space="preserve">
+    <value>Monthly_mixer_plan</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GenryoLotBangoKirokuHyoPDFName" xml:space="preserve">
+    <value>Weighing_record_list</value>
+    <comment>PDF file name</comment>
+  </data>
+  <data name="GenryoShiyoryoKeisanExcel" xml:space="preserve">
+    <value>Material_Issue_Order</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GenshizaiChoseiNyuryokuExcel" xml:space="preserve">
+    <value>Input_Material_Adjustment</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GenshizaiHendoHyoExcel" xml:space="preserve">
+    <value>Material_Inventory_Table</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GenshizaiKonyusakiMaster" xml:space="preserve">
+    <value>Source List</value>
+    <comment>Words</comment>
+  </data>
+  <data name="GenshizaiKonyusakiMasterExcel" xml:space="preserve">
+    <value>Source_List</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GenshizaiZaikoNyuryokuExcel" xml:space="preserve">
+    <value>Input_Material_Inventory</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GokeiText" xml:space="preserve">
+    <value>Total</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HachuPrefixSaibanKbn" xml:space="preserve">
+    <value>H</value>
+    <comment>Numbering div prefix: Order number</comment>
+  </data>
+  <data name="HachuSaibanKbn" xml:space="preserve">
+    <value>12</value>
+    <comment>Numbering div: Order number</comment>
+  </data>
+  <data name="HaigoHinKbn" xml:space="preserve">
+    <value>4</value>
+    <comment>Item div: Combination</comment>
+  </data>
+  <data name="HaigoMasterIchiranExcel" xml:space="preserve">
+    <value>Formula_Master</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="HaigoMeiMaster" xml:space="preserve">
+    <value>Formula name master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HaigoRecipeMaster" xml:space="preserve">
+    <value>Formula name master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HakariMaster" xml:space="preserve">
+    <value>Scale master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HakariMasterIchiranExcel" xml:space="preserve">
+    <value>Scale_master_catalogue</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="HakariPrefixSaibanKbn" xml:space="preserve">
+    <value>B</value>
+    <comment>Numbering div prefix: Range of scale</comment>
+  </data>
+  <data name="HakariSaibanKbn" xml:space="preserve">
+    <value>15</value>
+    <comment>Numbering div: Range of scale</comment>
+  </data>
+  <data name="HanNoShokichi" xml:space="preserve">
+    <value>1</value>
+    <comment>Version No. initialization</comment>
+  </data>
+  <data name="HasuText" xml:space="preserve">
+    <value>Partial</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HasuTextShort" xml:space="preserve">
+    <value>Par</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HendoHyoSimulationExcel" xml:space="preserve">
+    <value>Material_Inventory_Simulation</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="HinmeiMaster" xml:space="preserve">
+    <value>Material master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HinmeiMasterIchiranExcel" xml:space="preserve">
+    <value>Material_Master_Catalogue</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="Hyphen" xml:space="preserve">
+    <value>-</value>
+    <comment>Hyphen</comment>
+  </data>
+  <data name="InvalidDataFormatMessage" xml:space="preserve">
+    <value>Data type is wrong.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="InvalidUserIdOrPassword" xml:space="preserve">
+    <value>User ID or password is not correcrt.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="Jikagenryo" xml:space="preserve">
+    <value>Original of finished goods</value>
+    <comment>Words</comment>
+  </data>
+  <data name="JissekiLotPrefixSaibanKbn" xml:space="preserve">
+    <value>J</value>
+    <comment>Numbering div prefix: Actual lot</comment>
+  </data>
+  <data name="JissekiLotSaibanKbn" xml:space="preserve">
+    <value>4</value>
+    <comment>Numbering div: Actual lot</comment>
+  </data>
+  <data name="JissekiYojitsuFlag" xml:space="preserve">
+    <value>1</value>
+    <comment>Result and plan flag: Actual</comment>
+  </data>
+  <data name="JuryoMaster" xml:space="preserve">
+    <value>Weight master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="Kakutei" xml:space="preserve">
+    <value>Confirm</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KeikokuListExcel" xml:space="preserve">
+    <value>Warning_list</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="KeishoNashi" xml:space="preserve">
+    <value>none</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KeishoOnchu" xml:space="preserve">
+    <value>Messrs</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KeishoSama" xml:space="preserve">
+    <value>-</value>
+    <comment>Words</comment>
+  </data>
+  <data name="Keys" xml:space="preserve">
+    <value>keys</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KotaiJotaiKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Condition div: Solid</comment>
+  </data>
+  <data name="KowakeLabelTran" xml:space="preserve">
+    <value>Subdivision label publication tran</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KowakeLotPrefixSaibanKbn" xml:space="preserve">
+    <value>K</value>
+    <comment>Numbering div prefix: subdiv lot</comment>
+  </data>
+  <data name="KowakeLotSaibanKbn" xml:space="preserve">
+    <value>3</value>
+    <comment>Numbering div: subdiv lot</comment>
+  </data>
+  <data name="KowakeTran" xml:space="preserve">
+    <value>Actual subdivision tran</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KyujitsuRiyuKbn" xml:space="preserve">
+    <value>2</value>
+    <comment>Reason div: Holiday</comment>
+  </data>
+  <data name="LangEn" xml:space="preserve">
+    <value>en</value>
+    <comment>Language: English</comment>
+  </data>
+  <data name="LangJa" xml:space="preserve">
+    <value>ja</value>
+    <comment>Language: Japanese</comment>
+  </data>
+  <data name="LangZh" xml:space="preserve">
+    <value>zh</value>
+    <comment>Language: Chinese</comment>
+  </data>
+  <data name="Mishiyo" xml:space="preserve">
+    <value>Unused</value>
+    <comment>Words</comment>
+  </data>
+  <data name="MishiyoShort" xml:space="preserve">
+    <value>Unused</value>
+    <comment>Words</comment>
+  </data>
+  <data name="MonthCount" xml:space="preserve">
+    <value>12</value>
+    <comment>Months of a year</comment>
+  </data>
+  <data name="MonthDayCount" xml:space="preserve">
+    <value>31</value>
+    <comment>Dates of a month</comment>
+  </data>
+  <data name="MS0001" xml:space="preserve">
+    <value>You can not delete because applicable data exist at {0} date.(MS0001-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0027" xml:space="preserve">
+    <value>The same data exists. (MS0027-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0042" xml:space="preserve">
+    <value>Input of the {0} is required . (MS0042-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0045" xml:space="preserve">
+    <value>{0} is a duplicate . (MS0045-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0049" xml:space="preserve">
+    <value>specified {0} does not exist . (MS0049-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0297" xml:space="preserve">
+    <value>Code:{0} has been registered as a manufacturable line. You can not delete. (MS0297-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0452" xml:space="preserve">
+    <value>Can not delete because {0} plan exist. (MS0452-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0577" xml:space="preserve">
+    <value>You can not delete packing decision master of {0} because it's required 1 or more data. (MS0577-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0622" xml:space="preserve">
+    <value>There is a duplicate data exist for formula code and valid start date. (MS0622-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0691" xml:space="preserve">
+    <value>You can not save because the valid date overlaps to the other version. (MS0691-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="Nashi" xml:space="preserve">
+    <value>None</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NashiKeishoKbn" xml:space="preserve">
+    <value>3</value>
+    <comment>Title div: None</comment>
+  </data>
+  <data name="NoFileAttachmentMessage" xml:space="preserve">
+    <value>File has not specified. (MS0663)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="NoFileDataMessage" xml:space="preserve">
+    <value>Data does not exist. (MS0058)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="NonyuIraishoPdf" xml:space="preserve">
+    <value>Delivery_request_list</value>
+    <comment>PDF file name</comment>
+  </data>
+  <data name="NonyuIraishoPdfAddition" xml:space="preserve">
+    <value>Add</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfBracketEnd" xml:space="preserve">
+    <value>）</value>
+    <comment>Words: Close parenthesis</comment>
+  </data>
+  <data name="NonyuIraishoPdfBracketStart" xml:space="preserve">
+    <value>（</value>
+    <comment>Words: Parenthesis</comment>
+  </data>
+  <data name="NonyuIraishoPdfCancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfChange" xml:space="preserve">
+    <value>Change</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfItemNameBunrui" xml:space="preserve">
+    <value>Group</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfItemNameHinCode" xml:space="preserve">
+    <value>Item name code</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfItemNameHinmei" xml:space="preserve">
+    <value>Item name</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfItemNameNisugata" xml:space="preserve">
+    <value>Packing style</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPdfItemNameTani" xml:space="preserve">
+    <value>Unit：</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuIraishoPrintTypeAllPrint" xml:space="preserve">
+    <value>1</value>
+    <comment>Print type of delivery request list: Print all</comment>
+  </data>
+  <data name="NonyuIraishoPrintTypeSelectAllPrint" xml:space="preserve">
+    <value>2</value>
+    <comment>Print type of delivery request list: Print all</comment>
+  </data>
+  <data name="NonyuPrefixSaibanKbn" xml:space="preserve">
+    <value>N</value>
+    <comment>Numbering div prefix: Delivery No.</comment>
+  </data>
+  <data name="NonyuSaibanKbn" xml:space="preserve">
+    <value>8</value>
+    <comment>Numbering div: Delivery No.</comment>
+  </data>
+  <data name="NonyuSuryo" xml:space="preserve">
+    <value>Delivery amount</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuSuryoNonyushoKeishikiKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Numbering div: Delivery amount</comment>
+  </data>
+  <data name="NonyuTani" xml:space="preserve">
+    <value>Delivery unit</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuYoteiListSakuseiExcel" xml:space="preserve">
+    <value>Purchase_List</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="NoSelectConditionExcel" xml:space="preserve">
+    <value>Unselected</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="NotExsists" xml:space="preserve">
+    <value>NotExsists</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NotNullAllow" xml:space="preserve">
+    <value>Null is not permit.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="OnchuKeishoKbn" xml:space="preserve">
+    <value>2</value>
+    <comment>Title div: None</comment>
+  </data>
+  <data name="OptimisticConcurrencyError" xml:space="preserve">
+    <value>Concurrency error</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="persentKanzan" xml:space="preserve">
+    <value>100</value>
+    <comment>Percent conversion ratio</comment>
+  </data>
+  <data name="PrimaryKeyViolation" xml:space="preserve">
+    <value>Primary key constraints violation</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="RaiseFileUploadServerError" xml:space="preserve">
+    <value>The server encountered an unknown error in the file during the upload process. Please contact system administrator.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="RiyuKaijoKbn" xml:space="preserve">
+    <value>*</value>
+    <comment>Item of release holiday at monthly products plan</comment>
+  </data>
+  <data name="saibanNoContent" xml:space="preserve">
+    <value>no_saiban</value>
+    <comment>Item name that numbrering stored returns</comment>
+  </data>
+  <data name="SamaKeishoKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Title div: None</comment>
+  </data>
+  <data name="SecondKaisoSu" xml:space="preserve">
+    <value>2</value>
+    <comment>2nd rank</comment>
+  </data>
+  <data name="SeihinLotPrefixSaibanKbn" xml:space="preserve">
+    <value>P</value>
+    <comment>Numbering div prefix: Product lot</comment>
+  </data>
+  <data name="SeihinLotSaibanKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Numbering div: Product lot</comment>
+  </data>
+  <data name="SeikiText" xml:space="preserve">
+    <value>Regular</value>
+    <comment>Words</comment>
+  </data>
+  <data name="SeikiTextShort" xml:space="preserve">
+    <value>Reg</value>
+    <comment>Words</comment>
+  </data>
+  <data name="Seizo" xml:space="preserve">
+    <value>Manufacture</value>
+    <comment>Words</comment>
+  </data>
+  <data name="SeizoLineMaster" xml:space="preserve">
+    <value>Manufacture line master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="SeizomotoTorihikisakiKbn" xml:space="preserve">
+    <value>3</value>
+    <comment>Cuntomer div: Maker</comment>
+  </data>
+  <data name="SeizoNippoExcel" xml:space="preserve">
+    <value>Daily_Report_Of_Productions</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="SelectConditionExcel" xml:space="preserve">
+    <value>Select</value>
+    <comment>Words</comment>
+  </data>
+  <data name="SelectLotNashi" xml:space="preserve">
+    <value>0</value>
+    <comment>Monthly mixer plan Select lot: None</comment>
+  </data>
+  <data name="SelectLotOya" xml:space="preserve">
+    <value>2</value>
+    <comment>Monthly mixer plan Select lot: Parents</comment>
+  </data>
+  <data name="SelectLotSeihin" xml:space="preserve">
+    <value>1</value>
+    <comment>Monthly mixer plan Select lot: Product</comment>
+  </data>
+  <data name="SelectLotShikakari" xml:space="preserve">
+    <value>3</value>
+    <comment>Monthly mixer plan Select lot: Progressing</comment>
+  </data>
+  <data name="ServiceError" xml:space="preserve">
+    <value>Error occurred in service.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="ServiceErrorForClient" xml:space="preserve">
+    <value>Error that can not be run has occurred. Please contact system administrator.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="SetsubiCode" xml:space="preserve">
+    <value>Equipment code</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShiiresakiTorihikisakiKbn" xml:space="preserve">
+    <value>1</value>
+    <comment>Cuntomer div: Suplier</comment>
+  </data>
+  <data name="ShikakariHin" xml:space="preserve">
+    <value>Progressing product</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShikakarihinJotaiKbn" xml:space="preserve">
+    <value>3</value>
+    <comment>Condition div: Progressing product</comment>
+  </data>
+  <data name="ShikakarihinKeikakuPrefixSaibanKbn" xml:space="preserve">
+    <value>Q</value>
+    <comment>Numbering div prefix: Mxer plan</comment>
+  </data>
+  <data name="ShikakarihinKeikakuSaibanKbn" xml:space="preserve">
+    <value>10</value>
+    <comment>Numbering div: Mxer plan</comment>
+  </data>
+  <data name="ShikakariLotPrefixSaibanKbn" xml:space="preserve">
+    <value>S</value>
+    <comment>Numbering div prefix: Progressing product lot No.</comment>
+  </data>
+  <data name="ShikakariLotSaibanKbn" xml:space="preserve">
+    <value>2</value>
+    <comment>Numbering div: Progressing product lot No.</comment>
+  </data>
+  <data name="ShikomiCheckHyoPDFName" xml:space="preserve">
+    <value>Mixing_check_list</value>
+    <comment>PDF file name</comment>
+  </data>
+  <data name="ShikomiKeikakuHyo" xml:space="preserve">
+    <value>Production_plan_list</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="ShikomiNippoExcel" xml:space="preserve">
+    <value>Daily_Report_Of_Mixer</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="Shinai" xml:space="preserve">
+    <value>Undo</value>
+    <comment>Words</comment>
+  </data>
+  <data name="Shiyo" xml:space="preserve">
+    <value>Used</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShiyoSuryo" xml:space="preserve">
+    <value>Usage amount</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShiyoSuryoNonyushoKeishikiKbn" xml:space="preserve">
+    <value>2</value>
+    <comment>Delivery div: Usage amount</comment>
+  </data>
+  <data name="ShiyoYojitsuSeqNoPrefixSaibanKbn" xml:space="preserve">
+    <value>Y</value>
+    <comment>Numbering div prefix: Use result and plan SEQ No</comment>
+  </data>
+  <data name="ShiyoYojitsuSeqNoSaibanKbn" xml:space="preserve">
+    <value>16</value>
+    <comment>Numbering div: Use result and plan SEQ No</comment>
+  </data>
+  <data name="ShizaiShiyoData" xml:space="preserve">
+    <value>Packing materials usage data</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShizaiShiyoMaster" xml:space="preserve">
+    <value>Packing materials usage master</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShizaiShiyoMasterBody" xml:space="preserve">
+    <value>Packing materials usage master body</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShizaiShiyoMasterHeader" xml:space="preserve">
+    <value>Packing materials usage master header</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShizaiShiyoryoKeisanExcel" xml:space="preserve">
+    <value>Calculate_usage_amount_of_packing_materials</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="ShokubaSentakuShikomiName" xml:space="preserve">
+    <value>Produce location</value>
+    <comment>Select workplacename: Produce location</comment>
+  </data>
+  <data name="ShokubaSentakuShikomiValue" xml:space="preserve">
+    <value>0</value>
+    <comment>Select workplace value: Produce location</comment>
+  </data>
+  <data name="ShokubaSentakuShiyoName" xml:space="preserve">
+    <value>Usage location</value>
+    <comment>Select workplacename: Usage location</comment>
+  </data>
+  <data name="ShokubaSentakuShiyoValue" xml:space="preserve">
+    <value>1</value>
+    <comment>Select workplace value: Usage location</comment>
+  </data>
+  <data name="Shorihin" xml:space="preserve">
+    <value>Processing product</value>
+    <comment>Words</comment>
+  </data>
+  <data name="SonotaJotaiKbn" xml:space="preserve">
+    <value>9</value>
+    <comment>Condition div: Other</comment>
+  </data>
+  <data name="StringSpace" xml:space="preserve">
+    <value> </value>
+    <comment>Half size space</comment>
+  </data>
+  <data name="Suru" xml:space="preserve">
+    <value>Do</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TonyuJyokyoTran" xml:space="preserve">
+    <value>Putting condition tran</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TonyuTran" xml:space="preserve">
+    <value>Putting tran</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TorihikisakiCode" xml:space="preserve">
+    <value>Vendor code</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TorihikisakiSeizomoto" xml:space="preserve">
+    <value>Maker</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TorihikisakiShiiresaki" xml:space="preserve">
+    <value>Supplier</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TorihikisakiUriagemoto" xml:space="preserve">
+    <value>Sales</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UnDeletableRecord" xml:space="preserve">
+    <value>UnDeletableRecord</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UnDeletableRecordMessage" xml:space="preserve">
+    <value>Can not delete because this data using in the other tables. (MS0659-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="UriagemotoTorihikisakiKbn" xml:space="preserve">
+    <value>2</value>
+    <comment>Cuntomer div: Sales</comment>
+  </data>
+  <data name="ValidationDataFoundMessage" xml:space="preserve">
+    <value>Data of [{1}] is already registered the {0}. (MS0660-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="ValidationDataNotFoundMessage" xml:space="preserve">
+    <value>You can not find that {0} is [{1}] data. (MS0661-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="ValidationKey" xml:space="preserve">
+    <value>Unique key constraints violation. (MS0662-en)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="YoteiYojitsuFlag" xml:space="preserve">
+    <value>0</value>
+    <comment>Result and plan flag: Plan</comment>
+  </data>
+  <data name="ZanJissekiTran" xml:space="preserve">
+    <value>Rest of actual tran</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ZanLabelLotPrefixSaibanKbn" xml:space="preserve">
+    <value>L</value>
+    <comment>Numbering div prefix: Rest of label lot</comment>
+  </data>
+  <data name="ZanLabelLotSaibanKbn" xml:space="preserve">
+    <value>6</value>
+    <comment>Numbering div: Rest of label lot</comment>
+  </data>
+  <data name="ZanLotPrefixSaibanKbn" xml:space="preserve">
+    <value>Z</value>
+    <comment>Numbering div prefix: Rest of lot</comment>
+  </data>
+  <data name="ZanLotSaibanKbn" xml:space="preserve">
+    <value>5</value>
+    <comment>Numbering div: Rest of lot</comment>
+  </data>
+  <data name="YearMonth" xml:space="preserve">
+    <value>MM/yyyy</value>
+    <comment>Month/Date format</comment>
+  </data>
+  <data name="ShikakarihinShiyoIchiran" xml:space="preserve">
+    <value>Progressing_Item_List</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="LabelHakkouAri" xml:space="preserve">
+    <value>Label output exist</value>
+    <comment>文言</comment>
+  </data>
+  <data name="SeizoJisseki" xml:space="preserve">
+    <value>Filler result</value>
+    <comment>文言</comment>
+  </data>
+  <data name="SeizoYotei" xml:space="preserve">
+    <value>Filler plan</value>
+    <comment>文言</comment>
+  </data>
+  <data name="MS0707" xml:space="preserve">
+    <value>Can not register manufacturable line data because corresponding to the progressing product does not exist. Please check data. Manufacture date：{0} Code：{1}  (MS0707)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="GenshizaiShikakarihinShiyoIchiranExcel" xml:space="preserve">
+    <value>Material_and_Unfinished_product_use_list</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="ChoseiSu" xml:space="preserve">
+    <value>Number of preparations</value>
+    <comment>Words</comment>
+  </data>
+  <data name="KurikoshiZan" xml:space="preserve">
+    <value>Carrying inventory</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuJisseki" xml:space="preserve">
+    <value>Actual delivery</value>
+    <comment>Words</comment>
+  </data>
+  <data name="NonyuYotei" xml:space="preserve">
+    <value>Delivery plan</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShiyoJisseki" xml:space="preserve">
+    <value>Actual usage</value>
+    <comment>Words</comment>
+  </data>
+  <data name="ShiyoYotei" xml:space="preserve">
+    <value>Usage plan</value>
+    <comment>Words</comment>
+  </data>
+  <data name="GenryoChuiKankiMaster" xml:space="preserve">
+    <value>Material warning call master</value>
+    <comment>文言</comment>
+  </data>
+  <data name="sameJuni" xml:space="preserve">
+    <value>Orders duplicate</value>
+    <comment>原料注意喚起マスタで使用</comment>
+  </data>
+  <data name="Kaisu" xml:space="preserve">
+    <value>B</value>
+    <comment>Words</comment>
+  </data>
+  <data name="HaigoRecipeMasterPdf" xml:space="preserve">
+    <value>Register_formula_recipe</value>
+    <comment>Pdf file name</comment>
+  </data>
+  <data name="TotalAmount" xml:space="preserve">
+    <value>Total amount</value>
+    <comment>原資材在庫入力EXCELで使用</comment>
+  </data>
+  <data name="GenkaIchiranExcel" xml:space="preserve">
+    <value>Cost_list</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="InvalidAuthoritySetting" xml:space="preserve">
+    <value>Input ID has no authotiry setting for login.</value>
+  </data>
+  <data name="Sumi" xml:space="preserve">
+    <value>arranged</value>
+    <comment>Words</comment>
+  </data>
+  <data name="TorihikisakiMasterIchiranExcel" xml:space="preserve">
+    <value>Vendor_Master_Catalogue</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="TaniGram" xml:space="preserve">
+    <value>g</value>
+    <comment>文言</comment>
+  </data>
+  <data name="kbnHoryu" xml:space="preserve">
+    <value>Defer</value>
+    <comment>在庫区分：保留品</comment>
+  </data>
+  <data name="kbnRyohin" xml:space="preserve">
+    <value>Good product</value>
+    <comment>在庫区分：良品</comment>
+  </data>
+  <data name="MS0743" xml:space="preserve">
+    <value>Because performance is definite, it can not be {0}. Subject of product lot: {1} (MS0743)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="Soko" xml:space="preserve">
+    <value>Warehouse</value>
+    <comment>Words</comment>
+  </data>
+  <data name="kbnNyukoMusho" xml:space="preserve">
+    <value>Free of charge</value>
+    <comment>Words</comment>
+  </data>
+  <data name="kbnNyukoYusho" xml:space="preserve">
+    <value>Chargeable</value>
+    <comment>Words</comment>
+  </data>
+  <data name="SeihinLotNumber" xml:space="preserve">
+    <value>Product lot no.</value>
+    <comment>Words</comment>
+  </data>
+  <data name="LineUnit" xml:space="preserve">
+    <value>Line {0}</value>
+    <comment>Words</comment>
+  </data>
+  <data name="CsvMsgTargetData" xml:space="preserve">
+    <value>Target data：{0}</value>
+    <comment>Words</comment>
+  </data>
+  <data name="MS0666" xml:space="preserve">
+    <value>Please input {0} range between {1} and {2}. (MS0666)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="MS0735" xml:space="preserve">
+    <value>Data format is invalid. Number of items is different. Target data：{0} (MS0735)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="NotCSVFileMessage" xml:space="preserve">
+    <value>Please select the csv file or txt file.</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="GenshizaiZaikoNyuryokuHeaderRowNo" xml:space="preserve">
+    <value>17</value>
+    <comment>Value</comment>
+  </data>
+  <data name="GenshizaiUkeharaiIchiranExcel" xml:space="preserve">
+    <value>Material_Movement_History</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="UkeharaiKbnChoseiSu" xml:space="preserve">
+    <value>Adjustment</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UkeharaiKbnNonyuJisseki" xml:space="preserve">
+    <value>Actual receiving</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UkeharaiKbnNonyuYotei" xml:space="preserve">
+    <value>Delivery plan</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UkeharaiKbnSeizoJisseki" xml:space="preserve">
+    <value>Actual Manufacture</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UkeharaiKbnSeizoYotei" xml:space="preserve">
+    <value>Manufacture plan</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UkeharaiKbnShiyoJisseki" xml:space="preserve">
+    <value>Actual usage</value>
+    <comment>Words</comment>
+  </data>
+  <data name="UkeharaiKbnShiyoYotei" xml:space="preserve">
+    <value>Usage plan</value>
+    <comment>Words</comment>
+  </data>
+  <data name="MS0767" xml:space="preserve">
+    <value>Search date is defferent from CSV data.(MS0767)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="Taisho" xml:space="preserve">
+    <value>Trace target</value>
+    <comment>Trace target</comment>
+  </data>
+  <data name="Taishogai" xml:space="preserve">
+    <value>No lot tracking</value>
+    <comment>No lot tracking</comment>
+  </data>
+  <data name="GenryoHinKbn" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="JikaGenryoHinKbn" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="No_seq" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DateSlash" xml:space="preserve">
+    <value>d</value>
+  </data>
+  <data name="DateSlashEn" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="TorokuKbnIchibuMiToroku" xml:space="preserve">
+    <value>Pending</value>
+    <comment>「Register condition」Pending</comment>
+  </data>
+  <data name="TorokuKbnMiToroku" xml:space="preserve">
+    <value>Unregistered</value>
+    <comment>「Register condition」Unregistered</comment>
+  </data>
+  <data name="TorokuKbnTorokuSumi" xml:space="preserve">
+    <value>Registered</value>
+    <comment>「Register condition」Registered</comment>
+  </data>
+  <data name="ShikakariHinKbn" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ShukkoKbn" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NonyuIraishoPdfDelete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Words</comment>
+  </data>
+  <data name="LineMaster" xml:space="preserve">
+    <value>LineMaster</value>
+    <comment>Words</comment>
+  </data>
+  <data name="DensoKbnDensoMachi" xml:space="preserve">
+    <value>Pending</value>
+    <comment>Status of allocated data:Pending</comment>
+  </data>
+  <data name="DensoKbnDensoZumi" xml:space="preserve">
+    <value>Transmitted</value>
+    <comment>Status of allocated data:Transmitted</comment>
+  </data>
+  <data name="DensoKbnMiDenso" xml:space="preserve">
+    <value>Not transmitted</value>
+    <comment>Status of allocated data:Not transmitted</comment>
+  </data>
+  <data name="DensoKbnMiSakusei" xml:space="preserve">
+    <value>Not created</value>
+    <comment>Status of allocated data:Not created</comment>
+  </data>
+  <data name="PdfMishiyoComment" xml:space="preserve">
+    <value>No use</value>
+    <comment>PDF文言</comment>
+  </data>
+  <data name="PdfSeihinInfoComment" xml:space="preserve">
+    <value>Used in multiple products</value>
+    <comment>PDF文言</comment>
+  </data>
+  <data name="DefaultFontName" xml:space="preserve">
+    <value>MSゴシック</value>
+    <comment>Excel用のデフォルトフォント名</comment>
+  </data>
+  <data name="nm_meisai" xml:space="preserve">
+    <value>Detail</value>
+    <comment>Total item: Detail</comment>
+  </data>
+  <data name="nm_shukeiKbn" xml:space="preserve">
+    <value>Total</value>
+    <comment>Total item: Total</comment>
+  </data>
+  <data name="ExcelLineName" xml:space="preserve">
+    <value>ABCDEFGHIJKLMNOPQRSTUVRXYZ</value>
+  </data>
+  <data name="GenryoChuiKankiMasterIchiranExcel" xml:space="preserve">
+    <value>GenryoChuiKanki_Master</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="GenshizaiChoseiNyuryokuExcelIkatsu" xml:space="preserve">
+    <value>Input Material Adjustment (Specify period)</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="MS0823" xml:space="preserve">
+    <value>Can not update because the contents have been changed by another user. Please search again to update the data.(MS0823)</value>
+    <comment>Message：</comment>
+  </data>
+  <data name="CookieValue" xml:space="preserve">
+    <value>complete</value>
+    <comment>cookie値</comment>
+  </data>
+  <data name="gekkanSeihinKeikakuCookie" xml:space="preserve">
+    <value>gekkanSeihinKeikaku</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="SeizoNippoCookie" xml:space="preserve">
+    <value>SeizoNippo</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="GenshizaiHendoHyoCookie" xml:space="preserve">
+    <value>GenshizaiHendoHyo</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="gekkanShikakarihinKeikakuCookie" xml:space="preserve">
+    <value>gekkanShikakarihinKeikaku</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="keikokuListSakuseiCookie" xml:space="preserve">
+    <value>keikokuListSakusei</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="hendoHyoSimulationCookie" xml:space="preserve">
+    <value>hendoHyoSimulation</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genshizaiShikakarihinShiyoIchiranCookie" xml:space="preserve">
+    <value>genshizaiShikakarihinShiyoIchiran</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genshizaiUkeharaiIchiranCookie" xml:space="preserve">
+    <value>genshizaiUkeharaiIchiran</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="shikomiNippoCookie" xml:space="preserve">
+    <value>shikomiNippo</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genkaIchiranCookie" xml:space="preserve">
+    <value>genkaIchiran</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="hinmeiMasterCookie" xml:space="preserve">
+    <value>hinmeiMaster</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="haigoMasterIchiranCookie" xml:space="preserve">
+    <value>haigoMasterIchiran</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="torihikisakiMasterCookie" xml:space="preserve">
+    <value>torihikisakiMaster</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genryoChuikankiMasterCookie" xml:space="preserve">
+    <value>genryoChuikankiMaster</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="nonyuYoteiListSakuseiCookie" xml:space="preserve">
+    <value>nonyuYoteiListSakusei</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genshizaiChoseiNyuryokuCookie" xml:space="preserve">
+    <value>genshizaiChoseiNyuryoku</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genshizaiZaikoNyuryokuCookie" xml:space="preserve">
+    <value>genshizaiZaikoNyuryoku</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genshizaiKonyusakiMasterCookie" xml:space="preserve">
+    <value>genshizaiKonyusakiMaster</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="genryoShiyoKeisanCookie" xml:space="preserve">
+    <value>genryoShiyoKeisan</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="InsatsuSentakuDialogCookie" xml:space="preserve">
+    <value>insatsuSentakuDialog</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="GenshizaichoseinyuryokuExcelIkatsuDialogCookie" xml:space="preserve">
+    <value>genshizaichoseinyuryokuExcelIkatsuDialog</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="shokubaDialogCookie" xml:space="preserve">
+    <value>shokubaDialog</value>
+    <comment>cookie名称</comment>
+  </data>
+  <data name="HistoryChangeExcelName" xml:space="preserve">
+    <value>Change_History_List</value>
+    <comment>Excel file name</comment>
+  </data>
+  <data name="pdfExtens" xml:space="preserve">
+    <value>.pdf</value>
+  </data>
+  <data name="LangVi" xml:space="preserve">
+    <value>vi</value>
+    <comment>Language: Vietnamese</comment>
+  </data>
+</root>

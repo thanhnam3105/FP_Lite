@@ -1,0 +1,12 @@
+﻿/*中国語用スタイル設定*/
+header .header-container h1 {
+  line-height: 40px;
+  vertical-align: middle;
+  padding-left: 9px;
+  font-size: 16pt;
+  font-weight: normal;
+  position: absolute;
+  left: 195px;
+  min-width: 540px;
+  font-family: 'SimHei','メイリオ', Meiryo, Arial, Sans-Serif;
+}
