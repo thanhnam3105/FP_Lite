@@ -83,7 +83,9 @@ namespace Tos.FoodProcs.Web.Controllers
                         string NmSheet = "Sheet1";
                         WorkbookPart wbPart = spDoc.WorkbookPart;
                         Stylesheet sheet = wbPart.WorkbookStylesPart.Stylesheet;
-                        sheet.NumberingFormats = new NumberingFormats();
+                        if (criteria.lang != Properties.Resources.LangVi) {
+                            sheet.NumberingFormats = new NumberingFormats();
+                        }
 
                         // 書式設定の追加
                         UInt32 indexSpCom3 = FoodProcsCommonUtility.ExcelCellFormatSplitComma(

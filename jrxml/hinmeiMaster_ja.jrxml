@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="hinmeiMaster" language="groovy" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="d316649a-8738-4c7e-851e-8c554f1f7a9e">
-	<property name="ireport.zoom" value="0.9313819845887346"/>
+	<property name="ireport.zoom" value="1.500000000000003"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="43"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -38,6 +38,9 @@
 	</field>
 	<field name="nm_hinmei_zh" class="java.lang.String">
 		<fieldDescription><![CDATA[/root/nm_hinmei_zh]]></fieldDescription>
+	</field>
+	<field name="nm_hinmei_vi" class="java.lang.String">
+		<fieldDescription><![CDATA[/root/nm_hinmei_vi]]></fieldDescription>
 	</field>
 	<field name="nm_hinmei_ryaku" class="java.lang.String">
 		<fieldDescription><![CDATA[/root/nm_hinmei_ryaku]]></fieldDescription>
@@ -219,7 +222,7 @@
 	<pageHeader>
 		<band height="58">
 			<staticText>
-				<reportElement x="1" y="0" width="146" height="26" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" x="1" y="0" width="146" height="26"/>
 				<box topPadding="2" leftPadding="2"/>
 				<textElement>
 					<font size="16" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -227,7 +230,7 @@
 				<text><![CDATA[品名マスタ登録]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="656" y="0" width="146" height="17" uuid="43a5d30c-e9f5-4362-ae46-16f784681c62"/>
+				<reportElement uuid="43a5d30c-e9f5-4362-ae46-16f784681c62" x="656" y="0" width="146" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -241,7 +244,7 @@
 				<textFieldExpression><![CDATA[$F{output_day}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="603" y="0" width="53" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="603" y="0" width="53" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -255,7 +258,7 @@
 				<text><![CDATA[出力日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="603" y="17" width="53" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="603" y="17" width="53" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -269,7 +272,7 @@
 				<text><![CDATA[出力者]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="656" y="17" width="146" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="656" y="17" width="146" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -287,7 +290,7 @@
 	<columnHeader>
 		<band height="497" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="57" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="57" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -301,7 +304,7 @@
 				<text><![CDATA[コード]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="74" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="74" width="77" height="28" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -315,7 +318,7 @@
 				<text><![CDATA[品名(日本語)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="108" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="102" width="77" height="28" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -329,7 +332,7 @@
 				<text><![CDATA[品名(英語)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="142" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="130" width="77" height="28" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -343,7 +346,21 @@
 				<text><![CDATA[品名(中国語)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="176" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="158" width="77" height="28" backcolor="#CCCCFF"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[品名(vi)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="186" width="77" height="28" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -357,7 +374,7 @@
 				<text><![CDATA[品名略]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="210" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="214" width="77" height="30" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -371,7 +388,7 @@
 				<text><![CDATA[品区分]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="244" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="244" width="77" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -385,7 +402,7 @@
 				<text><![CDATA[荷姿表示用]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="278" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="278" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -399,7 +416,7 @@
 				<text><![CDATA[荷姿内容量]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="295" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="295" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -413,7 +430,7 @@
 				<text><![CDATA[入数]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="312" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="312" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -427,7 +444,7 @@
 				<text><![CDATA[一個の量]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="329" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="329" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -441,7 +458,7 @@
 				<text><![CDATA[一個の量の単位]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="346" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="346" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -455,7 +472,7 @@
 				<text><![CDATA[納入単位]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="363" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="363" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -469,7 +486,7 @@
 				<text><![CDATA[使用単位]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="380" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="380" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -483,7 +500,7 @@
 				<text><![CDATA[比重]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="397" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="397" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -497,7 +514,7 @@
 				<text><![CDATA[単価]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="414" width="77" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="414" width="77" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -511,7 +528,7 @@
 				<text><![CDATA[分類]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="448" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="448" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -525,7 +542,7 @@
 				<text><![CDATA[賞味期間]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="465" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="465" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -539,7 +556,7 @@
 				<text><![CDATA[開封後賞味期間]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="78" y="57" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="57" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -547,10 +564,11 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
+				<textElement/>
 				<textFieldExpression><![CDATA[$F{cd_hinmei}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="74" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="74" width="88" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -564,7 +582,7 @@
 				<text><![CDATA[保管区分]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="108" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="108" width="88" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -578,7 +596,7 @@
 				<text><![CDATA[開封後保管区分]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="176" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="176" width="88" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -592,7 +610,7 @@
 				<text><![CDATA[状態区分]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="74" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="74" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -606,7 +624,7 @@
 				<textFieldExpression><![CDATA[$F{nm_hokan}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="57" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="57" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -620,7 +638,7 @@
 				<text><![CDATA[バッチ出来高]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="125" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="125" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -634,7 +652,7 @@
 				<text><![CDATA[発注ロットサイズ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="618" y="57" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="57" width="136" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -646,7 +664,7 @@
 				<textFieldExpression><![CDATA[$F{su_batch_dekidaka}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="210" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="210" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -660,7 +678,7 @@
 				<text><![CDATA[歩留]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="227" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="227" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -674,7 +692,7 @@
 				<text><![CDATA[最低在庫]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="244" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="244" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -688,7 +706,7 @@
 				<text><![CDATA[最大在庫]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="261" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="261" width="88" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -702,7 +720,7 @@
 				<text><![CDATA[荷受場所]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="295" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="295" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -716,7 +734,7 @@
 				<text><![CDATA[納入リードタイム]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="193" width="88" height="289" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="193" width="88" height="289" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -730,7 +748,7 @@
 				<text><![CDATA[備考]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="312" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="312" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -744,7 +762,7 @@
 				<text><![CDATA[ライン登録]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="329" width="88" height="51" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="329" width="88" height="51" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -758,7 +776,7 @@
 				<text><![CDATA[配合名]]></text>
 			</staticText>
 			<textField pattern="">
-				<reportElement x="78" y="74" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="74" width="170" height="28"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -772,7 +790,7 @@
 				<textFieldExpression><![CDATA[$F{nm_hinmei_ja}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="108" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="102" width="170" height="28"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -786,7 +804,7 @@
 				<textFieldExpression><![CDATA[$F{nm_hinmei_en}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="142" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="130" width="170" height="28"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -800,7 +818,21 @@
 				<textFieldExpression><![CDATA[$F{nm_hinmei_zh}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="329" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="158" width="170" height="28"/>
+				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_hinmei_vi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="329" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -808,10 +840,11 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
+				<textElement/>
 				<textFieldExpression><![CDATA[$F{cd_haigo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="346" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="346" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0" lineStyle="Dotted"/>
@@ -825,7 +858,7 @@
 				<textFieldExpression><![CDATA[$F{nm_haigo}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="74" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="74" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -839,7 +872,7 @@
 				<text><![CDATA[標準労務費]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="91" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="91" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -853,7 +886,7 @@
 				<text><![CDATA[１Ｃ／Ｓ経費]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="108" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="108" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -867,7 +900,7 @@
 				<text><![CDATA[納入単価]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="142" width="88" height="34" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="142" width="88" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -881,7 +914,7 @@
 				<text><![CDATA[庫場所]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="78" y="176" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="186" width="170" height="28"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -895,7 +928,7 @@
 				<textFieldExpression><![CDATA[$F{nm_hinmei_ryaku}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="210" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="214" width="170" height="30"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -909,7 +942,7 @@
 				<textFieldExpression><![CDATA[$F{nm_kbn_hin}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="244" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="244" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -923,7 +956,7 @@
 				<textFieldExpression><![CDATA[$F{nm_nisugata_hyoji}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="278" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="278" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -935,7 +968,7 @@
 				<textFieldExpression><![CDATA[$F{wt_nisugata_naiyo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="295" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="295" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -947,7 +980,7 @@
 				<textFieldExpression><![CDATA[$F{su_iri}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="312" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="312" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -959,7 +992,7 @@
 				<textFieldExpression><![CDATA[$F{wt_ko}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="329" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="329" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -973,7 +1006,7 @@
 				<textFieldExpression><![CDATA[$F{nm_kbn_kanzan}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="346" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="346" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -987,7 +1020,7 @@
 				<textFieldExpression><![CDATA[$F{tani_nonyu}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="363" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="363" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1001,7 +1034,7 @@
 				<textFieldExpression><![CDATA[$F{tani_shiyo}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="380" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="380" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1013,7 +1046,7 @@
 				<textFieldExpression><![CDATA[$F{ritsu_hiju}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="397" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="397" width="136" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1025,7 +1058,7 @@
 				<textFieldExpression><![CDATA[$F{tan_ko}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="414" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="414" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1039,7 +1072,7 @@
 				<textFieldExpression><![CDATA[$F{nm_bunrui}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="448" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="448" width="153" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1051,7 +1084,7 @@
 				<textFieldExpression><![CDATA[$F{dd_shomi}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="108" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="108" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1065,7 +1098,7 @@
 				<textFieldExpression><![CDATA[$F{nm_kaifugo_hokan}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="176" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="176" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1079,7 +1112,7 @@
 				<textFieldExpression><![CDATA[$F{nm_kbn_jotai}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="210" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="210" width="153" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1091,7 +1124,7 @@
 				<textFieldExpression><![CDATA[$F{ritsu_budomari}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="227" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="227" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1103,7 +1136,7 @@
 				<textFieldExpression><![CDATA[$F{su_zaiko_min}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="244" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="244" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1115,7 +1148,7 @@
 				<textFieldExpression><![CDATA[$F{su_zaiko_max}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="261" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="261" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1129,7 +1162,7 @@
 				<textFieldExpression><![CDATA[$F{nm_niuke}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="295" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="295" width="153" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1141,7 +1174,7 @@
 				<textFieldExpression><![CDATA[$F{dd_leadtime}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="193" width="170" height="289" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="193" width="170" height="289"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1155,7 +1188,7 @@
 				<textFieldExpression><![CDATA[$F{biko}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="312" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="312" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1169,7 +1202,7 @@
 				<textFieldExpression><![CDATA[$F{line_toroku}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="74" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="74" width="136" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1181,7 +1214,7 @@
 				<textFieldExpression><![CDATA[$F{kin_romu}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="91" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="91" width="136" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1193,7 +1226,7 @@
 				<textFieldExpression><![CDATA[$F{kin_keihi_cs}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="108" width="136" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="108" width="136" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1205,7 +1238,7 @@
 				<textFieldExpression><![CDATA[$F{tan_nonyu}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="125" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="125" width="170" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1217,7 +1250,7 @@
 				<textFieldExpression><![CDATA[$F{su_hachu_lot_size}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="142" width="170" height="34" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="142" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1231,7 +1264,7 @@
 				<textFieldExpression><![CDATA[$F{nm_kura}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="78" y="465" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="465" width="153" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1243,7 +1276,7 @@
 				<textFieldExpression><![CDATA[$F{dd_kaifugo_shomi}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="234" y="448" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<reportElement uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd" x="234" y="448" width="16" height="17"/>
 				<box topPadding="2"/>
 				<textElement>
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1251,7 +1284,7 @@
 				<text><![CDATA[日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="234" y="465" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<reportElement uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd" x="234" y="465" width="16" height="17"/>
 				<box topPadding="2"/>
 				<textElement>
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1259,7 +1292,7 @@
 				<text><![CDATA[日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="503" y="210" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<reportElement uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd" x="503" y="210" width="16" height="17"/>
 				<box topPadding="2"/>
 				<textElement>
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1267,7 +1300,7 @@
 				<text><![CDATA[％]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="503" y="295" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<reportElement uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd" x="503" y="295" width="16" height="17"/>
 				<box topPadding="2"/>
 				<textElement>
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1275,7 +1308,7 @@
 				<text><![CDATA[日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="756" y="58" width="33" height="16" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd"/>
+				<reportElement uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd" x="756" y="58" width="33" height="16"/>
 				<box topPadding="2"/>
 				<textElement>
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1283,7 +1316,7 @@
 				<text><![CDATA[Ｃ／Ｓ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="17" width="77" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="1" y="17" width="77" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1297,7 +1330,7 @@
 				<text><![CDATA[使用状況]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="78" y="17" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="78" y="17" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1311,7 +1344,7 @@
 				<textFieldExpression><![CDATA[$F{flg_mishiyo}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="18" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="18" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1325,7 +1358,7 @@
 				<text><![CDATA[登録日]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="18" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="18" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1333,10 +1366,11 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
+				<textElement/>
 				<textFieldExpression><![CDATA[$F{dt_create}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="18" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="18" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1350,7 +1384,7 @@
 				<text><![CDATA[更新日]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="618" y="18" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="18" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1358,10 +1392,11 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
+				<textElement/>
 				<textFieldExpression><![CDATA[$F{dt_update}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="214" y="397" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="214" y="397" width="34" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
 				<textElement textAlignment="Left">
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1369,7 +1404,7 @@
 				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="756" y="74" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="756" y="74" width="34" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
 				<textElement textAlignment="Left">
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1377,7 +1412,7 @@
 				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="380" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="380" width="88" height="17" backcolor="#CCCCFF">
 					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
@@ -1393,7 +1428,7 @@
 				<text><![CDATA[固定日]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="380" width="153" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="380" width="153" height="17">
 					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
@@ -1409,7 +1444,7 @@
 				<textFieldExpression><![CDATA[$F{dd_kotei}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="397" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="397" width="88" height="17" backcolor="#CCCCFF">
 					<printWhenExpression><![CDATA[($F{kbn_hasu} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
@@ -1425,7 +1460,7 @@
 				<text><![CDATA[納入単位（端数）]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="397" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="397" width="170" height="17">
 					<printWhenExpression><![CDATA[($F{kbn_hasu} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
@@ -1441,7 +1476,7 @@
 				<textFieldExpression><![CDATA[$F{nm_tani_hasu}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="503" y="380" width="16" height="17" uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd">
+				<reportElement uuid="dbf3b099-23cc-46fa-90fa-f6bd8383acfd" x="503" y="380" width="16" height="17">
 					<printWhenExpression><![CDATA[($F{kbn_kotei} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="2"/>
@@ -1451,7 +1486,7 @@
 				<text><![CDATA[日]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="756" y="91" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="756" y="91" width="34" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
 				<textElement textAlignment="Left">
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1459,7 +1494,7 @@
 				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="756" y="108" width="34" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="756" y="108" width="34" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1"/>
 				<textElement textAlignment="Left">
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1467,7 +1502,7 @@
 				<textFieldExpression><![CDATA[$F{currency}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="618" y="176" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144">
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="618" y="176" width="170" height="17">
 					<printWhenExpression><![CDATA[($F{kbn_location} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
@@ -1483,7 +1518,7 @@
 				<textFieldExpression><![CDATA[$F{location}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="176" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73">
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="530" y="176" width="88" height="17" backcolor="#CCCCFF">
 					<printWhenExpression><![CDATA[($F{kbn_location} == "1") ? Boolean.TRUE : Boolean.FALSE]]></printWhenExpression>
 				</reportElement>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
@@ -1499,7 +1534,7 @@
 				<text><![CDATA[ロケーション]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="414" width="170" height="17" uuid="72305613-b64a-4ddd-bb05-9af070a01144"/>
+				<reportElement uuid="72305613-b64a-4ddd-bb05-9af070a01144" x="348" y="414" width="170" height="17"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1513,7 +1548,7 @@
 				<textFieldExpression><![CDATA[$F{flg_trace_taishogai}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="414" width="88" height="17" backcolor="#CCCCFF" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" mode="Opaque" x="260" y="414" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1527,7 +1562,7 @@
 				<text><![CDATA[トレース対象外]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="57" width="153" height="17" uuid="0c971460-6957-4b5b-ad46-7933ab7f545e"/>
+				<reportElement uuid="0c971460-6957-4b5b-ad46-7933ab7f545e" x="348" y="57" width="153" height="17"/>
 				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1539,7 +1574,7 @@
 				<textFieldExpression><![CDATA[$F{dd_kaitogo_shomi}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="503" y="57" width="16" height="17" uuid="a848b5fd-037d-41b2-ab6a-00f32f7335ff"/>
+				<reportElement uuid="a848b5fd-037d-41b2-ab6a-00f32f7335ff" x="503" y="57" width="16" height="17"/>
 				<box topPadding="2"/>
 				<textElement>
 					<font pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
@@ -1547,7 +1582,7 @@
 				<text><![CDATA[日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="57" width="88" height="17" backcolor="#CCCCFF" uuid="21040fac-1f69-4d05-afbb-5d640e77431d"/>
+				<reportElement uuid="21040fac-1f69-4d05-afbb-5d640e77431d" mode="Opaque" x="260" y="57" width="88" height="17" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1561,7 +1596,7 @@
 				<text><![CDATA[解凍後賞味期間]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="260" y="142" width="88" height="34" backcolor="#CCCCFF" uuid="1bf8ce71-7702-4941-8d0a-8b8535fadc9a"/>
+				<reportElement uuid="1bf8ce71-7702-4941-8d0a-8b8535fadc9a" mode="Opaque" x="260" y="142" width="88" height="34" backcolor="#CCCCFF"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1575,7 +1610,7 @@
 				<text><![CDATA[解凍後保管区分]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="348" y="142" width="170" height="34" uuid="f3371ceb-a443-41e9-87e0-c8f27a8706cf"/>
+				<reportElement uuid="f3371ceb-a443-41e9-87e0-c8f27a8706cf" x="348" y="142" width="170" height="34"/>
 				<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="1">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -1593,7 +1628,7 @@
 	<noData>
 		<band height="50">
 			<staticText>
-				<reportElement x="290" y="17" width="253" height="22" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" x="290" y="17" width="253" height="22"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
 				</textElement>

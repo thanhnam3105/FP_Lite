@@ -2381,11 +2381,11 @@
                         <input type="checkbox" name="shiyoubun" id="condition-shiyoubun" /><span class="item-label" style="width: 60px" data-app-text="shiyoubun"></span>
                     </label>
                     <label>
-                        <input type="checkbox" name="mishiyoubun" id="condition-mishiyoubun" /><span class="item-label" style="width: 70px" data-app-text="mishiyoubun"></span>
+                        <input type="checkbox" name="mishiyoubun" id="condition-mishiyoubun" /><span class="item-label" style="width: 70px" data-app-text="mishiyoubun" data-tooltip-text="mishiyoubun"></span>
                     </label>
                 <br/>
                     <label>
-                        <input type="checkbox" name="ari_nomi" /><span class="item-label" id="ari_nomi" data-app-text="ari_nomi"></span>
+                        <input type="checkbox" name="ari_nomi" /><span class="item-label" id="ari_nomi" data-app-text="ari_nomi" data-tooltip-text="ari_nomi"></span>
                     </label>
                 <br/>
                     <label>

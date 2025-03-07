@@ -99,7 +99,10 @@ namespace Tos.FoodProcs.Web.Controllers
                         WorkbookPart wbPart = spDoc.WorkbookPart;
                         // フォーマット作成とシートへのセット
                         Stylesheet sheet = wbPart.WorkbookStylesPart.Stylesheet; ;
-                        sheet.NumberingFormats = new NumberingFormats();
+                        if (lang != Properties.Resources.LangVi)
+                        {
+                            sheet.NumberingFormats = new NumberingFormats();
+                        }
 
                         // カンマ区切り、小数点以下2桁
                         /*UInt32 indexSpCom2 = FoodProcsCommonUtility.ExcelCellFormatSplitComma(

@@ -966,7 +966,7 @@
                 <li>
                     <!-- ラジオボタン：取引/品名選択 -->
                     <label>
-                        <input type="radio" name="select_print" id="select_tori_hin" value="4" checked="checked" /><span class="item-label" style="width: 150px" data-app-text="select_torihiki_hinmei"></span>
+                        <input type="radio" name="select_print" id="select_tori_hin" value="4" checked="checked" /><span class="item-label" style="width: 150px" data-app-text="select_torihiki_hinmei" data-tooltip-text="select_torihiki_hinmei"></span>
                     </label>
                     <label>
                         <span class="item-label" style="width: 50px">&nbsp;</span>
@@ -1015,7 +1015,7 @@
                     </label -->
                     <!-- ボタン：納品先一覧 -->
                     <label>
-                        <button type="button" class="dialog-button nohinsaki-button" name="nohinsaki-button" disabled="disabled" data-app-operation="nohinsakiIchiran" style="width:120px;">
+                        <button type="button" class="dialog-button nohinsaki-button" name="nohinsaki-button" disabled="disabled" data-app-operation="nohinsakiIchiran" style="min-width:120px;">
                             <span class="icon"></span><span data-app-text="nohinsakiIchiran"></span>
                         </button>
                     </label>

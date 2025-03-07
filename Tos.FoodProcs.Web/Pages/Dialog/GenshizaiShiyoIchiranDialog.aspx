@@ -79,7 +79,7 @@
 				    isDialogLoading = false;
 
 	            //Add tool tip
-	            App.customTooltip("#dialog-content-label");
+	            App.customTooltip("#dialog-content-label, .shiyo-ichiran-dialog");
 
 	            // パラメータからグリッドのIDを設定
 	            dialog_grid.attr("id", context.data.id);
@@ -180,8 +180,8 @@
 	                // TODO：ここまで
 	                // TODO：画面の仕様に応じて以下の列モデルの定義を変更してください。
 	                colModel: [
-						{ name: 'cd_shikakari_hin', width: 120, sorttype: "text", align: "left" },
-						{ name: haigoName, width: 200, sorttype: "text", align: "left" },
+						{ name: 'cd_shikakari_hin', label: pageLangText.cd_shikakari_hin_dlg.tooltip, width: 120, sorttype: "text", align: "left" },
+						{ name: haigoName, label: pageLangText.nm_shikakari_hin_dlg.tooltip, width: 200, sorttype: "text", align: "left" },
 						{ name: 'su_shiyo', width: 110, sorttype: "float", align: "right", formatter: 'number',
 						    //formatoptions: { thousandsSeparator: ",", decimalPlaces: 6, defaultValue: "" }
                             formatoptions: { thousandsSeparator: ",", decimalPlaces: 3, defaultValue: "" }
@@ -199,6 +199,7 @@
 	                loadComplete: function () {
 	                    // グリッドの先頭行選択：loadCompleteに記述しないとグリッドのソートで先頭行が選択されない
 	                    dialog_grid.setSelection(1, false);
+	                    App.customTooltip(".shiyo-ichiran-dialog", dialog_grid)
 	                }
 	            });
 
@@ -298,7 +299,7 @@
                         <ul class="item-list">
                             <li>
                                 <label>
-                                    <span class="item-label" data-app-text="nm_shikakari_hin_dlg" style="width: auto;"></span>
+                                    <span class="item-label" data-app-text="nm_shikakari_hin_dlg" data-tooltip-text="nm_shikakari_hin_dlg" style="width: auto;"></span>
                                     <input type="text" id="con_shikakari" name="nm_shikakari_hin_dlg" style="width: 300px;" maxlength="50" />
                                 </label>
                             </li>

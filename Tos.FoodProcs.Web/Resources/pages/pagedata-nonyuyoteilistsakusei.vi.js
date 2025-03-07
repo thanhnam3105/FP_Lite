@@ -6,22 +6,22 @@
         _pageTitle: { text: "Tạo danh sách dự định nhập" },
         // 項目名・検索条件
         con_dt_nonyu: { text: "Ngày" },
-        con_kbn_hin: { text: "Loại SP", tooltip: "Loại sản phẩm"},
-        con_cd_bunrui: { text: "Nhóm SP", tooltip: "Nhóm sản phẩm"},
+        con_kbn_hin: { text: "Loại NVL", tooltip: "Loại nguyên vật liệu"},
+        con_cd_bunrui: { text: "Phân loại nhóm"},
         con_kbn_hokan: { text: "ĐK bảo quản", tooltip: "Điều kiện bảo quản"},
-        all_torihiki: { text: "Tất cả KH", tooltip: "Tất cả khách hàng"},
-        select_torihiki: { text: "Chọn KH", tooltip: "Chọn khách hàng"},
-        con_flg_torihiki: { text: "Vendor" },
-        con_head_nm_torihiki: { text: "Vendor1(Logistics)" },
-        con_cd_torihiki: { text: "Mã KH", tooltip: "Mã khách hàng"},
-        con_nm_torihiki: { text: "Tên KH", tooltip: "Tên khách hàng"},
+        all_torihiki: { text: "Tất cả NCC", tooltip: "Tất cả nhà cung cấp"},
+        select_torihiki: { text: "Chọn NCC", tooltip: "Chọn nhà cung cấp"},
+        con_flg_torihiki: { text: "Nhà cung cấp" },
+        con_head_nm_torihiki: { text: "Nhà cung cấp 1(Logistics)" },
+        con_cd_torihiki: { text: "Mã", tooltip: "Mã nhà cung cấp"},
+        con_nm_torihiki: { text: "Tên", tooltip: "Tên nhà cung cấp"},
         // 項目名・画面項目見出し
         //set_no_nonyusho: { text: "Delivery paper quantity sequence setting" },
-        set_no_nonyusho: { text: "TLLT MS PN", tooltip: "Thiết lập liên tiếp mã số phiếu nhập" },
+        set_no_nonyusho: { text: "Đổi mã phiếu nhập"},
         // 項目名・明細
         flg_kakutei: { text: "Duyệt" },
         no_nonyusho: { text: "Mã phiếu nhập" },
-        nm_bunrui: { text: "Nhóm sản phẩm" },
+        nm_bunrui: { text: "Phân loại nhóm" },
         cd_hinmei: { text: "Mã nguyên vật liệu" },
         nm_genshizai: { text: "Tên nguyên vật liệu" },
         nm_nisugata_hyoji: { text: "Quy cách<br>đóng gói" },
@@ -34,10 +34,10 @@
         tan_nonyu: { text: "Đơn giá nhập" },
         kin_kingaku: { text: "Số tiền" },
         nm_zei: { text: "Loại thuế" },
-        nm_torihiki: { text: "Khách hàng 1" },
-        nm_torihiki2: { text: "Khách hàng 2" },
+        nm_torihiki: { text: "Nhà cung cấp 1" },
+        nm_torihiki2: { text: "Nhà cung cấp 2" },
         dt_nonyu: { text: "Ngày nhập thực tế" },
-        kbn_nyuko: { text: "Warehousing<br>division" },
+        kbn_nyuko: { text: "Phân loại<br>hàng nhập" },
         dt_nonyu_yotei: { text: "Ngày nhập <br>dự định" },
         // 項目名・隠し項目
         no_nonyu: { text: "Mã số nhập" },
@@ -49,14 +49,14 @@
         ma_dt_tanka_new: { text: "Ngày đổi đơn giá mới ở master nhà cung cấp nguyên vật liệu" },
         su_iri: { text: "Số lượng bên trong" },
         kbn_zei: { text: "Loại thuế" },
-        cd_torihiki: { text: "Mã khách hàng" },
-        cd_torihiki2: { text: "Mã khách hàng 2" },
+        cd_torihiki: { text: "Mã nhà cung cấp" },
+        cd_torihiki2: { text: "Mã nhà cung cấp 2" },
         // ラジオボタン：検索条件/取引先・全取引先
         conFlgTorihiki_zen: { text: "0" },
-        nmFlgTorihiki_zen: { text: "Tất cả khách hàng" },
+        nmFlgTorihiki_zen: { text: "Tất cả nhà cung cấp" },
         // ラジオボタン：検索条件/取引先・取引先選択
         conFlgTorihiki_sentaku: { text: "1" },
-        nmFlgTorihiki_sentaku: { text: "Chọn khách hàng" },
+        nmFlgTorihiki_sentaku: { text: "Chọn nhà cung cấp" },
 
         reqYoteiDate: { text: "Ngày nhập dự định" },
         reqYoteiSu: { text: "Ngày nhập dự định" },
@@ -125,7 +125,7 @@
                 alphanum: true
             },
             params: {
-                custom: "Mã khách hàng"
+                custom: "Mã nhà cung cấp"
             },
             messages: {
                 alphanum: MS0439,
@@ -248,7 +248,7 @@
         // 明細/取引先１(物流)
         nm_torihiki: {
             rules: {
-                required: "Vendor1(Logistics)"
+                required: "Nhà cung cấp 1(Logistics)"
             },
             messages: {
                 required: MS0042

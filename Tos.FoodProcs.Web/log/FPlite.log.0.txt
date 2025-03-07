@@ -1,95 +1,34 @@
-[2025-03-04 08:10:37.9749][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.IOException: The process cannot access the file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\genshizaiChoseiNyuryoku_vi.xlsx' because it is being used by another process.
+[2025-03-06 09:44:44.3839][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.IOException: The process cannot access the file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\hendoHyoSimulation_vi.xlsx' because it is being used by another process.
    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
    at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
    at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
    at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
    at System.IO.File.ReadAllBytes(String path)
-   at Tos.FoodProcs.Web.Controllers.GenshizaiChoseiNyuryokuExcelController.Get(ODataQueryOptions`1 options, String lang, String hinKubun, String userName, Int32 UTC, DateTime today) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiChoseiNyuryokuExcelController.cs:line 96
-[2025-03-04 08:32:09.4978][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.IO.IOException: The process cannot access the file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\genshizaiChoseiNyuryoku_en.xlsx' because it is being used by another process.
-   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
-   at System.IO.File.ReadAllBytes(String path)
-   at Tos.FoodProcs.Web.Controllers.GenshizaiChoseiNyuryokuExcelController.Get(ODataQueryOptions`1 options, String lang, String hinKubun, String userName, Int32 UTC, DateTime today) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiChoseiNyuryokuExcelController.cs:line 96
-[2025-03-04 09:22:53.4686][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.Data.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid object name 'dbo.vw_tr_keikaku_seihin_01'.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
-   at System.Data.SqlClient.SqlDataReader.get_MetaData()
-   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
-   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
-   --- End of inner exception stack trace ---
-   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
-   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
-   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
-   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
-   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at Tos.FoodProcs.Web.Controllers.SeizoNippoExcelController.Get(SeizoNippoCriteria criteria) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\SeizoNippoExcelController.cs:line 121
-[2025-03-04 09:23:22.8101][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.Data.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid object name 'dbo.vw_tr_keikaku_seihin_01'.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
-   at System.Data.SqlClient.SqlDataReader.get_MetaData()
-   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
-   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
-   --- End of inner exception stack trace ---
-   at System.Data.EntityClient.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
-   at System.Data.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
-   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
-   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
-   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
-   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
-   at Tos.FoodProcs.Web.Controllers.SeizoNippoExcelController.Get(SeizoNippoCriteria criteria) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\SeizoNippoExcelController.cs:line 121
-[2025-03-04 11:38:24.1309][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Error occurred in service.:System.NullReferenceException: Object reference not set to an instance of an object.
-   at Tos.FoodProcs.Web.Controllers.GenshizaiChoseiNyuryokuController.Post(ChangeSet`1 value) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiChoseiNyuryokuController.cs:line 451
-   at lambda_method(Closure , Object , Object[] )
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
-   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
-[2025-03-04 11:38:24.1309][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Error occurred in service.:System.NullReferenceException: Object reference not set to an instance of an object.
-   at Tos.FoodProcs.Web.Controllers.GenshizaiChoseiNyuryokuController.Post(ChangeSet`1 value) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiChoseiNyuryokuController.cs:line 451
-   at lambda_method(Closure , Object , Object[] )
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
-   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
-[2025-03-04 11:39:39.8086][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] ?a phat sinh l?i tren service.:System.NullReferenceException: Object reference not set to an instance of an object.
-   at Tos.FoodProcs.Web.Controllers.GenshizaiChoseiNyuryokuController.Post(ChangeSet`1 value) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiChoseiNyuryokuController.cs:line 451
-   at lambda_method(Closure , Object , Object[] )
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
-   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
-[2025-03-04 11:39:39.8086][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] ?a phat sinh l?i tren service.:System.NullReferenceException: Object reference not set to an instance of an object.
-   at Tos.FoodProcs.Web.Controllers.GenshizaiChoseiNyuryokuController.Post(ChangeSet`1 value) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiChoseiNyuryokuController.cs:line 451
-   at lambda_method(Closure , Object , Object[] )
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
-   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
-   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
-[2025-03-04 15:39:12.1002][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.IOException: The process cannot access the file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\genshizaiHendohyo_en.xlsx' because it is being used by another process.
-   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
-   at System.IO.File.ReadAllBytes(String path)
-   at Tos.FoodProcs.Web.Controllers.GenshizaiHendoHyoExcelController.Get(GenshizaiHendoHyoCriteria criteria, String genshizaiName, String konyusakiName, String shiyoTani, Int16 hinKbn, String bikoText, Int32 utc, DateTime outputDate) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiHendoHyoExcelController.cs:line 129
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 88
+[2025-03-06 10:35:28.2243][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:38:56.6822][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:39:05.7859][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:40:05.0687][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:44:51.2070][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:45:20.4438][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:45:36.1282][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:45:54.7223][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105
+[2025-03-06 10:51:46.8603][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tos.FoodProcs.Web.Controllers.FoodProcsCommonUtility.ExcelCellFormatSplitComma(Stylesheet sheet, String strFormat, UInt32Value idFormat) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\FoodProcsCommonUtility.cs:line 93
+   at Tos.FoodProcs.Web.Controllers.HendoHyoSimulationExcelController.Get(HendoHyoSimulationCriteria criteria, String lang, String hdCdGenshizai, String hdNmGenshizai, String cdSeihin, String nmSeihin, String seizoYotei, String afterChange, String nmGenshizai, String taniShiyo, String zaikoMin, Decimal befWtShiyo, Decimal aftWtShiyo, String strSeizoYotei, String strAfterChange, String userName, DateTime outputDate, DateTime today, String itemHeadNonyu) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\HendoHyoSimulationExcelController.cs:line 105

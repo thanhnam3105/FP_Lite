@@ -1,0 +1,202 @@
+[2025-03-05 08:26:55.7900][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Tos.FoodProcs.Web.Controllers.GenshizaiZaikoNyuryokuCSVController.BuildCsvData(FoodProcsEntities context, HttpPostedFile csvFileData) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiZaikoNyuryokuCSVController.cs:line 214
+   at Tos.FoodProcs.Web.Controllers.GenshizaiZaikoNyuryokuCSVController.Post() in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiZaikoNyuryokuCSVController.cs:line 140
+[2025-03-05 08:27:10.5440][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Concurrency error:System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Tos.FoodProcs.Web.Controllers.GenshizaiZaikoNyuryokuCSVController.BuildCsvData(FoodProcsEntities context, HttpPostedFile csvFileData) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiZaikoNyuryokuCSVController.cs:line 214
+   at Tos.FoodProcs.Web.Controllers.GenshizaiZaikoNyuryokuCSVController.Post() in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiZaikoNyuryokuCSVController.cs:line 140
+[2025-03-05 10:23:48.9286][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] Error occurred in service.:System.Data.EntityException: The underlying provider failed on Rollback. ---> System.InvalidOperationException: This SqlTransaction has completed; it is no longer usable.
+   at System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   at System.Data.SqlClient.SqlTransaction.Rollback()
+   at System.Data.EntityClient.EntityTransaction.Rollback()
+   --- End of inner exception stack trace ---
+   at System.Data.EntityClient.EntityTransaction.Rollback()
+   at Tos.FoodProcs.Web.Controllers.GenshizaiZaikoNyuryokuCSVController.Post() in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\GenshizaiZaikoNyuryokuCSVController.cs:line 179
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.<>c__DisplayClass5.<ExecuteAsync>b__4()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+[2025-03-05 11:26:03.1044][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_bafc963b87284030aa1bcb717fd12326.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:33:04.3886][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_e46aa8d22abd4ec2bf5c77e207e086df.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:33:07.2702][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_0cc4c22d59a84e45ac6e698140114dee.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:39:14.1047][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_a525cc029652479e84664fd37695f9d6.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:43:28.9240][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_487c6aac15ea4cc9b7459ab346287540.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:43:52.1377][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_cd90ff513cdf4ded888ce02746145ddb.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:45:49.3819][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_2a56ef28ff284fa6934a68d45a1bc5b7.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 11:53:24.8494][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_35eebd6b67b84fe1bad5fdaf60d183df.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 13:40:27.5075][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_b7b036ae48d54b13ad22b2fa8d8849d0.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 13:45:31.9352][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_b7b036ae48d54b13ad22b2fa8d8849d0.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 14:25:36.1898][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_tate_dd503cebdba94ed9ad98077fae2cceca.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 14:25:53.0894][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_tate_8fb10c4019dc483ba4bc95a6e1424954.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 14:26:10.3073][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_tate_98130f3818e049a7835aa9b2e5e7f361.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 14:27:09.2717][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_tate_2379ea59f2984de8a297090ecaddf59a.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 14:30:47.9981][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_tate_4a54a20547c747d3a36eeaaf8cd02be8.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 14:33:41.9090][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Jaspersoft\jasperreports-server-cp-8.2.0\apache-tomcat\webapps\xmldata\nonyuIraisho_tate_a715bea25861446cbf75899c484e07d4.xml'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at System.Xml.Linq.XElement.Save(String fileName, SaveOptions options)
+   at System.Xml.Linq.XElement.Save(String fileName)
+   at Tos.FoodProcs.Web.Controllers.NonyuIraishoListPDFController.Get(NonyuIraishoPdfCriteria criteria, String lang, String uuid, String printType, Int32 maxPages, Int32 maxColumn) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuIraishoListPDFController.cs:line 150
+[2025-03-05 15:54:30.3161][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.FileNotFoundException: Could not find file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx'.
+File name: 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at Tos.FoodProcs.Web.Controllers.NonyuYoteiListSakuseiExcelController.Get(NonyuYoteiListSakuseiCriteria criteria, String lang, String nmKbnHin, String nmCdBunrui, String nmKbnHokan, String nmFlgTorihiki, String nmCdTorihiki, String nmNmTorihiki, String userName, DateTime today) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuYoteiListSakuseiExcelController.cs:line 94
+[2025-03-05 15:54:58.1325][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.FileNotFoundException: Could not find file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx'.
+File name: 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at Tos.FoodProcs.Web.Controllers.NonyuYoteiListSakuseiExcelController.Get(NonyuYoteiListSakuseiCriteria criteria, String lang, String nmKbnHin, String nmCdBunrui, String nmKbnHokan, String nmFlgTorihiki, String nmCdTorihiki, String nmNmTorihiki, String userName, DateTime today) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuYoteiListSakuseiExcelController.cs:line 94
+[2025-03-05 15:56:09.5984][ERROR][Tos.FoodProcs.Web.Logging.Logger.Error] L?i th?c thi ??ng th?i.:System.IO.FileNotFoundException: Could not find file 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx'.
+File name: 'D:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Templates\nonyuYoteiListSakusei_kbn_nyuko_vi.xlsx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.File.InternalReadAllBytes(String path, Boolean checkHost)
+   at System.IO.File.ReadAllBytes(String path)
+   at Tos.FoodProcs.Web.Controllers.NonyuYoteiListSakuseiExcelController.Get(NonyuYoteiListSakuseiCriteria criteria, String lang, String nmKbnHin, String nmCdBunrui, String nmKbnHokan, String nmFlgTorihiki, String nmCdTorihiki, String nmNmTorihiki, String userName, DateTime today) in d:\source\1.FP_Lite_Ver_2\trunk\src\01_FPLite\src\C#\Tos.FoodProcs.Web\Controllers\NonyuYoteiListSakuseiExcelController.cs:line 94

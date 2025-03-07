@@ -3,19 +3,19 @@
 
     var lang = App.ui.pagedata.lang("vi", {
         // TODO: 画面の仕様に応じて以下の画面項目のテキストを変更してください。
-        _pageTitle: { text: "Master nhắc nhở lưu ý nguyên liệu" },
+        _pageTitle: { text: "Master nguyên liệu chú ý cảnh báo" },
         //検索条件
-        kbn_hin: { text: "Loại sản phẩm" },
+        kbn_hin: { text: "Loại" },
         cd_hinmei: { text: "Mã" },
         nm_hinmei: { text: "Tên" },
-        kbn_chui_kanki: { text: "Loại nhắc nhở" },
-        chuiIchiran: { text: "Danh sách nhắc nhở lưu ý" },
+        kbn_chui_kanki: { text: "Loại cảnh báo" },
+        chuiIchiran: { text: "Chọn nhóm cảnh báo" },
         
         //明細
-        cd_chui_kanki: { text: "Mã nhắc nhở" },
-        nm_chui_kanki: { text: "Tên nhắc nhở" },
+        cd_chui_kanki: { text: "Mã nhóm" },
+        nm_chui_kanki: { text: "Tên nhóm" },
         no_juni_yusen: { text: "Thứ tự" },
-        flg_chui_kanki_hyoji: { text: "Nhắc nhở lưu ý" },
+        flg_chui_kanki_hyoji: { text: "Hiển thị cảnh báo" },
         flg_mishiyo: { text: "Không<br>sử dụng" },
         ts: { text: "Timestamp" },
         dt_create: { text: "Ngày tạo" },
@@ -49,13 +49,13 @@
 
         cd_chui_kanki: {
             rules: {
-                required: "Mã nhắc nhở",
+                required: "Mã nhóm",
                 alphanum: true,
                 maxlength: 10
             },
             
             params: {
-                custom: "Mã nhắc nhở"
+                custom: "Mã nhóm"
             },
             
             messages: {

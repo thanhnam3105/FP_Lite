@@ -115,10 +115,25 @@
             $.extend(App, {
                 /// <summary>Tooltipをします。</summary>
                 /// <param name="element">html add tooltip</param>
-                customTooltip: function (element) {
+                customTooltip: function (element, jgrid) {
+                    
                     element = !element ? $(document) : element;
                     if (!App.isUndefOrNull(pageLangText.addTooltip) && pageLangText.addTooltip.text) {
                         //Add tool tip
+
+                        if (jgrid) {
+                            $(element).find("th").each(function (index) {
+                                var tooltipPosition = jgrid.jqGrid('getGridParam', 'colModel')[index];
+                                if (tooltipPosition && tooltipPosition.label) {
+                                    $(this).attr("title", tooltipPosition.label);
+                                }
+                            });
+
+                            $(element).find("th").tooltip({ track: true });
+
+                            return;
+                        }
+
                         $(element).find("[data-tooltip-text]").each(function (index, element) {
                             var element = $(element);
                             var tooltipText = element.attr("data-tooltip-text");

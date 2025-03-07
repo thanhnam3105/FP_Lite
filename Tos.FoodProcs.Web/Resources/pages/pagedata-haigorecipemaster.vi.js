@@ -7,7 +7,7 @@
         haigoName: { text: "Công thức" },
         haigoRecipe: { text: "Chi tiết công thức" },
         cd_bunrui: { text: "Mã nhóm bán thành phẩm" },
-        nm_bunrui: { text: "Nhóm BTP", tooltip: "Nhóm bán thành phẩm" },
+        nm_bunrui: { text: "Phân loại nhóm" },
         wt_kihon: { text: "Trọng lượng cơ bản" },
         nm_han: { text: "Phiên bản" },
         no_kotei: { text: "Công đoạn" },
@@ -21,13 +21,13 @@
         dt_yuko: { text: "Ngày bắt đầu hiệu lực" },
         //no_tonyu: { text: "Putting order" },
         //no_tonyu: { text: "Order" },
-        no_tonyu: { text: "Thứ tự kết hợp" },
-        kbn_hin: { text: "Loại sản phẩm" },
-        nm_kbn_hin: { text: "Loại sản phẩm" },
+        no_tonyu: { text: "Thứ tự" },
+        kbn_hin: { text: "Loại" },
+        nm_kbn_hin: { text: "Loại" },
         cd_hinmei: { text: "Mã" },
-        nm_hinmei: { text: "Tên nguyên liệu" },
-        cd_mark: { text: "Mã nhãn" },
-        mark: { text: "Nhãn" },
+        nm_hinmei: { text: "Tên" },
+        cd_mark: { text: "Mã mác" },
+        mark: { text: "Mác" },
         wt_shikomi: { text: "Trọng lượng công thức" },
         cd_tani_shiyo: { text: "Mã đơn vị sử dụng" },
         nm_tani_shiyo: { text: "Đơn vị sử dụng" },
@@ -42,15 +42,15 @@
         su_settei_max: { text: "Tối đa" },
         su_settei_min: { text: "Tối thiểu" },
         cd_futai: { text: "Mã kiểu đóng gói" },
-        nm_futai: { text: "Tên kiểu đóng gói" },
+        nm_futai: { text: "Kiểu đóng gói" },
         nm_haigo_total: { text: "Trọng lượng công thức" },
-        qty_shiage: { text: "Trọng lượng công thức thành phẩm" },
+        qty_shiage: { text: "Trọng lượng công thức 1 mẻ" },
         wt_chomieki: { text: "Trọng lượng" },
         maisu: { text: "Số tờ" },
         cd_tanto_koshin: { text: "Người phụ trách/ Ngày cập nhật" },
         kbn_hinkan: { text: "Quản lý chất lượng (QC)" },
         //kbn_seizo: { text: "Manufacture" },
-        kbn_seizo: { text: "Sản xuất" },
+        kbn_seizo: { text: "Quản lý sản xuất" },
         nenn: { text: "Năm" },
         tsuki: { text: "Tháng" },
         hi: { text: "Ngày" },
@@ -76,9 +76,9 @@
         max_juryo: { number: 999999.999999 },
         // TODO: ここまで
         // TODO: 画面の仕様に応じて以下の画面メッセージを変更してください。
-        con_recipe: { text: "T.T công thức", tooltip: "Trạng thái công thức"},
-        changeRecipe: { text: "Thay đổi công thức" },
-        createRecipe: { text: "Tạo mới công thức" },
+        con_recipe: { text: "Trạng thái công thức"},
+        changeRecipe: { text: "Đang cập nhật" },
+        createRecipe: { text: "Đang tạo mới" },
         totalQtyHaigo: { text: "Bằng tổng trọng lượng công thức" },
         labelChomieki: { text: "Nhãn BTP" },
         mishiyoError: { text: MS0678 },
@@ -130,7 +130,7 @@
             messages: { maxbytelength: MS0012 }
         },
         kbn_hin: {
-            rules: { required: "Loại sản phẩm" },
+            rules: { required: "Loại" },
             messages: { required: MS0042 }
         },
         cd_hinmei: {
@@ -148,7 +148,7 @@
         },
         nm_hinmei: {
             rules: {
-                required: "Tên nguyên liệu",
+                required: "Tên",
                 maxbytelength: 50,
                 illegalchara: true
             },
@@ -296,7 +296,7 @@
                 pointlength: [6, 6, false]
             },
             params: {
-                custom: "Trọng lượng hoàn thành"
+                custom: "Trọng lượng công thức 1 mẻ"
             },
             messages: {
                 number: MS0441,

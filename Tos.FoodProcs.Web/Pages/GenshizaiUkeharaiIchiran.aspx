@@ -1077,33 +1077,33 @@
                     <br />
                     <label>
                         <input type="checkbox" name="ari_nomi" /><span class="item-label" id="ari_nomi" style="width: 320px"
-                            data-app-text="ari_nomi"></span>
+                            data-app-text="ari_nomi" data-tooltip-text="ari_nomi"></span>
                     </label>
                     <br />
                     <label>
                         <input type="checkbox" name="flg_today_jisseki" /><span class="item-label" id="flg_today_jisseki" style="width: 320px"
-                            data-app-text="flg_today_jisseki"></span>
+                            data-app-text="flg_today_jisseki" data-tooltip-text="flg_today_jisseki"></span>
                     </label>
                 </li>
             </ul>
             <ul class="item-list item-list-right">
                 <li>
                     <label>
-                        <span class="item-label" style="width: 90px" data-app-text="hinKubun"></span>
+                        <span class="item-label" style="width: 90px" data-app-text="hinKubun" data-tooltip-text="hinKubun"></span>
                         <select name="kbn_hin" id="id_kbn_hin">
                         </select>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <span class="item-label" style="width: 90px" data-app-text="hinBunrui"></span>
+                        <span class="item-label" style="width: 90px" data-app-text="hinBunrui" data-tooltip-text="hinBunrui"></span>
                         <select name="cd_bunrui" id="id_cd_bunrui">
                         </select>
                     </label>
                 </li>
                 <li>
                     <label>
-                        <span class="item-label" data-app-text="hinCode"></span>
+                        <span class="item-label" data-app-text="hinCode" data-tooltip-text="hinCode"></span>
                         <input type="text" name="cd_genshizai" id="id_cd_genshizai" maxlength="14" style="width: 110px" />
                     </label>
                     <button type="button" class="hinmei-button" id="hincode-button">

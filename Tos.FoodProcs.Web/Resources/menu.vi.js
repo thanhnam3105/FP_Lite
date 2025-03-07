@@ -116,7 +116,7 @@
                 { display: "Master nơi nhận hàng", url: "../Pages/NiukeBashoMaster.aspx", visible: ["Admin", "Purchase", "Quality", "Warehouse"] },
                 { display: "Master phân loại nơi nhận hàng", url: "../Pages/NiukeBashoKubunMaster.aspx", visible: ["Admin", "Quality", "Purchase", "Warehouse"] },
                 { display: "Master điều kiện bảo quản", url: "../Pages/HokanKubunMaster.aspx", visible: ["Admin", "Purchase", "Quality", "Warehouse"] },
-                { display: "Master chỉ thị SX", url: "../Pages/ShikomiSagyoShijiMaster.aspx", visible: ["Admin", "Manufacture", "Purchase", "Quality"] },
+                { display: "Master chỉ thị sản xuất", url: "../Pages/ShikomiSagyoShijiMaster.aspx", visible: ["Admin", "Manufacture", "Purchase", "Quality"] },
                 { display: "Master kiểu đóng gói", url: "../Pages/FutaiMaster.aspx", visible: ["Admin", "Manufacture", "Purchase", "Quality"] },
                 { display: "Master quy định kiểu đóng gói", url: "../Pages/FutaiKetteiMaster.aspx", visible: ["Admin", "Manufacture", "Purchase", "Quality"] },
                 { display: "Master thiết lập trọng lượng", url: "../Pages/JuryoMaster.aspx", visible: ["Admin", "Manufacture", "Purchase", "Quality"] },

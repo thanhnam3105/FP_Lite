@@ -380,16 +380,18 @@
                     { name: 'flg_kyujitsu', width: 0, hidden: true, hidedlg: true },
                     { name: 'save_before_su_nonyu', width: 0, hidden: true, hidedlg: true },
                     { name: 'before_su_nonyu', width: 0, hidden: true, hidedlg: true },
-                    { name: 'after_su_nonyu', width: pageLangText.after_su_nonyu_width.number, editable: true, sortable: false, align: "right",
+                    { name: 'after_su_nonyu', width: pageLangText.after_su_nonyu_width.number, editable: true, sortable: false, align: "right", label: pageLangText.after_su_nonyu.tooltip,
                         formatter: changeZeroToBlank,
                         //formatoptions: { decimalSeparator: ".", thousandsSeparator: ",", decimalPlaces: 2, defaultValue: "" }
                         formatoptions: { decimalSeparator: ".", thousandsSeparator: ",", decimalPlaces: 3, defaultValue: "" }
                     },
-                    { name: 'before_wt_shiyo', width: pageLangText.before_wt_shiyo_width.number, editable: false, sortable: false, align: "right", formatter: changeZeroToBlank,
+                    {
+                        name: 'before_wt_shiyo', width: pageLangText.before_wt_shiyo_width.number, editable: false, sortable: false, align: "right", formatter: changeZeroToBlank, label: pageLangText.before_wt_shiyo.tooltip,
                         //formatoptions: { decimalSeparator: ".", thousandsSeparator: ",", decimalPlaces: 2, defaultValue: "" }
                         formatoptions: { decimalSeparator: ".", thousandsSeparator: ",", decimalPlaces: 3, defaultValue: "" }
                     },
-                    { name: 'after_wt_shiyo', width: pageLangText.after_wt_shiyo_width.number, editable: false, sortable: false, align: "right", formatter: changeZeroToBlank,
+                    {
+                        name: 'after_wt_shiyo', width: pageLangText.after_wt_shiyo_width.number, editable: false, sortable: false, align: "right", formatter: changeZeroToBlank, label: pageLangText.after_wt_shiyo.tooltip,
                         //formatoptions: { decimalSeparator: ".", thousandsSeparator: ",", decimalPlaces: 2, defaultValue: "" }
                         formatoptions: { decimalSeparator: ".", thousandsSeparator: ",", decimalPlaces: 3, defaultValue: "" }
                     },
@@ -425,6 +427,9 @@
                         // グリッドの先頭行選択
                         $("#" + 1).removeClass("ui-state-highlight").find("td").click();
                     }
+
+                    // add tootip
+                    App.customTooltip("#simulation-grid", simuGrid)
                 },
                 beforeEditCell: function (selectedRowId, cellName, value, iRow, iCol) {
                     currentRow = iRow;

@@ -103,7 +103,9 @@ namespace Tos.FoodProcs.Web.Controllers
 
                         // フォーマット作成とシートへのセット
                         Stylesheet sheet = wbPart.WorkbookStylesPart.Stylesheet;
-                        sheet.NumberingFormats = new NumberingFormats();
+                        if (lang != Properties.Resources.LangVi) {
+                            sheet.NumberingFormats = new NumberingFormats();
+                        }
 
                         // ===== 書式設定の追加
                         // カンマ区切り、小数点以下なし

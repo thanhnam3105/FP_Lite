@@ -3,9 +3,9 @@
 
     var lang = App.ui.pagedata.lang("vi", {
         // 画面項目
-        _pageTitle: { text: "Master nhắc nhở lưu ý" },
+        _pageTitle: { text: "Master chú ý cảnh báo" },
         //検索条件
-        kbn_chui_kanki: { text: "Loại nhắc nhở lưu ý" },
+        kbn_chui_kanki: { text: "Loại cảnh báo" },
         //明細
         cd_chui_kanki: { text: "Mã" },
         nm_chui_kanki: { text: "Tên" },

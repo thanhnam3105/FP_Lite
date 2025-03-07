@@ -3,7 +3,7 @@
 
     var lang = App.ui.pagedata.lang("vi", {
         // TODO: 画面の仕様に応じて以下の画面項目のテキストを変更してください。
-        _pageTitle: { text: "Kế hoạch sản xuất sản phẩm theo tháng" },
+        _pageTitle: { text: "Tạo kế hoạch sản phẩm theo tháng" },
         // 明細
         dt_seizo: { text: "Ngày" },
         dt_seizo_yobi: { text: "Thứ" },
@@ -15,9 +15,9 @@
         su_seizo_yotei: { text: "Lượng sản xuất" },
         su_seizo_jisseki: { text: "Lượng sản xuất thực tế" },
         no_lot_seihin: { text: "Số lô sản phẩm" },
-        batch: { text: "Số mẻ SX" },
+        batch: { text: "Số mẻ" },
         bairitsu: { text: "Bội suất" },
-        check_reflect: { text: "Đối tượng <br>chuyển sang C/S" },
+        check_reflect: { text: "Đối tượng<br>chuyển sang C/S" },
         txt_memo: { text: "Ghi chú" },
         // 検索条件
         dt_hiduke_search: { text: "Tháng" },
@@ -27,7 +27,7 @@
         zenLine: { text: "Kiểm tra toàn bộ dây chuyền" },
         gokei: { text: "Tổng kế hoạch sản xuất" },
         //seihinIchiran: { text: "Product list" },
-        yasumiIchiran: { text: "Danh sách ngày nghỉ" },
+        yasumiIchiran: { text: "Chọn ngày nghỉ" },
         csReflect: { text: "Đổi sang C/S" },
         blank: { text: "" },
         msg_param: { text: "lượng sản xuất của" },

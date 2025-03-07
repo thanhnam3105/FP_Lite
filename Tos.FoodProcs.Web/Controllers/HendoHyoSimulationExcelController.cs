@@ -97,7 +97,10 @@ namespace Tos.FoodProcs.Web.Controllers
                         Stylesheet sheet = wbPart.WorkbookStylesPart.Stylesheet;
 
                         // 書式設定の追加
-                        sheet.NumberingFormats = new NumberingFormats();
+                        if (lang != Properties.Resources.LangVi)
+                        {
+                            sheet.NumberingFormats = new NumberingFormats();
+                        }
                         // カンマ区切り、小数点以下2桁
                         /*UInt32 indexSpCom2 = FoodProcsCommonUtility.ExcelCellFormatSplitComma(
                             sheet, ActionConst.fmtSplitComma2, ActionConst.idSplitComma2);*/
@@ -162,12 +165,14 @@ namespace Tos.FoodProcs.Web.Controllers
                             }
                             // 明細/納入数
                             //SetNumberValue(wbPart, ws, "B" + index, item.before_su_nonyu.ToString(), indexSpCom2);
-                            SetNumberValue(wbPart, ws, "B" + index, item.before_su_nonyu.ToString(), indexSpCom3);
+                            //SetNumberValue(wbPart, ws, "B" + index, item.before_su_nonyu.ToString(), indexSpCom3);
+                            ExcelUtilities.changeNullToBlank(wbPart, ws, "B" + index, item.before_su_nonyu, indexSpCom3, lang);
                             // 明細/変更前使用量
                             decimal after_shiyo = item.before_wt_shiyo != null ? (decimal)item.before_wt_shiyo : 0;
                             //after_shiyo = FoodProcsCommonUtility.decimalCeiling(after_shiyo, 2);
                             //SetNumberValue(wbPart, ws, "C" + index, after_shiyo.ToString(), indexSpCom2);
-                            SetNumberValue(wbPart, ws, "C" + index, after_shiyo.ToString(), indexSpCom3);
+                            //SetNumberValue(wbPart, ws, "C" + index, after_shiyo.ToString(), indexSpCom3);
+                            ExcelUtilities.changeNullToBlank(wbPart, ws, "C" + index, after_shiyo, indexSpCom3, lang);
                             // 検索条件/検索日付当日の場合
                             if (item.dt_hizuke == criteria.con_dt_hizuke)
                             {
@@ -176,13 +181,15 @@ namespace Tos.FoodProcs.Web.Controllers
                                 //before_wt_shiyo = TruncateSpCom2(before_wt_shiyo);
                                 //before_wt_shiyo = FoodProcsCommonUtility.decimalCeiling(before_wt_shiyo, 2);
                                 //SetNumberValue(wbPart, ws, "D" + index, (before_wt_shiyo - befWtShiyo + aftWtShiyo).ToString(), indexSpCom2);
-                                SetNumberValue(wbPart, ws, "D" + index, (before_wt_shiyo - befWtShiyo + aftWtShiyo).ToString(), indexSpCom3);
+                                //SetNumberValue(wbPart, ws, "D" + index, (before_wt_shiyo - befWtShiyo + aftWtShiyo).ToString(), indexSpCom3);
+                                ExcelUtilities.changeNullToBlank(wbPart, ws, "D" + index, (before_wt_shiyo - befWtShiyo + aftWtShiyo), indexSpCom3, lang);
                             }
                             // 明細/変更前在庫量
                             //string befZaiko = calcZaiko((decimal)item.before_wt_zaiko).ToString();
                             string befZaiko = item.before_wt_zaiko.ToString();
                             //ExcelUtilities.UpdateValue(wbPart, ws, "E" + index, befZaiko, indexSpCom2, false);
-                            ExcelUtilities.UpdateValue(wbPart, ws, "E" + index, befZaiko, indexSpCom3, false);
+                            //ExcelUtilities.UpdateValue(wbPart, ws, "E" + index, befZaiko, indexSpCom3, false);
+                            ExcelUtilities.changeNullToBlank(wbPart, ws, "E" + index, item.before_wt_zaiko, indexSpCom3, lang);
                             if (item.dt_hizuke >= criteria.con_dt_hizuke)
                             {
                                 // 検索条件/検索日付以降の場合
@@ -194,7 +201,8 @@ namespace Tos.FoodProcs.Web.Controllers
                                 decimal afZaiko = before_wt_zaiko + befWtShiyo - aftWtShiyo;
                                 //string afZaikoStr = TruncateSpCom2(afZaiko).ToString();
                                 //ExcelUtilities.UpdateValue(wbPart, ws, "F" + index, afZaikoStr, indexSpCom2, false);
-                                ExcelUtilities.UpdateValue(wbPart, ws, "F" + index, afZaiko.ToString(), indexSpCom3, false);
+                                //ExcelUtilities.UpdateValue(wbPart, ws, "F" + index, afZaiko.ToString(), indexSpCom3, false);
+                                ExcelUtilities.changeNullToBlank(wbPart, ws, "F" + index, afZaiko, indexSpCom3, lang);
                             }
                             else
                             {
@@ -202,7 +210,8 @@ namespace Tos.FoodProcs.Web.Controllers
 
                                 // 明細/変更後在庫量
                                 //ExcelUtilities.UpdateValue(wbPart, ws, "F" + index, befZaiko, indexSpCom2, false);
-                                ExcelUtilities.UpdateValue(wbPart, ws, "F" + index, befZaiko, indexSpCom3, false);
+                                //ExcelUtilities.UpdateValue(wbPart, ws, "F" + index, befZaiko, indexSpCom3, false);
+                                ExcelUtilities.changeNullToBlank(wbPart, ws, "F" + index, item.before_wt_zaiko, indexSpCom3, lang);
                             }
 
                             // 明細出力行インデックスのカウントアップ

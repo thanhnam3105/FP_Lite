@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="genryoLotBangoKirokuHyo_seihin" language="groovy" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="d316649a-8738-4c7e-851e-8c554f1f7a9e">
-	<property name="ireport.zoom" value="1.6105100000000008"/>
-	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="48"/>
+	<property name="ireport.zoom" value="1.6105100000000014"/>
+	<property name="ireport.x" value="14"/>
+	<property name="ireport.y" value="0"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -117,7 +117,7 @@
 	<pageHeader>
 		<band height="133">
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="20" width="79" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="1" y="20" width="100" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -125,21 +125,21 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Workplace]]></text>
+				<text><![CDATA[Bộ phận sản xuất]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="0" width="207" height="20" uuid="5fde3403-58e7-413d-83f1-73e2db552ab7"/>
+				<reportElement uuid="5fde3403-58e7-413d-83f1-73e2db552ab7" x="0" y="0" width="207" height="20"/>
 				<box topPadding="1" leftPadding="1"/>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="11" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Weighing Record List]]></text>
+				<text><![CDATA[Bảng ghi nhận thực tế cân]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="583" y="16" width="64" height="16" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="582" y="16" width="64" height="16" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -147,13 +147,13 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Output date]]></text>
+				<text><![CDATA[Ngày xuất]]></text>
 			</staticText>
 			<textField pattern="" isBlankWhenNull="true">
-				<reportElement x="647" y="16" width="155" height="16" uuid="43a5d30c-e9f5-4362-ae46-16f784681c62"/>
+				<reportElement uuid="43a5d30c-e9f5-4362-ae46-16f784681c62" x="646" y="16" width="155" height="16"/>
 				<box rightPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -167,7 +167,7 @@
 				<textFieldExpression><![CDATA[$F{output_day}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="302" y="20" width="60" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="302" y="20" width="75" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -175,27 +175,27 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
-				</textElement>
-				<text><![CDATA[Line]]></text>
-			</staticText>
-			<staticText>
-				<reportElement mode="Opaque" x="1" y="35" width="79" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
-				<box leftPadding="3">
-					<pen lineWidth="1.0"/>
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Left">
+				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Production date]]></text>
+				<text><![CDATA[Dây chuyền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="1" y="35" width="100" height="15" backcolor="#9999FF"/>
+				<box leftPadding="3">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Ngày sản xuất]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="20" width="210" height="15" uuid="7493226a-ea18-426e-b9c6-80131811a9b2"/>
+				<reportElement uuid="7493226a-ea18-426e-b9c6-80131811a9b2" x="101" y="20" width="189" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -209,7 +209,7 @@
 				<textFieldExpression><![CDATA[$F{shokubaName}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="95" width="79" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="1" y="95" width="100" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -217,13 +217,13 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Formula name]]></text>
+				<text><![CDATA[Tên bán thành phẩm]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="302" y="35" width="60" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="302" y="35" width="75" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -231,48 +231,48 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[W. I. P.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="356" y="80" width="96" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="356" y="80" width="96" height="15" backcolor="#9999FF"/>
 				<box leftPadding="2">
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Batch Number]]></text>
+				<text><![CDATA[Số lượng mẻ sản xuất]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="356" y="50" width="96" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="356" y="50" width="96" height="15" backcolor="#9999FF"/>
 				<box leftPadding="2">
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[Formula weight]]></text>
 			</staticText>
 			<elementGroup>
 				<rectangle>
-					<reportElement x="583" y="35" width="219" height="20" uuid="84fdcac3-2a2a-47a4-9385-9769c2127773"/>
+					<reportElement uuid="84fdcac3-2a2a-47a4-9385-9769c2127773" x="583" y="35" width="219" height="20"/>
 				</rectangle>
 				<rectangle>
-					<reportElement x="583" y="75" width="219" height="20" uuid="84fdcac3-2a2a-47a4-9385-9769c2127773"/>
+					<reportElement uuid="84fdcac3-2a2a-47a4-9385-9769c2127773" x="583" y="75" width="219" height="20"/>
 				</rectangle>
 				<rectangle>
-					<reportElement x="583" y="55" width="219" height="20" uuid="84fdcac3-2a2a-47a4-9385-9769c2127773"/>
+					<reportElement uuid="84fdcac3-2a2a-47a4-9385-9769c2127773" x="583" y="55" width="219" height="20"/>
 				</rectangle>
 			</elementGroup>
 			<textField isBlankWhenNull="true">
-				<reportElement x="362" y="20" width="210" height="15" uuid="dfdcd854-7d84-4afd-98f1-1c35a93c0c18"/>
+				<reportElement uuid="dfdcd854-7d84-4afd-98f1-1c35a93c0c18" x="377" y="20" width="195" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -286,7 +286,7 @@
 				<textFieldExpression><![CDATA[$F{lineName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="35" width="210" height="15" uuid="bb70b28c-cb20-4195-a1fa-a1ea7eac70e2"/>
+				<reportElement uuid="bb70b28c-cb20-4195-a1fa-a1ea7eac70e2" x="101" y="35" width="189" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -300,7 +300,7 @@
 				<textFieldExpression><![CDATA[$F{seizoDate}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="95" width="210" height="15" uuid="c0d65847-63c3-49d1-b03c-99f69e27e69d"/>
+				<reportElement uuid="c0d65847-63c3-49d1-b03c-99f69e27e69d" x="101" y="95" width="189" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -314,7 +314,7 @@
 				<textFieldExpression><![CDATA[$F{haigoName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="362" y="35" width="210" height="15" uuid="fb0159e0-bcac-4fd4-bed6-6a171067954a"/>
+				<reportElement uuid="fb0159e0-bcac-4fd4-bed6-6a171067954a" x="377" y="35" width="195" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -328,7 +328,7 @@
 				<textFieldExpression><![CDATA[$F{shikakariBunruiName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="452" y="50" width="86" height="15" uuid="927a2aa6-57cb-4ec5-b799-62c5d893b900"/>
+				<reportElement uuid="927a2aa6-57cb-4ec5-b799-62c5d893b900" x="452" y="50" width="86" height="15"/>
 				<box rightPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -336,13 +336,13 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right">
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{haigoJyuryo}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="452" y="80" width="86" height="15" uuid="1ade15b5-9146-4f45-8635-1d19626110c1"/>
+				<reportElement uuid="1ade15b5-9146-4f45-8635-1d19626110c1" x="452" y="80" width="86" height="15"/>
 				<box rightPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -350,37 +350,37 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right">
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{batchSu}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="302" y="50" width="54" height="15" backcolor="#9999FF" uuid="e4640f77-4e3d-461b-ac1e-4df659eaea0f"/>
+				<reportElement uuid="e4640f77-4e3d-461b-ac1e-4df659eaea0f" mode="Opaque" x="302" y="50" width="54" height="15" backcolor="#9999FF"/>
 				<box leftPadding="2" rightPadding="0">
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["("+$F{seikiHasu}+")"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="302" y="80" width="54" height="15" backcolor="#9999FF" uuid="e4640f77-4e3d-461b-ac1e-4df659eaea0f"/>
+				<reportElement uuid="e4640f77-4e3d-461b-ac1e-4df659eaea0f" mode="Opaque" x="302" y="80" width="54" height="15" backcolor="#9999FF"/>
 				<box leftPadding="2" rightPadding="0">
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["("+$F{seikiHasu}+")"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="80" width="79" height="15" backcolor="#9999FF" uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f"/>
+				<reportElement uuid="b9444a7a-845a-4af1-aec8-04dce8aa5e8f" mode="Opaque" x="1" y="80" width="100" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -388,13 +388,13 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Formula code]]></text>
+				<text><![CDATA[Mã bán thành phẩm]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="80" width="210" height="15" uuid="c0d65847-63c3-49d1-b03c-99f69e27e69d"/>
+				<reportElement uuid="c0d65847-63c3-49d1-b03c-99f69e27e69d" x="101" y="80" width="189" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -408,7 +408,7 @@
 				<textFieldExpression><![CDATA[$F{haigoCode}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="452" y="65" width="86" height="15" uuid="8b70fef5-1497-4d4f-ac51-11982cdadd77"/>
+				<reportElement uuid="8b70fef5-1497-4d4f-ac51-11982cdadd77" x="452" y="65" width="86" height="15"/>
 				<box rightPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -416,37 +416,37 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right">
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{ritsuKeikaku}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="356" y="65" width="96" height="15" backcolor="#9999FF" uuid="15c61514-9bf8-42e0-ae94-1fb3bb499249"/>
+				<reportElement uuid="15c61514-9bf8-42e0-ae94-1fb3bb499249" mode="Opaque" x="356" y="65" width="96" height="15" backcolor="#9999FF"/>
 				<box leftPadding="2">
 					<topPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Magnification]]></text>
+				<text><![CDATA[Bội suất]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="302" y="65" width="54" height="15" backcolor="#9999FF" uuid="2427d855-afa6-4959-9406-25f2d1bf6f3d"/>
+				<reportElement uuid="2427d855-afa6-4959-9406-25f2d1bf6f3d" mode="Opaque" x="302" y="65" width="54" height="15" backcolor="#9999FF"/>
 				<box leftPadding="2" rightPadding="0">
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
 					<bottomPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["("+$F{seikiHasu}+")"]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="50" width="79" height="15" backcolor="#9999FF" uuid="5c23f2c6-4087-4138-8194-db6aada35172"/>
+				<reportElement uuid="5c23f2c6-4087-4138-8194-db6aada35172" mode="Opaque" x="1" y="50" width="100" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -454,13 +454,13 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Product code]]></text>
+				<text><![CDATA[Mã sản phẩm]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="80" y="50" width="210" height="15" uuid="c5fee4f8-6714-4a49-aae2-b45ec52c587a"/>
+				<reportElement uuid="c5fee4f8-6714-4a49-aae2-b45ec52c587a" mode="Opaque" x="101" y="50" width="189" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -474,7 +474,7 @@
 				<textFieldExpression><![CDATA[$F{seihinCode}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="65" width="79" height="15" backcolor="#9999FF" uuid="d3a2cd44-fd2f-4219-b36b-723f2cccb38d"/>
+				<reportElement uuid="d3a2cd44-fd2f-4219-b36b-723f2cccb38d" mode="Opaque" x="1" y="65" width="100" height="15" backcolor="#9999FF"/>
 				<box leftPadding="3">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -482,13 +482,13 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Left">
-					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Product name]]></text>
+				<text><![CDATA[Tên sản phẩm]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="80" y="65" width="210" height="15" uuid="a67770d7-7804-4b80-8e83-5ad59ea2da54"/>
+				<reportElement uuid="a67770d7-7804-4b80-8e83-5ad59ea2da54" x="101" y="65" width="189" height="15"/>
 				<box leftPadding="2">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -506,7 +506,7 @@
 	<columnHeader>
 		<band height="29">
 			<staticText>
-				<reportElement mode="Opaque" x="244" y="0" width="60" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="244" y="0" width="60" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -515,12 +515,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Total weight]]></text>
+				<text><![CDATA[Tổng trọng lượng]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="304" y="0" width="60" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="304" y="0" width="60" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -529,13 +529,12 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Packing
- style weight]]></text>
+				<text><![CDATA[Trọng lượng đóng gói]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="364" y="0" width="23" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="364" y="0" width="23" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -544,12 +543,13 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[No.]]></text>
+				<text><![CDATA[Số
+lượng]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="387" y="0" width="60" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="387" y="0" width="60" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -558,13 +558,13 @@
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Weighing
-weight1]]></text>
+				<text><![CDATA[Trọng lượng
+chia nhỏ 1]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="470" y="0" width="60" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="470" y="0" width="60" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -573,13 +573,13 @@ weight1]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Weighing
-weight2]]></text>
+				<text><![CDATA[Trọng lượng
+chia nhỏ 2]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="447" y="0" width="23" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="447" y="0" width="23" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -588,12 +588,13 @@ weight2]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[No.]]></text>
+				<text><![CDATA[Số
+lượng]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="553" y="0" width="86" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="553" y="0" width="86" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -602,12 +603,13 @@ weight2]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Lot No.]]></text>
+				<text><![CDATA[Số lô
+bán thành phẩm]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="737" y="0" width="65" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="737" y="0" width="65" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -616,12 +618,13 @@ weight2]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Sign]]></text>
+				<text><![CDATA[Người kiểm tra
+nguyên liệu]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="1" y="0" width="206" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="1" y="0" width="206" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -630,13 +633,13 @@ weight2]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[ Item Code
- Raw materials name]]></text>
+				<text><![CDATA[ Mã nguyên liệu
+ Tên nguyên liệu]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="530" y="0" width="23" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="530" y="0" width="23" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -645,12 +648,13 @@ weight2]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[No.]]></text>
+				<text><![CDATA[Số
+lượng]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="639" y="0" width="38" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="639" y="0" width="38" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -659,13 +663,12 @@ weight2]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Expiry
-date]]></text>
+				<text><![CDATA[Hạn sử dụng]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="207" y="0" width="17" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="207" y="0" width="17" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -674,12 +677,12 @@ date]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<text><![CDATA[M]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="677" y="0" width="60" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="677" y="0" width="60" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -688,12 +691,12 @@ date]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Inventory]]></text>
+				<text><![CDATA[Lượng tồn bán thành phẩm hiện tại]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="224" y="0" width="20" height="29" backcolor="#9999FF" uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746"/>
+				<reportElement uuid="4ed32afc-d66f-4df5-8c0a-babd9c2f4746" mode="Opaque" x="224" y="0" width="20" height="29" backcolor="#9999FF"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -702,16 +705,16 @@ date]]></text>
 					<rightPen lineWidth="0.5"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="DejaVu Sans" size="8" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<font fontName="DejaVu Sans" size="7" isBold="true" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[Unit]]></text>
+				<text><![CDATA[Đơn vị	]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="25" splitType="Stretch">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToTallestObject" x="1" y="0" width="206" height="25" isRemoveLineWhenBlank="true" uuid="39b3b2d3-3a39-4be7-b720-b563f1b5aa9f"/>
+				<reportElement uuid="39b3b2d3-3a39-4be7-b720-b563f1b5aa9f" stretchType="RelativeToTallestObject" x="1" y="0" width="206" height="25" isRemoveLineWhenBlank="true"/>
 				<box leftPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -724,7 +727,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{genryoName}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="244" y="0" width="60" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="244" y="0" width="60" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -737,7 +740,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{soJyuryo}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="304" y="0" width="60" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="304" y="0" width="60" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -750,7 +753,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{nisugataJyuryo}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="364" y="0" width="23" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="364" y="0" width="23" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -763,7 +766,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{suNisugata}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="387" y="0" width="60" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="387" y="0" width="60" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -776,7 +779,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{kowakeJyuryo1}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="470" y="0" width="60" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="470" y="0" width="60" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -789,7 +792,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{kowakeJyuryo2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="447" y="0" width="23" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="447" y="0" width="23" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -802,7 +805,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{suKowake1}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="530" y="0" width="23" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="530" y="0" width="23" height="25"/>
 				<box rightPadding="2">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -815,7 +818,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{suKowake2}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="553" y="0" width="86" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="553" y="0" width="86" height="25"/>
 				<box>
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -827,7 +830,7 @@ date]]></text>
 				</textElement>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="639" y="0" width="38" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="639" y="0" width="38" height="25"/>
 				<box>
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -839,7 +842,7 @@ date]]></text>
 				</textElement>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="737" y="0" width="65" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="737" y="0" width="65" height="25"/>
 				<box>
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -851,7 +854,7 @@ date]]></text>
 				</textElement>
 			</textField>
 			<textField isBlankWhenNull="false">
-				<reportElement x="207" y="0" width="17" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="207" y="0" width="17" height="25"/>
 				<box rightPadding="0">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -864,7 +867,7 @@ date]]></text>
 				<textFieldExpression><![CDATA[$F{mark}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="677" y="0" width="60" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="677" y="0" width="60" height="25"/>
 				<box>
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -876,7 +879,7 @@ date]]></text>
 				</textElement>
 			</textField>
 			<textField isBlankWhenNull="false">
-				<reportElement x="224" y="0" width="20" height="25" uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1"/>
+				<reportElement uuid="4adf625c-9cec-450c-ac40-e2774c21b5b1" x="224" y="0" width="20" height="25"/>
 				<box rightPadding="0">
 					<topPen lineWidth="0.5"/>
 					<leftPen lineWidth="0.5"/>
@@ -893,14 +896,14 @@ date]]></text>
 	<pageFooter>
 		<band height="23" splitType="Stretch">
 			<textField>
-				<reportElement x="337" y="3" width="80" height="20" uuid="61bf34b9-4f83-4b80-9bac-e3ff4348c5ce"/>
+				<reportElement uuid="61bf34b9-4f83-4b80-9bac-e3ff4348c5ce" x="337" y="3" width="80" height="20"/>
 				<textElement textAlignment="Right">
 					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report">
-				<reportElement x="417" y="3" width="40" height="20" uuid="c91e4dd9-73cb-444f-9a4c-c088ec12c8a5"/>
+				<reportElement uuid="c91e4dd9-73cb-444f-9a4c-c088ec12c8a5" x="417" y="3" width="40" height="20"/>
 				<textElement>
 					<font fontName="DejaVu Sans" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 				</textElement>
@@ -911,11 +914,11 @@ date]]></text>
 	<noData>
 		<band height="50">
 			<staticText>
-				<reportElement x="290" y="17" width="223" height="16" uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73"/>
+				<reportElement uuid="44aa3108-a4b7-44dc-942d-ce0c9ed90a73" x="270" y="17" width="263" height="16"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
 				</textElement>
-				<text><![CDATA[There is no detail data to display.]]></text>
+				<text><![CDATA[Không có dữ liệu chi tiết muốn hiển thị.]]></text>
 			</staticText>
 		</band>
 	</noData>

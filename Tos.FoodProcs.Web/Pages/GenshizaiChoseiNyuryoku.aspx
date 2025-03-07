@@ -2459,7 +2459,7 @@
                 <!-- TODO: 画面の仕様に応じて以下の検索条件を変更してください。-->
                 <li>
                     <label>
-                        <span class="item-label" data-app-text="dt_chosei_hassei"></span>
+                        <span class="item-label" data-app-text="dt_chosei_hassei" data-tooltip-text="dt_chosei_hassei"></span>
                         <input type="text" name="dt_chosei_hassei" id="condition-date" />
                     </label>
                 </li>

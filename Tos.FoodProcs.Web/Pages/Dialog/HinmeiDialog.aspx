@@ -110,7 +110,7 @@
 	                    elem.find(".dialog-alert-message").hide();
 	                }
 	            });
-	            App.customTooltip(".hinmei-dialog, .shizai-dialog, .genshizai-dialog, .seihin-dialog, .seihin-search-dialog, .hinmei-dialog2");
+	            App.customTooltip(".hinmei-dialog, .shizai-dialog, .genshizai-dialog, .seihin-dialog, .seihin-search-dialog, .hinmei-dialog2, .con-seihin-button-dialog");
 	            /// パラメータ別に表示する品区分を切り替える
 	            var getHinKubun = function (param) {
 	                if (param === pageLangText.maHinmeiHinDlgParam.text) {
